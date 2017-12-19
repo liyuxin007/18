@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>安狗狗开放平台</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="../css/common .css" />
+        <link rel="stylesheet" type="text/css" href="../css/user.css" />
+        <link rel="stylesheet" type="text/css" href="../css/applic.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/bounces.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.pagination.css"/>
+        <style type="text/css">
+        	  .cancel2{width: 58px;
+    height: 30px;
+    color: white;
+    background: #a6a6a6;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 0 0 10px!important;
+    cursor: pointer;
+}
+    .particulars{
+    	width: 60px!important;
+    }
+    .validation-true2 {
+    margin-left: 15px;
+    height: 30px;
+    width: 55px;
+    background: #7DB72E;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.table-tr2 span{
+	margin-left: 20px;
+}
+.position2{
+	position: relative;
+	left: 49px;
+}
+a{
+	color: black;
+}
+.table-head div:nth-child(1) {
+				width: 25%;
+				
+			}
+.table-tr div:nth-child(1){
+	width: 25%;
+}
+
+.table-head div:nth-child(2) {
+				width: 15%;
+				
+			}
+.table-tr div:nth-child(2){
+	width: 15%;
+}
+.welcome-lf p:nth-child(2){
+	margin-top: 19px;
+	margin-left: 2px;
+}
+em{
+	position: relative;
+	left: 20px;
+}
+.box{
+	margin-left: 27px;
+}
+        </style>
+    </head>
+    <body>
+        <!--头部-->
+        <div class="head">
+            <div class="head-left">
+	<img src="../img/logo.png"/>
+            </div>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="javascript:;">管理中心</a></li>
+                <li><a href="statememt.html">数据中心</a></li>
+            </ul>
+            <div class="head-right LoginAjax">
+                <p class="person"><span class="person2"></span><i class="arrow"></i></p>
+                <div class="hover">
+                    <p><a class="changePass" style="border: none;">修改密码</a></p>
+                    <p class="pull-out2">退出登录</p>
+                </div>
+            </div>
+            <div class="head-right LoginAjax2">
+                <a href="javascript:;" class="head-login">登录</a>
+
+                <a href="../signup.html">注册</a>
+            </div>
+        </div>
+
+
+        <!--侧边栏-->
+        <div class="navigation">
+            <div style="height: 70px;"></div>
+            <div class="common welcome ">
+                <a href="user.html">
+                    <p></p>
+                </a>
+                <p class="navps">欢迎页</p>
+            </div>
+            <div class="common application color">
+                <a href="application.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">应用管理</p>
+            </div>
+            <div class="common generalize">
+                <a href="generalize.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">CPD推广</p>
+            </div>
+            <div class="common statement">
+                <a href="statememt.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">数据报表</p>
+            </div>
+            <div class="common finance">
+                <a href="finace.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">财务管理</p>
+            </div>
+            <div class="common newscenter">
+                <a href="newscenter.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">消息中心</p>
+            </div>
+            <div class="common personage">
+                <a href="personage.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">个人中心</p>
+            </div>
+        </div>
+
+
+
+
+        <!--中间类容区域-->
+        
+            <div style="height: 70px;"></div>
+            <div class="app-head content-center">
+                <span class=" "> <a href="application.html">我的应用</a></span>
+                <span class="color2">上下架记录</span>
+            </div>
+            <div class="welcome-center content-center">
+                <div class="welcome-fix ">
+                    <!--上下架记录-->
+                    <div class="welcome-lf ">
+                        <p style="border:none!important;">
+                            <select class="input-width updown">
+                                <option value="">全部</option>
+                                <option value="2">已上架</option>
+                                <option value="5">已下架</option>
+
+                            </select>
+                            <input type="text" name="" id="" value="" placeholder="应用名称" class="input-width appname" /><span class="search">搜索</span>
+                        </p>
+                        <div class="table">
+                            <div class="table-head bg">
+                                <div><span>应用名称</span></div>
+                                <div><span>状态</span></div>
+                                <div><span>申请时间</span></div>
+                                <div><span>审核时间</span></div>
+                                <div><span>操作</span></div>
+                            </div>
+
+                        </div>
+						<div class="box">
+								<div id="pagination2" class="page fl"></div>
+								
+							</div>
+                    </div>
+                    
+                    
+   
+                </div>
+
+ <div style="height: 100px;">	</div>
+
+            </div>
+
+            <!--底部-->
+            <div class="foot ft2">
+
+                <p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+            </div>
+            <!--登录弹框-->
+            <div class="bounces-box">
+                <div class="bounces">
+                    <div class="bo-header">
+                        <span>登录</span>
+                        <span class="down"><img src="../img/down.png" /></span>
+                    </div>
+                    <div class="bo-content">
+                        <p><span>邮箱</span><input type="text" placeholder="请填写登录邮箱" class="login-mail" /></p>
+                        <p><span>密码</span><input type="password" placeholder="请填写密码" class="login-pw" /></p>
+                        <p class="checkbox">
+
+                            <!--<input type="checkbox" />-->
+                            <input type="checkbox">
+                            <span>记住密码</span><span><a href="forgot_1.html">忘记密码</a></span>
+                        </p>
+                        <div class="login">登录</div>
+                        <div class="registration"><a href="signup.html">注册</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--提示弹框-->
+             <div class="bounces-box2  bb2">
+                <div class="bounces2">
+                    <div class="bo-header2">
+                        <span>信息</span>
+                        <span class="down2"><img src="../img/down.png" /></span>
+                    </div>
+                    <div class="bo-content2">
+                        <p>是否执行删除操作?</p>
+                        <p><span class="validation-true">确认</span><span class="cancel2">取消</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="bounces-box2 bb3">
+                <div class="bounces2">
+                    <div class="bo-header2">
+                        <span>信息</span>
+                        <span class="down2"><img src="../img/down.png" /></span>
+                    </div>
+                    <div class="bo-content2">
+                        <p>是否执行下架操作?</p>
+                        <p><span class="validation-true2">确认</span><span class="cancel">取消</span></p>
+                    </div>
+                </div>
+            </div>
+            <script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/helper.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/jquery.pagination.min.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+           
+            	
+            	
+			function common(data){
+				 $(".table-tr").remove()
+				 if (data.List) {
+                                for (var i = 0; i < data.List.length; i++) {
+
+
+                                    var app = "<div class=table-tr>" + "<div>" +
+                                    "<img src=" +imgserver+ data.List[i].Icon + "><p><em class=name>" +
+
+                                    data.List[i].AppName
+                                    + "</em><em	> " +length(data.List[i].PackName)  + "</em>" + "<em></em></p></div>" +
+                                    "<div><span>" +
+                                  filter  (data.List[i].Status)
+                                    + "</span></div><div><span>" +
+                                  DateTFormat(data.List[i].CreateTime)  
+                                    + "</span></div><div><span>" +
+                                 DateTFormat(data.List[i].LastTime)   
+                                    + "</span></div><div class=details><span>详情</span>"
+
+
+
+                                    + "</div>"
+                                    $(".table").append(app)
+                                      $(".details").click(function(evt){
+                                    	var evn = evt || event
+                                    	var t = $(".details").index(this)
+												 if (evn.target.nodeName == "SPAN") {
+												 	var id  = data.List[t].AppID
+												 	sessionStorage.setItem("deId",id)
+												 	window.location.href ="application_3.html"
+												 }
+											})
+                                }
+                            }
+			}
+                
+
+               
+
+                
+
+                var app2 = ""
+                //上下架记录
+              
+				var totalPage =""
+                    $.ajax({
+                        url: URL + '/Application/ShelveLogs',
+                        type: 'POST',
+                        data: { token: token },
+                        dataType: 'JSON',
+                        cache: false,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true,
+                        success: function (data) {
+                        	totalPage = data.Total/10
+                        	console.log(totalPage)
+                            console.log(data.List)
+                           	common(data)
+
+
+
+							$("#pagination2").pagination({
+								currentPage: 1,
+								totalPage: Math.ceil(totalPage),
+								isShow: false,
+								prevPageText: "< 上一页",
+								nextPageText: "下一页 >",
+								callback: function(current) {
+									console.log(current)
+									$.ajax({
+						                    type: "POST",
+						                    url: URL + '/Application/ShelveLogs',
+						                    data:{token:token,pageIndex:current},
+						                    async: false,
+						                    dataType: "JSON",
+						                    xhrFields: {
+						                        withCredentials: true
+					                    },
+			                    crossDomain: true,
+			                    success: function (data) {
+			                    	
+			                    	
+			                    totalPage =data.Total
+			                    dataObj = data
+			                    common(data)
+		                       
+	                    }
+	                });
+						
+					}
+				});
+
+
+
+                        }
+                    });
+               
+
+
+
+                $(".updown").change(function () {
+                    console.log($(".updown").val())
+                })
+                //查询
+                $(".search").click(function () {
+
+                    $.ajax({
+                        url: URL + '/Application/ShelveLogs',
+                        type: 'POST',
+                        data: {  auditType: $(".updown").val(), keyword: $(".appname").val(), token: token },
+                        dataType: 'JSON',
+                        cache: false,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true,
+                        success: function (data) {
+                        	totalPage = data.Total/10
+                            console.log(data.List)
+                            if (data.List) {
+                                $(".table-tr").remove()
+                                
+                                for (var i = 0; i < data.List.length; i++) {
+                                    var app = ""
+									console.log(data.List[i].Icon)
+                                    app = "<div class=table-tr>" + "<div>" +
+                                   "<img src="+imgserver+ data.List[i].Icon +"><p class=tutu></p><p><em class=name>" +
+
+                                   data.List[i].AppName
+                                   + "</em><em	> " + data.List[i].PackName + "</em></p></div>" +
+                                   "<div><span>" +
+                                   filter(data.List[i].Status)
+                                   + "</span></div><div><span>" +
+                                DateTFormat(data.List[i].CreateTime)   
+                                   + "</span></div><div><span>" +
+                               DateTFormat(data.List[i].LastTime)     
+                                   + "</span></div><div class=details><span>详情</span>"
+
+                                   + "</div>"
+                                    $(".table").append(app)
+                                }
+                            }
+							
+							
+							
+							$("#pagination2").pagination({
+								currentPage: 1,
+								totalPage: Math.ceil(totalPage),
+								isShow: false,
+								prevPageText: "< 上一页",
+								nextPageText: "下一页 >",
+								callback: function(current) {
+									console.log(current)
+									$.ajax({
+						                    type: "POST",
+						                    url: URL + '/Application/ShelveLogs',
+						                    data:{token:token,pageIndex:current},
+						                    async: false,
+						                    dataType: "JSON",
+						                    xhrFields: {
+						                        withCredentials: true
+					                    },
+			                    crossDomain: true,
+			                    success: function (data) {
+			                    	
+			                    	
+			                    totalPage =data.Total
+			                    dataObj = data
+			                    common(data)
+		                       
+	                    }
+	                });
+						
+					}
+				});
+
+                        }
+                    });
+                })
+
+				function filter(num){
+				
+								switch (num){
+										case 0:
+				
+										
+										return num="已撤销";
+				
+										case 1:
+										return  num="上架待审核";
+				
+										case 2:
+										return  num="上架中";
+				
+										case 3:
+										return num="上架审核未通过";
+				
+										case 4:
+										return num="下架待审核";
+										
+										case 5:
+										return num="已下架";
+				
+										}
+				
+							}
+					
+					
+					
+						//事件委托应用管理
+						
+			function back(){
+				 $(".table-tr2").click(function(evn){
+				 			var that = this
+						    var t=$(".table-tr2").index(this);
+						   	var evn = evn || event;
+						   	
+						   	//撤回
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="back"){
+								   		var backObj = dataObj.List[t].Id
+								console.log(backObj)
+								 
+								
+								$.ajax({
+					             type: "POST",
+					             url: URL+"/Application/Cancel  ",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+//					             	 window.location.reload();
+									 alert(data.Message)
+					                    }
+					         });
+			
+
+
+					  }
+						   	//删除
+						   	 	if(evn.target.nodeName == "SPAN"&&evn.target.className =="delet"){
+						   	 		console.log(11)
+						   	 		$(".bb2").show()
+						   		var backObj = dataObj.List[t].Id
+						   		 $(".validation-true").click(function(){
+								 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/DeleteApp",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	$(".bounces-box2").hide()
+					             	console.log(data)
+					             	if(data.Status ==true){
+					             		 that.remove()
+					             	}
+
+					                    }
+					         });
+					  			})
+						}
+						   	//下架
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="downShelve"){
+						   		$(".bb3").show()
+						   		 $(".validation-true2").click(function(){
+						   		var backObj = dataObj.List[t].Id
+								 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/DownShelve",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	console.log(data)
+					             	
+										window.location.reload() 
+					                    }
+					         });
+
+												})
+					  }
+						   	//上架
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="upShelve"){
+						   		var backObj = dataObj.List[t].Id
+								 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/UpShelve",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	console.log(data)
+					             	window.location.reload() 
+
+					                    }
+					         });
+
+
+					  }
+						
+						if(evn.target.nodeName == "SPAN"&&evn.target.className =="particulars"){
+							console.log(11)
+						   		var backObj = dataObj.List[t].Id
+								sessionStorage.setItem("backObj",backObj)
+								window.location.href = "application_2.html"
+
+					  }
+
+
+					});
+			}
+			
+			$(".cancel").click(function(){
+				$(".bounces-box2").hide()
+			})
+			$(".bounces-box2").css({"height": $(".content-center").height()});
+			console.log($(".bounces-box2").height())
+
+			//应用查询
+			$(".search2").click(function(){
+				 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/GetMyApp",
+					             data:{auditType:$(".appCreat").val(),keyword:$(".appCtname").val(),token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	//移除节点
+					             	$(".table-tr2").remove()
+					             	console.log(data)
+						//循环创建节点						
+					for(var i=0;i<data.List.length;i++){
+                    	app	=  "<div class=table-tr2><div><img src="+imgserver+
+                    	data.List[i].Icon
+                    	+"> <p> <em class=name>"+
+                    	data.List[i].AppName
+                    	+"</em> <em> "+
+                    	data.List[i].packname
+                    	+"</em><em> "+
+                                    data.List[i].VersionName
+                                    +"</em></p></div><div><span>"+
+					
+					filter(data.List[i].AuditStatus)
+					+"</span></div><div class=creat-time><span>"+
+					DateTFormat(data.List[i].CreateTime)
+					+"</span></div>"
+					
+					 
+					                     	if(data.List[i].Status==0){
+						app=app +"<div class=details><span class=back>撤销</span> </div></div>"
+					}else if(data.List[i].AuditStatus==1||data.List[i].AuditStatus==4){
+						app=app +"<div class=details><span class=back>撤销</span> </div></div>"
+					}else if(data.List[i].AuditStatus==2){
+						app=app +"<div class=details><span >更新</span> <span class=downShelve>下架</span></div></div>"
+					}else if(data.List[i].AuditStatus==5){
+						app=app +"<div class=details><span >更新</span> <span class=upShelve>上架</span></div></div>"
+					}else if(data.List[i].AuditStatus==3){
+						app=app +"<div class=details><span >更新</span> <span class=delet>删除</span><span>详情</span></div></div>"
+					}
+					 
+					 
+					     $(".table2").append(app)
+                    }
+											//事件委托绑定新节点	
+											 back()	
+					                    }
+					         });
+					        
+			})
+            </script>
+    </body>
+</html>
+
+</body>
+</html>

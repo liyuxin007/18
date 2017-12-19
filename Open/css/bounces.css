@@ -1,0 +1,84 @@
+.bounces-box2{
+			
+				width: 100%;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				/*left: -120px;*/
+				background-color:rgba(0,0,0,0.3);
+				background-size: cover;
+				z-index: 9999;
+				font-size: 14px;
+				display: none;
+			}
+			.bounces2{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+				
+				
+			}
+			.bo-header2{
+				background:#7DB72E;
+				height: 40px;
+				line-height: 40px;
+				width: 350px;
+				color: white;
+				padding: 0 10px;
+			}
+			.down2{
+				float: right;
+				display: inline-block;
+				margin-top: 4px;
+				cursor: pointer;
+			}
+			
+ 			.bo-content2{
+ 				height: 200px;
+ 				background: white;
+ 				
+ 			}
+			.bo-content2 p:first-child{
+				
+				
+				margin: 0 auto;
+				padding:35px 50px 0 65px ;
+			}
+			.bo-content2 p:first-child img{
+				height: 45px;
+				width: 100px;
+				
+			}
+			.span-color2{
+				margin-left: 20px;
+				color: #7DB72E;
+				cursor: pointer;
+			}
+			.bo-content2 p:last-child input{
+				border: 1px solid #cccccc;
+			   	height: 30px;
+			    line-height: 30px;
+			    width: 93px;
+			
+			    outline: none;
+			}
+			.bo-content2 p:last-child {
+				
+				margin: 0 auto;
+				margin-top: 30px;
+				padding:0 50px 0 65px ;
+			}
+			.validation-true{
+				margin-left: 15px;
+				height: 30px;
+				width: 55px;
+				background: #7DB72E;
+				display: inline-block;
+				text-align: center;
+				line-height: 30px;
+				border-radius: 3px;
+				color: white;
+				cursor: pointer;
+			}
+			

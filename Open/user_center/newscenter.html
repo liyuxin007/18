@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+	</head>
+	<body>
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.pagination.css"/>
+		<style type="text/css">
+			a{
+				color:#858997 ;
+			}
+			.welcome-lf{
+				width: 100%;
+				height: 538px;
+				margin-right: 168px;
+				font-size: 14px;
+				position: relative;
+				color:#858997 ;
+			}
+			.welcome-lf p:nth-child(2) span{
+				color:#858997;
+				font-size: 14px;
+			}
+			.welcome-lf p:nth-child(2){
+				margin-bottom: 0;
+			}
+			.welcome-lf p:first-child{
+				font-size: 16px;
+				border-bottom: 0;
+			}
+			.input-width{
+				width: 130px;height: 35px;
+			}
+			.new{
+				margin: 0!important;
+				border-top: 1px solid #ededed;
+				padding: 10px 0;
+				padding-left: 30px;
+				overflow: hidden;
+				height: 21px;
+			}
+			.new img{
+				width: 20px;
+				height: 18px;
+				vertical-align:middle;
+				margin-right: 10px;
+			}
+			.new-margin{
+				width: 250px;
+				display: inline-block;
+			}
+			.new-right{
+				float: right;
+				margin-right: 300px;
+			}
+			
+			.color{
+				color:#7DB72E;
+			}
+			.common p:first-child{
+				
+				background-position: 10px 10px;
+			}
+			.application p:first-child{
+			
+				background-position: 10px -40px;
+			}
+			.generalize p:first-child{
+				background-position: 10px -90px;
+			}
+			
+			
+			.statement p:first-child{
+				background-position: 10px -140px;
+			}
+			.finance p:first-child{
+				background-position: 10px -190px;
+			}
+			.newscenter p:first-child{
+				background-position: -33px  -240px;
+			}
+			.personage p:first-child{
+				background-position: 10px  -290px;
+			}
+			button{
+				list-style-type:none;
+			}
+			.search {
+                width: 70px;
+                height: 35px;
+                color: white;
+                background: #7DB72E;
+                text-align: center!important;
+                line-height: 35px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-left: 10px;
+                cursor: pointer;
+                display:inline-block;
+                font-size: 14px;
+                
+            }
+            .welcome-lf p:first-child{
+            	margin-top: 0;
+            	padding-top: 28px;
+            }
+           .welcome-fix{
+           	display: block;
+           }
+           .box{
+           	margin: 0;
+           }
+  		@media screen and (max-width: 1106px) {
+				   .welcome-lf{
+				   	width: 941px;
+				   }
+		}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+					<img src="../img/logo.png"/>
+			</div>
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="javascript:;">管理中心</a></li>
+				<li><a href="statememt.html">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					 <p><a class="changePass" style="border: none;">修改密码</a></p>
+					<p class="pull-out2">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="../signup.html">注册</a>
+			</div>
+		</div>
+		
+		
+		<!--侧边栏-->
+		<div class="navigation">
+			<div style="height: 70px;"></div>
+			<div class="common welcome ">
+				<a href="user.html" >
+					<p></p>
+				</a>
+				<p class="navps">欢迎页</p>
+			</div>
+			<div class="common application ">
+				<a href="application.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">应用管理</p>
+			</div>
+			<div class="common generalize ">
+				<a href="generalize.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">CPD推广</p>
+			</div>
+			<div class="common statement">
+				<a href="statememt.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">数据报表</p>
+			</div>
+			<div class="common finance ">
+				<a href="finace.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">财务管理</p>
+			</div>
+			<div class="common newscenter color">
+				<a href="newscenter.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">消息中心</p>
+				
+			</div>
+			<div class="common personage">
+				<a href="personage.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">个人中心</p>
+			</div>
+			<span class="point"></span>
+		</div>
+		
+		
+		
+		
+        <!--中间类容区域-->
+        <div class="content-center">
+            <div style="height: 70px;"></div>
+            <div class="welcome-center">
+                <div class="welcome-fix">
+                    <div class="welcome-lf" id="list">
+                        <p id="select">
+                            <select class="input-width" name="ReadStatus" id="ReadStatus">
+                                <option value="-1">全部</option>
+                                <option value="0">未读</option>
+                                <option value="1">已读</option>
+                            </select>
+                            &nbsp;<span  onclick="search()" value="" class="search" >
+                            	搜索
+                            </span>
+                        </p>
+
+                        
+                    </div>
+                    <div class="box">
+								<div id="pagination2" class="page fl"></div>
+								
+					</div>
+                </div>
+            </div>
+           
+</div>
+
+            <!--底部-->
+            <div class="foot ft2">
+
+                <p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+            </div>
+            <script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/jquery.pagination.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/common.js"></script>
+            <script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/helper.js"></script>
+            <script type="text/javascript">
+            	var textValue =sessionStorage.getItem("textValue")
+            	if(textValue=="待审核"||textValue=="审核不通过"){
+            		for(var i=0;i<$(".navigation a").length-2;i++){
+							                $(".navigation a").eq(i).attr('href', '#');     
+							                 $(".navigation a").eq(i).click(function (event) {
+							                    event.preventDefault(); 
+							                    if(textValue=="待审核"){
+							                    	alert("待审核通过后可以正常使用")
+							                    	window.location.href = "user.html"
+							                    }else{
+							                    	alert("审核不通过请重新填写资料")
+							                    	window.location.href = "user.html"
+							                    }
+							                    
+							                });
+						            }
+            	}
+			
+
+			var totalPage = ""
+
+            
+                search();
+                
+             
+
+         
+            function search() {
+                $.ajax({
+                    type: "POST",
+                    url: URL + "/Message/GetList",
+                    data: { ReadStatus:$("#ReadStatus").val(),token: localStorage.getItem('token') },
+                    dataType: "JSON",
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                    	if(data.Status==402){
+			        		
+							alert(data.Message)
+							window.location.href = "user.html"
+					             
+			        		return
+			        	}
+                    	totalPage = data.Total/10
+                    	
+                        $("#list").find('p:gt(0)').remove();
+					console.log(data)
+					
+                        if (data.List != null) {
+                            for (var i in data.List) {
+                                var app = '<p class="new"><img src='+filter(data.List[i].IsRead)+'><span class="new-margin"><a href="newscenter_2.html?id=' + data.List[i].ID + '">' + data.List[i].Title + 
+                                '<a/> </span><span>' +length(data.List[i].Content)  + '</span><span class="new-right">' + DateTFormat(data.List[i].SendTime) + '</span></p>';
+                                $("#list").append(app)
+
+
+                            }
+                            
+                            
+                             var item = $(".new");
+					            for(var i=0;i<item.length;i++){
+					                if(i%2== 1){
+					                    item[i].style.backgroundColor="#fafafa";
+					                }
+					            }
+                        }
+                        
+                        $("#pagination2").pagination({
+							currentPage: 1,
+							totalPage: Math.ceil(totalPage),
+							isShow: false,
+							prevPageText: "< 上一页",
+							nextPageText: "下一页 >",
+							callback: function(current) {
+								$.ajax({
+                    type: "POST",
+                    url: URL + "/Message/GetList",
+                    data: { ReadStatus:$("#ReadStatus").val(),token: localStorage.getItem('token'),pageIndex:current},
+                    dataType: "JSON",
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                        $("#list").find('p:gt(0)').remove();
+                        if (data.List != null) {
+                            for (var i in data.List) {
+                                var app = '<p class="new"><img src='+filter(data.List[i].IsRead)+'><span class="new-margin"><a href="newscenter_2.html?id=' + data.List[i].ID + '">' + data.List[i].Title + 
+                                '<a/> </span><span>' +length(data.List[i].Content)  + '</span><span class="new-right">' + DateTFormat(data.List[i].SendTime) + '</span></p>';
+                                $("#list").append(app)
+                            }
+                            
+                             var item = $(".new");
+					            for(var i=0;i<item.length;i++){
+					                if(i%2== 1){
+					                    item[i].style.backgroundColor="#fafafa";
+					                }
+					            }
+                        }
+                        
+                      
+                        
+                        
+                    }
+
+                })
+								
+								
+								
+								
+							}
+						});
+                        
+                        
+                    }
+
+                })
+
+            }
+//          function length(data){
+//          	var  s =data
+//          	if(s){
+//          		if(data.length>=15){
+//          		
+//          		 s=data.substring(0,15)+"...";
+//          	}
+//          	}
+//          	
+//          	
+//          	return s
+//          }
+            function filter(num){
+				
+								switch (num){
+										case 0:
+				
+									
+										return num="../img/newct2.png";
+				
+										case 1:
+										return  num="../img/newct1.png";
+				
+										
+				
+										}
+				
+							}
+          
+            
+          
+            
+            
+            </script>
+</body>
+</html>
+
+	</body>
+</html>

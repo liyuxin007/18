@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+		<link rel="stylesheet" type="text/css" href="css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="css/signup.css"/>
+	</head>
+		<style type="text/css">
+			#checkbox-agg{
+				display:inline-block;
+				width: 14px;
+				position: relative;
+				top: 8px;
+    			left: 46px;
+			}
+			/*.content{
+				height: 667px
+			}*/
+.content-box {
+    height: 565px;
+}
+		</style>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+				
+			</div>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="javascript:;" class="application2">管理中心</a></li>
+				<li><a href="javascript:;"  class="application3">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					<p><a href="forgot_1.html" style="border: none;">修改密码</a></p>
+					<p class="pull-out">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="signup.html">注册</a>
+			</div>
+		</div>
+		<div style="height: 70px;"></div>
+		<!--内容区-->
+		<div class="content-box">
+					<div class="content">
+			
+			<div class="content-head cl">
+					<p class="ct-p">1、填写基本信息</p>
+					<div class="box2 b2"></div>  
+			</div>
+			<div class="content-head ">
+					<p class="ct-p bg">2、邮箱激活</p>
+					<div class="box2 b3"></div>  
+					<div class="box b1"></div>  
+			</div>
+			<div class="content-head cf">
+					<p class="ct-p bg">3、完善资料</p>
+					
+					<div class="box b1"></div>  
+			</div>
+			<!--填写信息-->
+			<div class="full-in">
+				<p><span>邮箱</span><input type="text" name="" id="mail" value="" /></p>
+				<span class="prompt mail">邮箱格式错误</span>
+				<p class="p-margin"><span>密码</span><input type="password" class="full-pass"/></p>
+				<span class="prompt password">密码长度小于8</span>
+					<span class="full-span flsp1">字母、数字或者英文符号，最短8位，区分大小写</span>
+				<p class="p-margin maone "><span>确认密码</span><input type="password"  class="full-pass2"/></p>
+					<span class="prompt passwordag">两次密码不一致</span>
+					<span class="full-span flsp2">请再次输入密码</span>
+				<p class="matwo">
+					<span>验证码</span>
+					<input type="text"  class="validation"/>
+					<span class="validation-img">
+						<img class="validation-img2"/>
+					</span>
+					<span class="span-color">换一张</span>
+				</p>
+				<span class="prompt flsp3">验证码错误</span>
+				<p>
+					<input type="checkbox"  id="checkbox-agg"/>
+					<span class="select-margin">我同意并遵守上述的</span><span >
+						<a href="javascript:;" class="span-color3">
+							《安狗狗开放平台开发者服务协议》
+						</a>
+					</span>
+				</p>
+				<span class="quick">已有开发平台账号？<a class="login2">立即登录</a></span>
+				<div class="button">下一步</div>
+			</div> 
+			
+		</div>
+		
+		</div>
+		
+		<!--底部-->
+		<div class="foot foot-position">
+				<p><a href="agreement.html">开发者协议 </a>  <a href="contact _us.html">联系我们</a></p>
+				<p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+		</div>
+		<div class="add">
+			<p>手机号码不能为空</p>
+		</div>
+		
+		
+		
+		<!--登录弹框-->
+		<div class="bounces-box">
+			<div class="bounces">
+			<div class="bo-header">
+				<span>登录</span>
+				<span class="down"><img src="img/down.png"/></span>
+			</div>
+			<div class="bo-content">
+				<p><span>邮箱</span><input type="text" placeholder="请填写登录邮箱" class="login-mail"/></p>
+				<p><span>密码</span><input type="password" placeholder="请填写密码" class="login-pw"/></p>
+				<p class="prompt2">账号或密码错误</p>
+				<p class="agcolor">账号没有激活，请激活后再登录</p>
+				<p class="checkbox">
+					
+					<!--<input type="checkbox" />-->
+					<label><input type="checkbox"><i>✓</i></label>
+					<span>记住密码</span><span><a href="forgot_1.html">忘记密码</a></span></p> 
+				<div class="login">登录</div>
+				<div class="registration"><a href="signup.html">注册</a></div>
+			</div>
+			
+			<div class="agposition">
+				
+			</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//请求验证码图片
+			function Verification (){
+					$.ajax({
+			             type: "POST",
+			             url: URL + "/CreateCode.ashx",
+			             dataType: "text",
+			             xhrFields: {
+					           withCredentials: true
+					       },
+					    crossDomain: true,
+			            success: function(data){
+			             		 $(".validation-img2").attr("src",'data:image/gif;base64,'+encodeURI(data));
+			                    }
+			         });
+			}
+			$(".span-color3").click(function(){
+				window.open("agreement.html")
+			})
+		
+		
+		
+		
+			Verification ()
+			
+			$("#mail").blur(function(){
+				var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/; 
+				var str = $("#mail").val()
+				console.log($("#mail").val())
+				 if(re.test(str)){
+				 		console.log(1)
+						  	$(".mail").hide()
+						  }else{
+//						  	alert("请输入正确的邮箱")
+							$(".mail").show()
+						  	return
+						  }
+			
+			});
+			
+			$(".full-pass").blur(function(){
+				if($(".full-pass").val().length<8){
+						$(".password").show()
+//						alert("密码不能少于8位")
+					$(".flsp1").hide()
+						return
+					}else{
+						$(".password").hide()
+						$(".flsp1").show()
+					}
+			});
+			$(".full-pass2").blur(function(){
+				
+				if($(".full-pass").val()!==$(".full-pass2").val()){
+//					alert("两次密码不一致");
+					$(".passwordag").show()
+					$(".flsp2").hide()
+				
+					return
+				}else{
+					$(".passwordag").hide()
+					$(".flsp2").show()
+					
+				}
+				
+		});
+			
+				function GetQueryString(name) {
+    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+        return unescape(r[2]);
+    }
+    return null;
+}
+			
+					$(".button").click(function(){
+						var promoterVal = GetQueryString("Promoter") || '';
+						
+//							 add()
+						if($(".full-pass").val()==""||$(".validation").val()==""||$("#mail").val()==""){
+							alert("请填写完整信息");
+							return
+						};
+						
+						if (!$("#checkbox-agg").is(':checked')) {
+								    alert("请同意安狗狗开放平台开发者服务协议")
+								    return
+								    
+						}
+						
+						
+							 $.ajax({
+					             type: "POST",
+					             url: URL + "/Register/RegisterUser",
+					             data:{email:$("#mail").val(),password:$(".full-pass").val(),verifycode:$(".validation").val(),promoter:promoterVal},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							       crossDomain: true,
+					             success: function(data){
+					             		 
+					             		  if(data.Status==1){
+					             		      localStorage.setItem("key", $("#mail").val());
+					             		  		window.location.href="signup_2.html" 
+					             		  }else{
+					             		  	alert(data.Message)
+					             		  }
+					             		  
+					             		  if(data.Message=="验证码错误"){
+					             		  	$(".flsp3").show()
+					             		  }else{
+					             		  	$(".flsp3").hide()
+					             		  }
+											
+					                    }
+					         });
+
+					})
+				
+		
+			
+//			$(".button").click(function(){
+//				if(!$(".checkbox").is(':checked')){
+//					console.log("a")
+//				}
+//			})
+			//刷新验证码
+//			$(".span-color").click(function(){
+//				var myimg = document.getElementsByClassName("validation-img2")[0];
+//				now = new Date();
+//				myimg.src = "http://192.168.1.84:8754/CreateCode.ashx?code="+now.getTime()
+//				
+//			});
+			function add(){
+				$(".add").fadeIn();
+				setTimeout(function(){
+					$(".add").hide()
+				},3000)
+				return
+			}
+
+
+			
+			$(".span-color").click(function(){
+				Verification ()
+			});
+			
+			
+			
+			$(".login2").click(function(){
+				$(".bounces-box").show();
+			})
+			 
+		</script>
+	</body>
+</html>

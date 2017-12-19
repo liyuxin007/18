@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+	</head>
+	<body>
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bounces.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.pagination.css"/>
+		<style type="text/css">
+			.welcome-fix {
+				    display: block;
+				    margin-right: 98px;
+				}
+				.welcome-center{
+					margin-right: 46px;
+				}
+			.welcome-lf{
+				width: 100%;
+				position: relative;
+			}
+			.welcome-lf p:nth-child(2) span{
+				color: black;
+				font-size: 14px;
+			}
+			.welcome-lf p:nth-child(2){
+				margin-bottom: 0;
+			}
+			.welcome-lf p:first-child{
+				margin: 0;
+				font-size: 16px;
+				border-bottom: 0;
+				position: relative;
+				top: 19px;
+			}
+			.input-width{
+				width: 180px;padding: 9px;border-radius: 2px;
+			}
+		
+			.welcome-lf input{
+				position: relative;
+				top: -2px;
+				border: none;
+				border: 1px solid #d2d7d9;
+				height: 18px;
+			}
+			.search{
+				width: 70px;
+				height: 37px;
+				color:white ;
+				background:#7DB72E ;
+				text-align: center;
+				line-height: 37px;
+				border-radius: 5px;
+				display: inline-block;
+				margin-left: 10px;
+				cursor: pointer;
+				font-size: 14px;
+			}
+			.details{
+				line-height: 0!important;
+			}
+			.details span{
+				display: inline-block;
+				height: 20px;
+				border: 1px solid #bfbfbf;
+				position: relative;
+				top: 28px;
+				line-height: 20px;
+				cursor: pointer;
+			}
+			.welcome-lf p {
+				 margin: 20px 0 10px 0; 
+				}
+			
+			.color2{
+				color: #7DB72F;
+				border-bottom: 2px solid #7DB72F;
+				padding: 14px 0;
+			}
+			
+			.submit{
+				width: 140px;
+				height: 37px;
+				background:#7DB72E ;
+				text-align: center;
+				line-height: 37px;
+				border-radius: 5px;
+				display: inline-block;
+				position: absolute;
+				right: 3%;
+    			top: 20px;
+				cursor: pointer;
+			}
+			.submit2{
+				width: 100px;
+				height: 37px;
+				background:#7DB72E ;
+				text-align: center;
+				line-height: 37px;
+				border-radius: 3px;
+				display: inline-block;
+				color: white;
+				cursor: pointer;
+			}
+			.cancel{
+				width: 100px;
+				height: 36px;
+				color:white ;
+				background:#a6a6a6 ;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 3px;
+				display: inline-block;
+				
+				cursor: pointer;
+			}
+			.submit a{
+				color: white;
+			}
+			
+			
+			
+			.table-head div{
+				width: 15%;
+			}
+			.table-head div:nth-child(1){
+				width: 20%;
+				
+			}
+			.table-tr em{
+				font-size: 14px;
+			}
+			.table-tr div:nth-child(1){
+				width: 20%;
+			}
+			.table-tr p{
+				margin: 0!important;
+				padding: 0;
+			}
+			
+			
+			.table-head div:nth-child(2){
+				width: 12%;
+				
+			}
+			.table-tr div:nth-child(2){
+				width: 12%;
+				line-height: 21px;
+			}
+			
+			
+		
+			.table-head div:nth-child(3){
+				width: 12%;
+				
+			}
+			.table-tr div:nth-child(3){
+				padding-top: 12px;
+			width: 12%;
+				line-height: 20px;
+			}
+			
+			
+			
+			.table-head div:nth-child(6){
+				width: 8%;
+				
+			}
+			
+			.table-tr div:nth-child(6){
+				width:8%;
+			}
+		
+			.table-head div:nth-child(7) {
+				width: 18%;
+				
+			}
+			
+			.table-tr div:nth-child(7) {
+				
+				width: 18%;
+			}
+			
+			.table-tr div{
+				width: 15%;
+			}
+			.color{
+				color:#7DB72E;
+			}
+			.welcome p:first-child{
+				
+				background-position: 10px 10px;
+			}
+			
+			.generalize p:first-child{
+				background-position: -33px -90px;
+			}
+			
+			
+			
+			.bounces{
+				height: 200%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				background-color:rgba(0,0,0,0.3);
+				z-index: 999;
+				font-size: 14px;
+				display: none;
+			}
+			.bounces-box3{
+				position: absolute;
+				left: 50%;
+				top: 70%;
+				transform: translate(-50%,-50%);
+				height: 150px;
+				width: 350px;
+				background: white;
+				text-align: center;
+				
+			}
+			.bounces-box3 p{
+				margin-top: 31px;
+				margin-bottom: 29px;
+			}
+			.bounces-box3 div{
+				
+				margin-right: 15px;
+			}
+			.table-tr div:nth-child(1) em:nth-child(1){
+				margin-top: 20px;
+			}
+			a {
+				color: #959595;
+			}
+			.paddno p{
+				padding: 0!important;
+				
+			}
+			
+			.table-head span{
+				margin-left: 10px;
+			}
+			.table-tr img{
+				margin: 0;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			.table-tr span{
+				margin-left: 10px;
+			}
+			.spand em:nth-child(2){
+				margin-left: 38px;
+			}
+			
+		 				         @media screen and (max-width: 1130px) {
+	   .welcome-lf{
+	   	width: 960px;
+	   }
+}
+/*添加弹框*/
+.bo-content2 {
+    width: 383px;
+    border-radius: 3px;
+}
+.validation-true{
+    margin: 0;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+}
+.cancel2{
+	display: inline-block;
+  	margin: 0;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: #a6a6a6;
+    border-radius: 3px;
+    margin-left: 10px;
+    color: white;
+}
+.bo-content2 p:last-child{
+	padding: 0;
+}
+.bo-content2 p {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+}
+		</style>
+	</head>
+	<body>
+		<div class="bounces">
+			<div class="bounces-box3">
+				<p>确定要启动这个推广计划？</p>
+				<div class="submit2">确认提交</div>
+				<div class="cancel">取消</div>
+			</div>
+		</div>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+					<img src="../img/logo.png"/>
+			</div>
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="javascript:;">管理中心</a></li>
+				<li><a href="statememt.html">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					 <p><a class="changePass" style="border: none;">修改密码</a></p>
+					<p class="pull-out2">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="../signup.html">注册</a>
+			</div>
+		</div>
+		
+		
+		<!--侧边栏-->
+		<div class="navigation">
+			<div style="height: 70px;"></div>
+			<div class="common welcome ">
+				<a href="user.html" >
+					<p></p>
+				</a>
+				<p class="navps">欢迎页</p>
+			</div>
+			<div class="common application ">
+				<a href="application.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">应用管理</p>
+			</div>
+			<div class="common generalize color">
+				<a href="generalize.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">CPD推广</p>
+			</div>
+			<div class="common statement">
+				<a href="statememt.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">数据报表</p>
+			</div>
+			<div class="common finance ">
+				<a href="finace.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">财务管理</p>
+			</div>
+			<div class="common newscenter">
+				<a href="newscenter.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">消息中心</p>
+			</div>
+			<div class="common personage">
+				<a href="personage.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">个人中心</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--中间类容区域-->
+		
+			<div style="height: 70px;"></div>
+			<div class="welcome-center content-center">
+				<div class="welcome-fix ">
+			
+					<!--我的应用-->
+					<div class="welcome-lf ">
+
+                        <p>
+                            <select name="PauseStatus" id="PauseStatus" class="input-width">
+                                <option value="-1">全部</option>
+                                <option value="0">已启动</option>
+                                <option value="1">已暂停</option>
+                            </select>
+                            <input type="text" name="Keyword" id="Keyword" value="" placeholder="应用名称" class="input-width" /><span class="search" onclick="search()">搜索</span>
+                            <div class="submit"><a href="javascript:;">创建计划</a></div>
+                        </p>
+							<div class="table">
+						<div class="table-head bg">
+							<div><span>计划</span></div>
+							<div><span>规格</span></div>
+							<div><span>推广日期</span></div>
+							<div><span>开始生效时间</span></div>
+							<div><span>修改时间</span></div>
+							<div><span>状态</span></div>
+							<div><span>操作</span></div>
+							
+						</div>
+                                <div id="list"></div>
+                                <div class="box">
+								<div id="pagination2" class="page fl"></div>	
+							</div>
+                                <div style="height: 100px;"></div>
+					</div>
+						
+					</div>
+					
+				</div>
+				
+				
+		</div>
+		
+		<!--底部-->
+		<div class="foot ft2">
+			
+				<p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+		</div>
+		 <!--提示弹框-->
+             <div class="bounces-box2  bb2">
+                <div class="bounces2">
+                   
+                    <div class="bo-content2">
+                        <p>是否执行此操作?</p>
+                        <p><span class="validation-true">确认</span><span class="cancel2">取消</span></p>
+                    </div>
+                </div>
+            </div>
+		
+		
+		
+		<script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.pagination.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/helper.js"></script>
+            <script type="text/javascript">
+			$(".on").click(function(){
+				$(".bounces").show()
+			})
+			$(".submit2").click(function(){
+				$(".bounces").hide()
+			})
+			$(".cancel").click(function(){
+				$(".bounces").hide()
+			})
+			$(".app-head span").click(function(){
+				$(this).addClass("color2").siblings(".app-head span").removeClass("color2")
+			})
+				
+			$(".app-hover1").click(function(){
+				$(".box1").hide()
+				$(".box2").show()
+			})
+			$(".app-hover2").click(function(){
+				$(".box1").show()
+				$(".box2").hide()
+			})
+			$(".submit").click(function(){
+				window.location.href = "generalize_2.html"
+			})
+		
+			    search();
+
+			var totalPage =""
+			
+			function common(data){
+				 $("#list").children().remove();
+			            if (data.List != null) {
+			                for (var i in data.List) {
+			                    var stat = data.List[i].IsClosed == 0 ? data.List[i].IsPause == 0 ? "已启动" : data.List[i].IsPause == 1 ? "已暂停" : "达限暂停" : "已关闭"
+			                    var html = '<div class="table-tr" ><div>' +
+                                        '<img src="' +imgserver+ data.List[i].Icon + '" alt="" />' +
+                                        '<p style="width: 10px;float: left;height:80px"></p>' +
+                                        '<p>' +
+                                        '<em	class="name">' + data.List[i].AppName + '</em>' +
+                                        '<em	> ' +length(data.List[i].PackName)  + '</em>' +
+                                        '<em	> ' + data.List[i].VersionName + '</em>' +
+                                        '</p></div>' +
+                                '<div class=paddno><p><em>日预算：' + data.List[i].Budget + '元</em><em	> 出价：' + data.List[i].Price + '元/下载 </em></p></div>' +
+                                '<div class=spand><em>' + DateTFormat(data.List[i].ExtStartDate, "yyyy-MM-dd") + '</em><em>至</em><em>' + DateTFormat(data.List[i].ExtEndDate, "yyyy-MM-dd") + '</em></div>' +
+                                '<div><span>' + DateTFormat(data.List[i].EffectiveTime) + '</span></div>' +
+                                '<div><span>' + DateTFormat(data.List[i].UpdateTime) + '</span></div>' +
+                                '<div><span>' + stat + '</span></div>' +
+                                '<div  class="details">';
+                                
+                                
+			                    if (data.List[i].IsClosed == 0) {
+			                        if (data.List[i].IsPause == 0) {
+			                            html = html + '<span class="on" onClick="action(\'/Promote/Pause\',' + data.List[i].ID + ',\'' + data.List[i].PlanName + '\')">暂停</span>';
+			                        } else if (data.List[i].IsPause == 1) {
+			                            html = html + '<span class="on"  onClick="action(\'/Promote/Enable\',' + data.List[i].ID + ',\'' + data.List[i].PlanName + '\')">启用</span>';
+			                        }
+
+			                        html = html + '<span onClick="action(\'/Promote/Close\',' + data.List[i].ID + ',\'' + data.List[i].PlanName + '\')">关闭</span>' +
+                                    '<span ><a href="generalize_4.html?id=' + data.List[i].ID + '">修改<a/></span>';
+			                    }
+			                    
+			                    
+			                    html += '<span class=particulars    onClick="action2(' + data.List[i].ID +' )" >详情</span>' +
+                                '</div></div>';
+
+			                    $("#list").append(html)
+			                }
+
+			            }
+			}
+			
+			
+			function search() {
+			    $.ajax({
+			        type: "POST",
+			        url: URL + "/Promote/GetList",
+			        data: { PauseStatus: $("#PauseStatus").val(), Keyword: $("#Keyword").val(), token: localStorage.getItem('token') },
+			        dataType: "JSON",
+			        xhrFields: {
+			            withCredentials: true
+			        },
+			        crossDomain: true,
+			        success: function (data) {
+			        	common(data)
+			        	totalPage = data.Total/10
+			        	console.log(data)
+			        	if(data.Status==402){
+			        		
+							alert(data.Message)
+							window.location.href = "user.html"
+					             
+			        		$(".submit").unbind()
+			        		
+			        		return
+			        	}
+			           
+			            $("#PauseStatus").val(data.PauseStatus);
+			            $("#Keyword").val(data.Keyword);
+			            $("#pagination2").pagination({
+							currentPage: 1,
+							totalPage: Math.ceil(totalPage),
+							isShow: false,
+							prevPageText: "< 上一页",
+							nextPageText: "下一页 >",
+							callback: function(current) {
+								console.log(current)
+								$.ajax({
+				                    type: "POST",
+				                    url: URL + "/Promote/GetList",
+				                    data:{token:token,pageIndex:current},
+				                    async: false,
+				                    dataType: "JSON",
+				                    xhrFields: {
+				                        withCredentials: true
+				                    },
+				                    crossDomain: true,
+				                    success: function (data) {
+				                    	$(".table-tr2").remove()
+				                    	console.log(data.List)
+				                    	totalPage =data.Total
+				                    dataObj = data
+				                    common(data)
+				                       
+				                    }
+		                });
+								
+							}
+				});
+			            
+			            
+			            
+			            
+			        }
+
+
+			    })
+
+			}
+			
+			function action(url, id, planName) {
+				$(".bounces-box2").show()
+				var ur =url
+				var i =id
+				var planNam=planName
+			 	$(".validation-true").click(function(ur, i, planNam){
+			 		console.log(1)
+			 		 $.ajax({
+			            type: "POST",
+			            url: URL + url,
+			            data: { id: id, planName: planName, token: localStorage.getItem('token') },
+			            dataType: "JSON",
+			            xhrFields: {
+			                withCredentials: true
+			            },
+			            crossDomain: true,
+			            success: function (json) {
+			                if (json.Status == true) {
+			                    // 刷新页面
+			                    window.location.reload();
+			                }
+			                else {
+			                    alert(json.Message);
+			                    //$.messager.alert('失败信息', json.Message);
+			                }
+
+			            }
+			        });
+			 	})
+			       
+			    
+			}
+			$(".cancel2").click(function(){
+				$(".bounces-box2").hide()
+			})
+			
+			function action2(id){
+				sessionStorage.setItem("actionId",id)
+				console.log(1)
+				window.location.href ="generalize_3.html"
+			}
+			
+			//事件委托
+			function back(){
+				 $(".table-tr2").click(function(evn){
+				 			var that = this
+						    var t=$(".table-tr2").index(this);
+						   	var evn = evn || event;
+						   	
+						   	//详情
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="back"){
+								   		var backObj = dataObj.List[t].Id
+								console.log(backObj)
+								 
+								
+
+			
+
+
+					  }
+						   	
+
+						  
+						   
+
+					});
+			}
+			
+            </script>
+	</body>
+</html>
+
+	</body>
+</html>

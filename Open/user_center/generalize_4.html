@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+		<link rel="stylesheet" type="text/css" href="../css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+        <link href="../css/jquery-ui.css" rel="stylesheet" />
+        <style type="text/css">
+			body{
+				overflow: hidden;
+			}
+			.welcome-center{
+				padding-top: 0;
+				
+			}
+			.welcome-center p:first-child{
+				border-bottom:1px solid #ededed
+			}
+			.welcome-foot {
+				height: 570px;
+			}
+			.welcome-foot p{
+				padding: 10px;
+				padding-left:0 ;
+				margin:0 30px;
+			}
+			.welcome-foot div{
+				margin: 40px 0;
+				margin-left: 155px;
+				font-size: 14px;
+				
+			}
+			.welcome-foot em{
+				color: #FF0000;
+			}
+			.welcome-foot span{
+				margin: 10px;
+			}
+			
+			input{
+				border: none;
+				outline: none;
+				border-radius: 3px;
+				height: 25px;
+				width: 400px;
+				border: 1px solid #ddd; 
+			}
+			.prompting{
+				position: absolute;
+				top: 0;
+				left: -72px;
+				color: #acacac;
+			}
+			input[type="checkbox"]{
+				display:inline-block;
+				position: relative;
+				top: 2px;
+				height: 15px;
+				width: 20px;
+			}
+			.submit{
+				width: 140px;
+				height: 36px;
+				color:white ;
+				background:#7DB72E ;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 5px;
+				display: inline-block;
+				margin:0 0 0 240px!important;
+				cursor: pointer;
+			}
+			.cancel{
+				width: 140px;
+				height: 36px;
+				color:white ;
+				background:#a6a6a6 ;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 5px;
+				display: inline-block;
+				margin:0 0 0  10px!important;
+				cursor: pointer;
+			}
+			.common p:first-child{
+				
+				background-position: 10px 10px;
+			}
+			.application p:first-child{
+			
+				background-position: 10px -40px;
+			}
+			.generalize p:first-child{
+				background-position: -33px -90px;
+			}
+			
+			
+			.statement p:first-child{
+				background-position: 10px -140px;
+			}
+			.finance p:first-child{
+				background-position: 10px -190px;
+			}
+			.newscenter p:first-child{
+				background-position: 10px  -240px;
+			}
+			.personage p:first-child{
+				background-position: 10px  -290px;
+			}
+			.color{
+				color:#7DB72E;
+			}
+			.inform{
+        		background: #fee1e1;
+        		height: 50px;
+        		width: 96%;
+        		color:#f96868 ;
+        	}
+        	.mag{
+        		margin: 0!important;
+        	}
+        	.inform{
+					line-height: 51px;
+				}
+				.mag{
+					margin-left: 50px!important;
+				}
+				#PackName{
+					padding: 3px;
+				}
+				
+			 
+			@media screen and (max-width: 1106px) {
+				   .welcome-foot  {
+				   	width: 842px;
+				   }
+		}
+		</style>
+	</head>
+<body>
+    <!--头部-->
+    <div class="head">
+        <div class="head-left">
+	<img src="../img/logo.png"/>
+        </div>
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="javascript:;">管理中心</a></li>
+            <li><a href="statememt.html">数据中心</a></li>
+        </ul>
+        <div class="head-right LoginAjax">
+            <p class="person"><span class="person2"></span><i class="arrow"></i></p>
+            <div class="hover">
+                <p><a class="changePass" style="border: none;" class="changePass">修改密码</a></p>
+                <p class="pull-out2">退出登录</p>
+            </div>
+        </div>
+        <div class="head-right LoginAjax2">
+            <a href="javascript:;" class="head-login">登录</a>
+
+            <a href="../signup.html">注册</a>
+        </div>
+    </div>
+
+
+    <!--侧边栏-->
+    <div class="navigation">
+        <div style="height: 70px;"></div>
+        <div class="common welcome ">
+            <a href="user.html">
+                <p></p>
+            </a>
+            <p class="navps">欢迎页</p>
+        </div>
+        <div class="common application ">
+            <a href="application.html">
+                <p></p>
+
+            </a>
+            <p class="navps">应用管理</p>
+        </div>
+        <div class="common generalize color">
+            <a href="generalize.html">
+                <p></p>
+
+            </a>
+            <p class="navps">CPD推广</p>
+        </div>
+        <div class="common statement">
+            <a href="statememt.html">
+                <p></p>
+
+            </a>
+            <p class="navps">数据报表</p>
+        </div>
+        <div class="common finance ">
+            <a href="finace.html">
+                <p></p>
+
+            </a>
+            <p class="navps">财务管理</p>
+        </div>
+        <div class="common newscenter">
+            <a href="newscenter.html">
+                <p></p>
+
+            </a>
+            <p class="navps">消息中心</p>
+        </div>
+        <div class="common personage">
+            <a href="personage.html">
+                <p></p>
+
+            </a>
+            <p class="navps">个人中心</p>
+        </div>
+    </div>
+
+
+
+
+    <!--中间类容区域-->
+    <div class="content-center">
+        <div style="height: 70px;"></div>
+        <div class="welcome-center">
+            <div class="welcome-foot ">
+            	
+                <p>修改计划</p>
+                <div style="position: relative;">
+                    <em>*</em><span>计划名称</span><input type="text" id="PlanName" onchange="changeInput('PlanName')" maxlength="15" placeholder="请输入计划名称">
+                    <div class="prompting">15字以内</div>
+                </div>
+                <div>
+                    <em>*</em><span>应用名称</span><select name="PackName" id="PackName"> </select>
+                </div>
+                <div>
+                    <em>*</em><span>广告出价</span><input type="text" onchange="changeInput('EffectivePrice')" maxlength="10" id="EffectivePrice" placeholder="请输入价格"><span>元/下载</span>
+                </div>
+                <div style="position: relative;">
+                    <em>*</em><span>每日预算</span><input id="Budget" onchange="changeInput('Budget')" type="text" maxlength="10" placeholder="请输入预算"><span>元</span>
+                    <div class="prompting" id="Balance">您的总余额为0元，每日预算最低100元起</div>
+                </div>
+                <div>
+                    <em>*</em><span>推广日期</span>
+                    <input type="text" value="" style="width: 150px !important;" id="txtBeginDate" name="ValidityStartDate" />
+                    -
+                    <input type="text" value="" style="width: 150px !important;" id="txtEndDate" name="ValidityEndDate" />
+                </div>
+                <div class="submit" onclick="postSumit()">确认提交</div>
+                <div class="cancel" onclick="back()">取消</div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="foot foot-position">
+
+        <p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/helper.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-ui-1.11.4.js"></script>
+    <script type="text/javascript">
+    	
+			$(".common").click(function(){
+				$(this).addClass("color").siblings(".common").removeClass("color")
+			})
+			var idVal = GetQueryString("id") || 0;
+//			var idVal =sessionStorage.getItem("actionId")
+			$(function () {
+
+			    $("#txtEndDate").datepicker({
+			        changeYear: true,
+			        monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+			        dayNamesMin: ['七', '一', '二', '三', '四', '五', '六'],
+			        dateFormat: "yy-mm-dd",
+			        minDate: new Date(),
+			        onSelect: function (dateText, inst) {
+			            $('#txtEndDate').datepicker('option', 'getDate', dateText);
+			            //popularize.initTimeType();
+			        }
+			    }).blur(function () {
+			        //popularize.initTimeType();
+			    });
+
+			    $("#txtBeginDate").datepicker({
+			        changeYear: true,
+			        monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+			        dayNamesMin: ['七', '一', '二', '三', '四', '五', '六'],
+			        dateFormat: "yy-mm-dd",
+			        defaultDate: new Date(),
+			        minDate: new Date(),
+			        onSelect: function (dateText, inst) {
+			            $('#txtBeginDate').datepicker('option', 'getDate', dateText);
+			            $('#txtEndDate').datepicker('option', 'minDate', dateText);
+			        }
+			    }).blur(function () {
+			        //popularize.initTimeType();
+			    });
+
+				
+				
+			    $.ajax({
+			        type: "POST",
+			        url: URL + "/Promote/GetInfo",
+			        data: { id: idVal, token: localStorage.getItem('token') },
+			        dataType: "JSON",
+			        xhrFields: {
+			            withCredentials: true
+			        },
+			        crossDomain: true,
+			        success: function (data) {
+			        	console.log(data)
+			            if (data.PackageSelected!=null) {
+			                for (var i in data.PackageSelected) {
+			                    var option = ' <option value="'+data.PackageSelected[i].Item1+'" >'+data.PackageSelected[i].Item2+'</option>';
+			                    $("#PackName").append(option);
+			                }
+
+			            }
+			            if (data.Model!=null) {
+			                $("#PlanName").val(data.Model.PlanName);
+			                $("#PackName").val(data.Model.PackName);
+			                $("#EffectivePrice").val(data.Model.Price);
+			                $("#Budget").val(data.Model.Budget);
+			                $("#txtBeginDate").val(DateTFormat(data.Model.ExtStartDate,"yyyy-MM-dd"));
+			                
+			                $("#txtEndDate").val( DateTFormat(data.Model.ExtEndDate,"yyyy-MM-dd"));
+			            }
+			            $("#Balance").html('您的总余额为' +data.Balance + '元，每日预算最低100元起');
+			            
+			            if(data.Model.IsClosed==0){
+								if(data.Model.IsPause=0){
+									var down = "<div class=mag>此计划已经启动</div>" 
+									$(".inform").append()
+								}
+								if(data.Model.IsPause=1){
+									var down = "<div class=mag>此计划已经达限暂停</div>" 
+									$(".inform").append()
+								}
+								if(data.Model.IsPause!=1&&data.IsPause!=0){
+									var down = "<div class=mag>此计划已经暂停</div>" 
+									$(".inform").append()
+								}
+						
+					}else{
+						console.log(1)
+						var down = "<div class=mag>此计划已经已经关闭</div>" 
+						$(".inform").append(down)
+					}
+			        }
+			       
+					
+				
+			        
+			        
+			        
+
+			    })
+
+									
+
+											
+			
+
+
+			})
+			function back() {
+			    window.location.href = "generalize.html"
+			}
+
+			function ValidInput(element) {
+			    var value = $(element).val() || "";
+			    if (value == "") {
+			        $(element).attr("style", "border:1px solid #D31919");
+			        return;
+			    } else {
+			        $(element).attr("style", "border:1px solid #cccccc");
+			    }
+			}
+
+			function changeInput(element) {
+			    ValidInput("#" + element);
+			}
+
+			function postSumit() {
+				var changeId = GetQueryString("id") || 0;
+			    var planName = $("#PlanName").val() || "";
+			    if (planName == "") {
+			        $("#PlanName").attr("style", "border:1px solid #D31919");
+			        return;
+			    } else {
+			        $("#PlanName").attr("style", "border:1px solid #cccccc");
+			    }
+			    var effectivePrice = $("#EffectivePrice").val() || "";
+			    if (effectivePrice == "") {
+			        $("#EffectivePrice").attr("style", "border:1px solid #D31919");
+			        return;
+			    }
+			    else if (effectivePrice <= 0) {
+			        $("#EffectivePrice").attr("style", "border:1px solid #cccccc");
+			        alert("广告出价不小于0");
+			        return;
+			    }
+			    else {
+			        $("#EffectivePrice").attr("style", "border:1px solid #cccccc");
+			    }
+			    var budget = $("#Budget").val();
+			    if (budget == "") {
+			        $("#Budget").attr("style", "border:1px solid #D31919");
+			        return;
+			    } else if (budget < 100) {
+			        $("#Budget").attr("style", "border:1px solid #D31919");
+			        alert("每天预算不可少于100");
+			        return;
+			    } else {
+			        $("#Budget").attr("style", "border:1px solid #cccccc");
+			    }
+			    var beginDate = $("#txtBeginDate").val();
+			    var endDate = $("#txtEndDate").val();
+			    if (!beginDate) {
+			        alert("请选择开始时间");
+			        return;
+			    }
+			    $.ajax({
+			        url: URL+"/Promote/AddOrEdit",
+			        type: "POST",
+			        data: {
+			            Id: changeId,
+			            PlanName: planName,
+			            EffectivePrice: effectivePrice,
+			            Budget: budget,
+			            PackName: $("#PackName").val(),
+			            ExtStartDate: beginDate,
+			            ExtEndDate: endDate,
+			            token: localStorage.getItem('token')
+			        },
+			        dataType: "JSON",
+			        xhrFields: {
+			            withCredentials: true
+			        },
+			        crossDomain: true,
+			        success: function (json) {
+			            if (typeof (json) == "undefined") {
+			                alert("保存有误，请稍后重试");
+			            }
+			            if (json.Status == false) {
+			                alert(json.Message);
+			            } else {
+			                back();
+			            }
+			        },
+			        error: function (XMLHttpRequest, textStatus) {
+			            console.log(XMLHttpRequest);  //XMLHttpRequest.responseText    XMLHttpRequest.status   XMLHttpRequest.readyState
+			            console.log(textStatus);
+			            alert("保存有误，请稍后重试");
+			        }
+			    });
+			}
+
+			function GetQueryString(name)
+			{
+			    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+			    var r = window.location.search.substr(1).match(reg);
+			    if(r!=null)return  unescape(r[2]); return null;
+			}
+			
+			
+    </script>
+</body>
+</html>

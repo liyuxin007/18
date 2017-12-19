@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+		<link rel="stylesheet" type="text/css" href="css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="css/signup.css"/>
+		<style type="text/css">
+			.notice p{
+				
+				border-bottom: 1px solid #eee;
+				margin: 0;
+				padding-bottom: 14px;
+				padding-top: 14px;
+				font-size: 14px;
+			}
+			 h3{
+				margin: 0;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				font-size: 20px;
+				
+				
+			}
+			h3 a{
+				color: black;
+				cursor: pointer;
+			}
+			.content{
+				    margin: 40px 40px 0 40px;
+				    padding: 0;
+			}
+			.notice-r{
+				float: right;
+				color: #999;
+			}
+			
+			
+			.box-new {
+				width: 800px;
+				margin-top:50px;
+				height: 34px;
+			}
+			
+			.page {
+				width: 600px;
+			}
+			
+			.info {
+				width: 200px;
+				height: 34px;
+				line-height: 34px;
+			}
+			
+			.fl {
+				float: left;
+			}
+			.ui-pagination-container {
+				height: 34px;
+				line-height: 34px;
+				position: relative;
+				bottom: 20px;
+			}
+			
+			.ui-pagination-container .ui-pagination-page-item {
+				font-size: 14px;
+				padding: 4px 10px;
+				background: #fff;
+				border: 1px solid #c5b7b7;
+				color: #888;
+				margin: 0 3px;
+				text-decoration: none;
+			}
+			
+			.ui-pagination-container .ui-pagination-page-item:hover {
+				border-color: #568dbd;
+				color: #568dbd;
+				text-decoration: none;
+			}
+			
+			.ui-pagination-container .ui-pagination-page-item.active {
+				background: #568dbd;
+				border-color: #568dbd;
+				color: #fff;
+				cursor: default;
+			}
+			.foot-position {
+			    position: absolute;
+			    bottom: -178px;
+			}
+			.pclick{
+				cursor: pointer;
+			}
+			 em {
+    font-style: normal;
+    color: #cc0000;
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    top: -4px;
+    font-size: 12px;}
+		</style>
+	</head>
+	
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+				
+			</div>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="javascript:;" class="application2">管理中心</a></li>
+				<li><a href="javascript:;"  class="application3">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					<p><a href="forgot_1.html" style="border: none;">修改密码</a></p>
+					<p class="pull-out">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="signup.html">注册</a>
+			</div>
+		</div>
+		<div style="height: 70px;"></div>
+		<!--内容区-->
+		<div class="content-box">
+			<div class="content">
+				<h3><a href="news.html">系统公告</a></h3>
+				<div class="notice" id="notice">
+					
+					
+					
+				</div>
+				<div class="box-new">
+					<div id="pagination2" class="page fl"></div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div class="foot foot-position">
+			
+			<p><a href="agreement.html">开发者协议 </a> <a href="contact _us.html">联系我们</a></p>
+			<p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+		</div>
+		<!--登录弹框-->
+		<div class="bounces-box">
+			<div class="bounces">
+			<div class="bo-header">
+				<span>登录</span>
+				<span class="down"><img src="img/down.png"/></span>
+			</div>
+			<div class="bo-content">
+				<p><span>邮箱</span><input type="text" placeholder="请填写登录邮箱" class="login-mail"/></p>
+				<p><span>密码</span><input type="password" placeholder="请填写密码" class="login-pw"/></p>
+				<p class="prompt2">账号或密码错误</p>
+				<p class="agcolor">账号没有激活，请激活后再登录</p>
+				<p class="checkbox">
+					
+					<!--<input type="checkbox" />-->
+					<label><input type="checkbox"><i>✓</i></label>
+					<span>记住密码</span><span><a href="forgot_1.html">忘记密码</a></span></p> 
+				<div class="login">登录</div>
+				<div class="registration"><a href="signup.html">注册</a></div>
+			</div>
+			
+			<div class="agposition">
+				
+			</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.pagination.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/helper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			 
+			        $.ajax({
+			             type: "POST",
+			             url: URL + "/Notice/GetList",
+			        	 data:"",
+			             dataType: "json",
+		                 xhrFields: {
+						           withCredentials: true
+						       },
+						 crossDomain: true,
+			             success: function(data){
+			             	console.log(data)
+			             	var data =data
+			             	var span =""
+			             	for(var i=0;i<data.List.length;i++){
+			             		if(data.List[i].IsNew==1){
+			             			 span+="<p ><span class=pclick>"+data.List[i].Title+"<em>NEW</em></span><span class=notice-r>"+DateTFormat(data.List[i].CreateTime)+"</span></p>"
+			             		}else{
+			             			 span+="<p ><span class=pclick>"+data.List[i].Title+"</span><span class=notice-r>"+DateTFormat(data.List[i].CreateTime)+"</span></p>"
+			             		}
+			             		
+//			             	console.log(data.List[i].CreateTime)
+			             	}
+			             	$(".notice").append(span)
+			                      $(".pclick").click(function(evn){
+        					
+			        			 		var that = this
+									    var t=$(".pclick").index(this);
+									   	var evn = evn || event;
+									   	$(".box-new").remove()
+			        					$(".pclick").remove()
+			        			 		console.log(data)
+			      			 		var content =uHtml(data.List[t].Content) 
+			      			 		
+			      			 		
+			      			 		$("#notice").html(content)
+			        			 		
+			        			})
+			                      
+			                      
+			                      
+			                     var totalPage = data.Total/10 
+								 
+								
+			                    
+					            $("#pagination2").pagination({
+									currentPage: 1,
+									totalPage: Math.ceil(totalPage),
+									isShow: false,
+									prevPageText: "< 上一页",
+									nextPageText: "下一页 >",
+									callback: function(current) {
+										$("#current2").text(current)
+										console.log(current)
+											$.ajax({
+										             type: "POST",
+										             url: URL + "/Notice/GetList",
+										             data:{pageIndex:current},
+										             dataType:"json",
+										             xhrFields: {
+												           withCredentials: true
+												       },
+											        crossDomain: true,
+									             	success: function(data){
+									             			
+									             			$(".notice p").remove()
+									             			span = ""
+															for(var i=0;i<data.List.length;i++){
+											             		 if(data.List[i].IsNew==1){
+			             			 span+="<p ><span class=pclick>"+data.List[i].Title+"<em>NEW</em></span><span class=notice-r>"+DateTFormat(data.List[i].CreateTime)+"</span></p>"
+			             		}else{
+			             			 span+="<p ><span class=pclick>"+data.List[i].Title+"</span><span class=notice-r>"+DateTFormat(data.List[i].CreateTime)+"</span></p>"
+			             		}
+											             	}
+											             	$(".notice").append(span)
+											             	 $(".pclick").click(function(evn){
+        					
+										        			 		var that = this
+																    var t=$(".pclick").index(this);
+																   	var evn = evn || event;
+																   	$(".box-new").remove()
+										        					$(".pclick").remove()
+										        			 		console.log(data)
+										      			 		var content =uHtml(data.List[t].Content) 
+										      			 		
+										      			 		
+										      			 		$("#notice").html(content)
+										        			 		
+										        			})
+									                    }
+										       });
+										       
+									}
+								});
+								
+			                      }
+        			 });
+        			 
+        	function bind(){
+        		$(".pclick").click(function(evn){
+        					
+        			 		var that = this
+						    var t=$(".pclick").index(this);
+						   	var evn = evn || event;
+						   	$(".box-new").remove()
+        					$(".pclick").remove()
+        			 		console.log(data)
+
+        			 		
+        			})
+        	}
+        			
+        			 
+        			 
+        			
+						
+						
+						
+						 /**
+  * @function escapeHTML 转义html脚本 < > & " '
+  * @param a -
+  *            字符串
+  */
+ function eHtml(a){
+     a = "" + a;
+     return a.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");;
+ }
+ /**
+  * @function unescapeHTML 还原html脚本 < > & " '
+  * @param a -
+  *            字符串
+  */
+ function uHtml(a){
+    a = "" + a;
+     return a.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&apos;/g, "'");
+ }
+		
+					
+		        			 
+		</script>
+	</body>
+</html>

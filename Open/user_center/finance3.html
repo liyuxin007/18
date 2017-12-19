@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>安狗狗开放平台</title>
+    <link rel="stylesheet" type="text/css" href="../css/common .css" />
+    <link rel="stylesheet" type="text/css" href="../css/user.css" />
+    <style type="text/css">
+        .welcome-center {
+            padding-top: 0;
+        }
+@media screen and (max-width: 900px) {
+				   .welcome-foot {
+				   	width: 830px;
+				   }
+		}
+            .welcome-center p:first-child {
+                border-bottom: 1px solid #ededed;
+            }
+
+        .welcome-foot {
+            height: 500px;
+        }
+
+            .welcome-foot div {
+                margin: 40px 0;
+                font-size: 14px;
+                margin-left: 30px;
+            }
+
+            .welcome-foot em {
+                color: #FF0000;
+            }
+
+            .welcome-foot span {
+                margin: 10px;
+            }
+
+            .welcome-foot p {
+                padding: 10px;
+                padding-left: 0;
+                margin: 0 30px;
+            }
+
+        input {
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            height: 25px;
+            width: 400px;
+            border: 1px solid #ddd;
+        }
+
+        .submit {
+            width: 140px;
+            height: 36px;
+            color: white;
+            background: #7DB72E;
+            text-align: center;
+            line-height: 36px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0 0 0px !important;
+            cursor: pointer;
+        }
+
+        .submit2 {
+            width: 140px;
+            height: 36px;
+            color: white;
+            background: #7DB72E;
+            text-align: center;
+            line-height: 36px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0 0 0px !important;
+            cursor: pointer;
+        }
+
+        .cancel {
+            width: 140px;
+            height: 36px;
+            color: white;
+            background: #a6a6a6;
+            text-align: center;
+            line-height: 36px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0 0 10px !important;
+            cursor: pointer;
+        }
+
+        .ft-span {
+            display: block;
+            margin-left: 0 !important;
+            margin-bottom: 30px !important;
+        }
+
+        .box1 {
+            margin: 0 !important;
+            display: none;
+        }
+
+        .box2 {
+        }
+
+            .box2 p:first-child {
+                border: 0;
+                font-size: 14px;
+            }
+
+            .box2 p {
+                margin: 0;
+                font-size: 14px;
+                padding: 5px;
+            }
+
+        .color {
+            color: #7DB72E;
+        }
+
+        .common p:first-child {
+            background-position: 10px 10px;
+        }
+
+        .application p:first-child {
+            background-position: 10px -40px;
+        }
+
+        .generalize p:first-child {
+            background-position: 10px -90px;
+        }
+
+
+        .statement p:first-child {
+            background-position: 10px -140px;
+        }
+
+        .finance p:first-child {
+            background-position: -33px -190px;
+        }
+
+        .newscenter p:first-child {
+            background-position: 10px -240px;
+        }
+
+        .personage p:first-child {
+            background-position: 10px -290px;
+        }
+    </style>
+</head>
+<body>
+   <!--头部-->
+        <div class="head">
+            <div class="head-left">
+	<img src="../img/logo.png"/>
+            </div>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="javascript:;" class="application">管理中心</a></li>
+                <li><a href="statememt.html">数据中心</a></li>
+            </ul>
+            <div class="head-right LoginAjax">
+                <p class="person"><span class="person2"></span><i class="arrow"></i></p>
+                <div class="hover">
+                    <p><a class="changePass" style="border: none;">修改密码</a></p>
+                    <p class="pull-out2">退出登录</p>
+                </div>
+            </div>
+            <div class="head-right LoginAjax2">
+                <a href="javascript:;" class="head-login">登录</a>
+
+                <a href="../signup.html">注册</a>
+            </div>
+        </div>
+
+
+    <!--侧边栏-->
+    <div class="navigation">
+        <div style="height: 70px;"></div>
+        <div class="common welcome ">
+            <a href="user.html">
+                <p></p>
+            </a>
+            <p class="navps">欢迎页</p>
+        </div>
+        <div class="common application ">
+            <a href="application.html">
+                <p></p>
+
+            </a>
+            <p class="navps">应用管理</p>
+        </div>
+        <div class="common generalize">
+            <a href="generalize.html">
+                <p></p>
+
+            </a>
+            <p class="navps">CPD推广</p>
+        </div>
+        <div class="common statement">
+            <a href="statememt.html">
+                <p></p>
+
+            </a>
+            <p class="navps">数据报表</p>
+        </div>
+        <div class="common finance color">
+            <a href="finace.html">
+                <p></p>
+
+            </a>
+            <p class="navps">财务管理</p>
+        </div>
+        <div class="common newscenter">
+            <a href="newscenter.html">
+                <p></p>
+
+            </a>
+            <p class="navps">消息中心</p>
+        </div>
+        <div class="common personage">
+            <a href="personage.html">
+                <p></p>
+
+            </a>
+            <p class="navps">个人中心</p>
+        </div>
+    </div>
+
+
+
+
+    <!--中间类容区域-->
+
+        <div style="height: 70px;"></div>
+        <div class="welcome-center content-center">
+            <div class="welcome-foot">
+                <p>确认打款</p>
+                <div class="box1">
+                    <div style="position: relative;">
+                        <span class="ft-span">请输入转账的订单号</span>
+                        <em>*</em><span>订单号</span><input type="text" class="serialNumber">
+                    </div>
+                    <div>
+                        <div class="submit2">确定</div>
+                    </div>
+                </div>
+
+                <div class="box2">
+
+                    <p>本次充值<span class="money"></span>元请将款项转至以下账号内:</p>
+                    <p>开户行:<span>建行南翔支行</span></p>
+                    <p>账号名称:<span>上海移卓网络科技有限公司</span></p>
+                    <p>账号:<span>31001975910050027304</span></p>
+                    <p>如果您已经将款项转账至指点的账号内，请点击下一步</p>
+                    <div class="submit">下一步</div>
+                    <div class="cancel">取消</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--底部-->
+        <div class="foot foot-position">
+
+            <p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+        </div>
+        <script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+			var money = sessionStorage.getItem("money")
+			var orderNumber = sessionStorage.getItem("serialNumber")
+			$(".money").text(money)
+			console.log(money)
+			$(".submit").click(function(){
+				$(".box1").show()
+				$(".box2").hide()
+			})
+			$(".cancel").click(function(){
+				 window.location.href ="finace.html"
+			})
+			$(".submit2").click(function(){
+				$.ajax({
+					             type: "POST",
+					             url: URL+"/Finance/Audit",
+					             data:{orderNumber:$(".serialNumber").val(),token:token, serialNumber:orderNumber},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	console.log(data)
+					             	if(data.Status ==true){
+					             		alert(data.Message)
+					             		 window.location.href ="finace.html"
+					             	}else{
+					             		if(data.Message=="参数有误"){
+					             			alert("请输入订单号")
+					             			return
+					             		}
+					             		alert(data.Message)
+					             	}
+
+					                    }
+					         });
+			})
+        </script>
+</body>
+</html>

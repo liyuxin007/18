@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta http-equiv="Access-Control-Allow-Origin" content="*">-->
+		<title>安狗狗开放平台</title>
+		<link rel="stylesheet" type="text/css" href="css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="css/signup.css"/>
+		<link rel="stylesheet" type="text/css" href="css/double-date.css"/>
+		
+		<style type="text/css">
+			.headd{
+				margin-top: 100px;
+			}
+			.img-box5{
+				
+				margin-left: 0!important;
+				margin-top: 10px;
+				
+			}
+			/*.enterprise-box span{
+				right: 25px;
+			}*/
+			.en2 span{
+				margin-right: 25px;
+			}
+			.img-box1{
+				
+				margin-left: 157px!important;
+			}
+				.img-box2{
+				position: absolute;
+					     left: 306px;
+					   
+					    top: 28px;
+			}
+			.pt-file4{
+				left: 390px;
+			}
+			.img-box4 img{
+				 height: 155px;
+    width: 220px;
+			}
+			.content{
+				height: 100%;
+			}
+			.box-height{
+					height:2836px!important ;	
+			}
+			.outer{
+				position: relative;
+				left: -5px;
+			}
+			.position{
+				position: absolute;
+				top: 85px;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+				
+			</div>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="javascript:;" class="application2">管理中心</a></li>
+				<li><a href="javascript:;"  class="application3">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					<p><a href="forgot_1.html" style="border: none;">修改密码</a></p>
+					<p class="pull-out">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="signup.html">注册</a>
+			</div>
+		</div>
+		<div style="height: 70px;"></div>
+		<!--内容区-->
+		<div class="content-box box-height">
+					<div class="content">
+			
+			<div class="content-head cl">
+					<p class="ct-p">1、填写基本信息</p>
+					<div class="box2 b2"></div>  
+			</div>
+			<div class="content-head ">
+					<p class="ct-p  bg2">2、邮箱激活</p>
+					<div class="box2 b2"></div>  
+					<div class="box b1"></div>  
+			</div>
+			<div class="content-head cf">
+					<p class="ct-p bg2">3、完善资料</p>
+					
+					<div class="box b1"></div>  
+			</div>
+			
+			
+			<!--填写资料-->
+			<div class="failure-down">
+			
+			<!--企业资料-->
+			
+				
+			
+			<p class="enterprise headd">企业信息</p>
+			
+			<form  id="form1">
+			<div class="enterprise-box">
+				
+				<div><span><em>*</em>公司名称</span><input type="text" name="CompanyName" class="CompanyName" /></div>
+				<div style="position: relative;">
+					<span><em>*</em>注册省份</span>
+					<span class="position"><em>*</em>注册地址</span>
+					<!--<div class="outer">
+						<select name="" class="province RegProvince1" >
+							<option value="请选择">请选择</option>
+						</select>
+						<select name="" class="city RegProvince2">
+							<option value="请选择">请选择</option>
+						</select>
+						<select name="" class="town RegProvince3">
+							<option value="请选择">请选择</option>
+						</select>
+					</div>-->
+					<div class="p_2" id="city" style="display: inline-block;">
+		                    <select class="prov RegProvince1"><option value="">请选择</option><option value="北京">北京</option><option value="天津">天津</option><option value="河北">河北</option><option value="山西">山西</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁</option><option value="吉林">吉林</option><option value="黑龙江">黑龙江</option><option value="上海">上海</option><option value="江苏">江苏</option><option value="浙江">浙江</option><option value="安徽">安徽</option><option value="福建">福建</option><option value="江西">江西</option><option value="山东">山东</option><option value="河南">河南</option><option value="湖北">湖北</option><option value="湖南">湖南</option><option value="广东">广东</option><option value="广西">广西</option><option value="海南">海南</option><option value="重庆">重庆</option><option value="四川">四川</option><option value="贵州">贵州</option><option value="云南">云南</option><option value="西藏">西藏</option><option value="陕西">陕西</option><option value="甘肃">甘肃</option><option value="青海">青海</option><option value="宁夏">宁夏</option><option value="新疆">新疆</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾</option><option value="国外">国外</option></select>
+		                    <select class="city RegProvince2"><option value="">请选择</option><option value="广州">广州</option><option value="韶关">韶关</option><option value="深圳">深圳</option><option value="珠海">珠海</option><option value="汕头">汕头</option><option value="佛山">佛山</option><option value="江门">江门</option><option value="湛江">湛江</option><option value="茂名">茂名</option><option value="肇庆">肇庆</option><option value="惠州">惠州</option><option value="梅州">梅州</option><option value="汕尾">汕尾</option><option value="河源">河源</option><option value="阳江">阳江</option><option value="清远">清远</option><option value="东莞">东莞</option><option value="中山">中山</option><option value="潮州">潮州</option><option value="揭阳">揭阳</option><option value="云浮">云浮</option></select>
+		                    <select class="dist RegProvince3" style=""><option value="">请选择</option><option value="江城区">江城区</option><option value="阳西县">阳西县</option><option value="阳东县">阳东县</option><option value="阳春市">阳春市</option></select>
+       				</div>
+					
+					
+					<input type="text" name="RegProvince"  class="RegProvince" value="" style="display: none;" class="RegProvince"/>
+					
+					<input type="text" name="RegAddress" id="" value="" class="select-pt" class="RegAddress"/>
+				</div>
+				<div class="enter-margin"><span><em>*</em>工商营业执照注册号 </span><input type="text" name="BusinessLicenseNum" class="BusinessLicenseNum"/></div>
+				
+				<input type="" name="BusinessLicensePic" id="" value="" style="display: none;" class="BusinessLicensePic"/>
+			
+				<div class="enter-margin en-up"><span><em>*</em>工商营业执照扫描件</span> 
+					<input type="file" name="fileImg" id="en-up" class="pt-file"/>
+				
+					<div class="pt-file2">上传</div>
+				</div>
+				
+				<p class="enter-margin2">请上传工商营业照扫描件，JPG、PNG格式的图片，不超过1M</p>
+				<div class="enter-margin2 img-box" >
+					<img src="" class="div-img"/>
+				</div>
+				
+			
+				
+				
+				<div class="enter-margin en2"><span><em>*</em>法人身份证有效期 </span>
+				<div class="outer clearfix">
+				    <div class="date date1 fl" id="from">
+				        <input type="text" class="date-check ValidityStartDate" name="ValidityStartDate" /> <span>
+				        	-
+				        </span>
+				    </div>
+				    <div class="date fr" id="to">
+				        <input type="text" class="date-check ValidityEndDate" name="ValidityEndDate" />
+				    </div>
+				</div>
+				
+				</div>
+				
+				
+				<div class="enter-margin en-up"><span class="en-pic"><em>*</em>法人身份证照片 </span>
+					<input type="file" name="" id="IDCardPic" class="pt-file"/>
+						
+					<input type="file" name="" id="IDCardPic2" />
+					<input type="text" name="IDCardPic" id="" value="" class="IDCardPic-box" style="display: none;"/>
+					<div class="pt-file2 pt2">上传正面</div>
+					<div class="pt-file4">上传反面</div>
+					<div class="enter-margin2 img-box1" >
+					<img src="" class="div-img1"/>
+					</div>
+					<div class="enter-margin2 img-box2" >
+					<img src="" class="div-img2"/>
+					</div>
+				</div>
+					<p class="enter-margin2">请上法人身份证正反面照片或加盖公司公章的复印件，JPG、PNG格式的图片，文件大小不超过1M</p>
+					<!--<div class="upload-display"></div>-->
+					
+					
+					<div><span class="one"><em>*</em>税务登记账号</span><input type="text"  class="the" name="TaxNum"/></div>
+					<div class="enter-margin en-up"><span class="two"><em>*</em>税务登记证</span> 
+					<input type="file" name="" id="TaxPic" class="pt-file"/>
+					<input type="text" name="TaxPic" id="" value="" class="TaxPic" style="display: none;"/>
+					<div class="pt-file2">上传</div>
+				</div>
+					<p class="enter-margin2">请上传传扫描件，JPG、PNG格式的图片，不超过1M</p>
+					<div class="enter-margin2 img-box3" >
+					<img src="" class="div-img3"/>
+					</div>
+					<div class="enter-margin en-up"><span class="two"><em>*</em>开户许可证</span> 
+					<input type="file" name="" id="LicencePic" class="pt-file"/>
+					<input type="text" name="LicencePic" id="" value="" class="LicencePic" style="display: none;"/>
+					<div class="pt-file2">上传</div>
+				</div>
+					<p class="enter-margin2">请上传扫描件，JPG、PNG格式的图片，不超过1M</p>
+					<div class="enter-margin2 img-box4" >
+					<img src="" class="div-img4"/>
+					</div>
+			</div>
+			
+			
+			
+			
+			
+			<!--实名认证-->
+			<p class="enterprise">实名认证</p>
+			<div class="new-box" style="height: 275px;">
+				<div class="new-box1">
+					<div class="new-margin">
+						<p><em>*</em>联系人 </p>
+						<p><em>*</em>联系人身份证号 </p>
+						<p><em>*</em>联系人手持身份证照片</p>
+					</div>
+				</div>
+				<div class="new-box2">
+					<p><input type="text" name="RealName" id="" / class="RealName"></p>
+					<p><input type="text" name="RealIDNum" id="" class="RealIDNum"/></p>
+					<p><input type="file" name="" id="RealIDCardPic" class="pt-file"/><div class="pt-file3 ">上传</div></p>
+					<input type="" name="RealIDCardPic" id="" value="" style="display: none;" class="RealIDCardPic"/>
+					<span>证件号清晰可见。JPG、PNG格式的图片，不超过1M</span>
+					<div class="enter-margin2 img-box5" style="">
+					<img src="" class="div-img5"/>
+					</div>
+				</div>
+			</div>
+			
+			
+		
+			<p class="enterprise lianxi" >联系方式</p>
+			<div class="new-box" >
+				<div class="new-box1">
+					<div class="new-margin">
+						<p><em>*</em>联系省份 </p>
+						<p><em>*</em>联系地址</p>
+						<p><em>*</em>手机号码 </p>
+						<p><em>*</em>手机验证码</p>
+						<p style="margin-top: 36px;">QQ</p>
+					</div>
+				</div>
+				<div class="new-box2 box2-margin">
+					<p>
+				
+					</p>
+					<!--<div class="outer">
+						<select name="province" class="province ConProvince1">
+							<option value="请选择">请选择</option>
+						</select>
+						<select name="city" class="city ConProvince2">
+							<option value="请选择">请选择</option>
+						</select>
+						<select name="town" class="town ConProvince3">
+							<option value="请选择">请选择</option>
+						</select>
+					</div>-->
+					
+					<div class="p_2" id="city2" style="display: inline-block;">
+		                    <select class="prov ConProvince1"><option value="">请选择</option><option value="北京">北京</option><option value="天津">天津</option><option value="河北">河北</option><option value="山西">山西</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁</option><option value="吉林">吉林</option><option value="黑龙江">黑龙江</option><option value="上海">上海</option><option value="江苏">江苏</option><option value="浙江">浙江</option><option value="安徽">安徽</option><option value="福建">福建</option><option value="江西">江西</option><option value="山东">山东</option><option value="河南">河南</option><option value="湖北">湖北</option><option value="湖南">湖南</option><option value="广东">广东</option><option value="广西">广西</option><option value="海南">海南</option><option value="重庆">重庆</option><option value="四川">四川</option><option value="贵州">贵州</option><option value="云南">云南</option><option value="西藏">西藏</option><option value="陕西">陕西</option><option value="甘肃">甘肃</option><option value="青海">青海</option><option value="宁夏">宁夏</option><option value="新疆">新疆</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾</option><option value="国外">国外</option></select>
+		                    <select class="city ConProvince2"><option value="">请选择</option><option value="广州">广州</option><option value="韶关">韶关</option><option value="深圳">深圳</option><option value="珠海">珠海</option><option value="汕头">汕头</option><option value="佛山">佛山</option><option value="江门">江门</option><option value="湛江">湛江</option><option value="茂名">茂名</option><option value="肇庆">肇庆</option><option value="惠州">惠州</option><option value="梅州">梅州</option><option value="汕尾">汕尾</option><option value="河源">河源</option><option value="阳江">阳江</option><option value="清远">清远</option><option value="东莞">东莞</option><option value="中山">中山</option><option value="潮州">潮州</option><option value="揭阳">揭阳</option><option value="云浮">云浮</option></select>
+		                    <select class="dist ConProvince3" style=""><option value="">请选择</option><option value="江城区">江城区</option><option value="阳西县">阳西县</option><option value="阳东县">阳东县</option><option value="阳春市">阳春市</option></select>
+       				</div>
+					
+					<input type="text" name="ConProvince" id="" value="" class="ConProvince" style="display: none;"/>
+					<p><input type="text" name="ConAddress" id="" style="width: 350px;" class="select-pl"/></p>
+					<p><input type="text" name="PhoneNumber" id="PhoneNumber" /></p>
+					<p><input type="text" name="CheckCode" id="" style="width: 150px;" class="CheckCode"/><input class="submit2" value="发送验证码" type="button" /></p>
+					<p><input type="text" name="QQ" id=""  /> </p>
+				</div>
+			</div>
+			<p class="enterprise">其他信息</p>
+			<div class="new-box" style="height: 200px;">
+				<div class="new-box1">
+					<div class="new-margin">
+						<p>推广人 </p>
+						
+					</div>
+				</div>
+				<div class="new-box2">
+					<p><input type="text" name="promoter" id=""class="new-t" /></p> 
+					<span>没有则无需填入</span>
+				</div>
+			</div>
+			
+			<p class="enterprise"></p>
+				</form>
+			<div class="submit">确认提交</div>
+		</div>
+		</div>
+		</div>
+			<!--底部-->
+		<div class="foot">
+			<p style="height: 10px;"></p>
+			<p><a href="agreement.html">开发者协议 </a> <a href="contact _us.html">联系我们</a></p>
+			<p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+		</div>
+			<!--弹窗-->
+		<div class="bounces-box2">
+			<div class="bounces2">
+			<div class="bo-header2">
+				<span>请输入图片中的验证码</span>
+				<span class="down2"><img src="img/down.png"/></span>
+			</div>
+			<div class="bo-content2">
+					<p>
+						<span class="validation-img">
+						<img src="" class="validation-img2"/>
+						</span>
+						<span class="span-color2">看不清楚，换一张</span>
+					</p>
+					<p><span class="validation-number">验证码:</span><input type="text" name="" id="validation-number" value="" /><span class="validation-true">确认</span></p>		
+					
+			</div>
+			<div class="false">验证码错误</div>
+			</div>
+		</div>
+		<!---->
+		<div class="add">
+			<p>手机号码不能为空</p>
+		</div>
+		<!--登录弹框-->
+		<div class="bounces-box">
+			<div class="bounces">
+			<div class="bo-header">
+				<span>登录</span>
+				<span class="down"><img src="img/down.png"/></span>
+			</div>
+			<div class="bo-content">
+				<p><span>邮箱</span><input type="text" placeholder="请填写登录邮箱" class="login-mail"/></p>
+				<p><span>密码</span><input type="password" placeholder="请填写密码" class="login-pw"/></p>
+				<p class="prompt2">账号或密码错误</p>
+				<p class="agcolor">账号没有激活，请激活后再登录</p>
+				<p class="checkbox">
+					
+					<!--<input type="checkbox" />-->
+					<label><input type="checkbox"><i>✓</i></label>
+					<span>记住密码</span><span><a href="forgot_1.html">忘记密码</a></span></p> 
+				<div class="login">登录</div>
+				<div class="registration"><a href="signup.html">注册</a></div>
+			</div>
+			
+			<div class="agposition">
+				
+			</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/double-date.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/helper.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/area.js"></script>
+		<script src="js/select.js"></script>-->
+		<script src="js/city.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cityselect.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				$(".failure-down").show()
+				var dataIdCard = ''
+				var dataIdCard2 = ''
+				$.ajax({
+		             type: "POST",
+		             url: URL + "/User/GetUserData",
+		             data:{token:token},
+		             dataType:"JSON",
+		             xhrFields: {
+				           withCredentials: true
+				       },
+			        crossDomain: true,
+	             	success: function(data){
+	             		console.log(data)
+	             		var IdCardPic  =data.IDCardPic
+	             		console.log(IdCardPic)
+	             	
+	             		dataIdCard =IdCardPic.substring(0,IdCardPic.indexOf(";"))
+	             		dataIdCard2 =IdCardPic.substring(IdCardPic.indexOf(";")+1,IdCardPic.length)
+	             		console.log(dataIdCard)
+	             		if(data.RegProvince){
+	             			
+	             			
+	             				$("#PhoneNumber").val(data.PhoneNumber)
+	             		$(".CompanyName").val(data.CompanyName)
+	             		$(".RegProvince").val(data.RegProvince)
+	             		$(".select-pt").val(data.RegAddress)
+	             		$(".BusinessLicenseNum").val(data.BusinessLicenseNum)
+	             		$(".BusinessLicensePic").val(data.BusinessLicensePic)
+	             		$(".IDCardPic-box").val(data.IDCardPic)
+	             		$(".TaxPic").val(data.TaxPic)
+	             		$(".LicencePic").val(data.LicencePic)
+	             		$(".RealIDCardPic").val(data.RealIDCardPic)
+	             		$(".ValidityStartDate").val(DateTFormat(data.ValidityStartDate,"yyyy-MM-dd"))
+	             		$(".ValidityEndDate").val(DateTFormat(data.ValidityEndDate,"yyyy-MM-dd"))
+	             		$(".RealName").val(data.RealName)
+	             		$(".RealIDNum").val(data.RealIDNum)
+	             		$(".select-pl").val(data.ConAddress )
+	             		$(".the").val(data.TaxNum)
+	             		$(".ConProvince").val(data.ConProvince )
+	             		$(".div-img").attr("src",imgserver+data.BusinessLicensePic )
+	             		$(".div-img1").attr("src",imgserver+IdCardPic.substring(0,IdCardPic.indexOf(";")) )
+	             		$(".div-img2").attr("src",imgserver+IdCardPic.substring(IdCardPic.indexOf(";")+1,IdCardPic.length))
+	             		$(".div-img3").attr("src",imgserver+data.TaxPic  )
+	             		$(".div-img4").attr("src",imgserver+data.LicencePic  )
+	             		$(".div-img5").attr("src",imgserver+data.RealIDCardPic  )
+	             			
+	             			
+	             			
+	             			var city = data.RegProvince.split('-')
+	             		$("#city").citySelect({
+					                prov: city[0],
+					                city: city[1],
+					                dist: city[2],
+					                nodata: "none"
+					                
+					                
+					           });
+					           var city2 = data.ConProvince.split('-')
+	             		$("#city2").citySelect({
+					                prov: city2[0],
+					                city: city2[1],
+					                dist: city2[2],
+					                nodata: "none"
+					                
+					                
+					           });
+	             		}else{
+	             				var city = "请选择-请选择-请选择"
+	             		$("#city").citySelect({
+					                prov: city[0],
+					                city: city[1],
+					                dist: city[2],
+					                nodata: "none"
+					                
+					                
+					           });
+					           var city2 = "请选择-请选择-请选择"
+	             		$("#city2").citySelect({
+					                prov: city2[0],
+					                city: city2[1],
+					                dist: city2[2],
+					                nodata: "none"
+					                
+					                
+					           });
+	             		}
+	             		
+	             		
+	             	}
+	             	
+				})
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				var email = localStorage.getItem("key")
+				 
+				
+				$(".again2").click(function(){
+					$.ajax({
+						             type: "POST",
+						             url: URL + "/Register/SendMail",
+						             data:{email:email},
+						             dataType: "json",
+						             xhrFields: {
+								           withCredentials: true
+								       },
+								       crossDomain: true,
+						             success: function(data){
+						             		  console.log(data)
+				
+						                    }
+						         });
+				})
+			    //获取邮箱id
+			 	var href = window.location.href
+			    function GetParam(urlID, id) {
+			            href = href+ "";
+			            regstr = "/(\\?|\\&)" + id + "=([^\\&]+)/";
+			            reg = eval(regstr);
+			            result = href.match(reg);//匹配的结果是：result[0]=?sid=22 result[1]=sid result[2]=22。所以下面我们返回result[2]
+			
+			            if (result && result[2]) {
+			                return result[2];
+			            }
+			        }
+			 
+				console.log(GetParam(href,"id"))
+				var urlId = GetParam(href,"id")
+
+			
+			
+			
+			//完善资料和不完善资料
+			$(".submit3").click(function(){
+				console.log()
+				if($('input[name="language"]:checked').val()=="ws"){
+					$(".activate").hide()
+					$(".failure-down").show()
+				}else if($('input[name="language"]:checked').val()=="tg"){
+					window.location.href = "index.html"
+				}
+			})
+			
+			
+			
+			
+			//遮盖层高度
+			$(".bounces-box2").css({"height": $(document).height()});
+			//刷新验证码
+			$(".span-color").click(function(){
+				var myimg = document.getElementsByClassName("validation-img2")[0];
+				now = new Date();
+				myimg.src = URL + "/CreateCode.ashx?type=2?code=" + now.getTime()
+				
+			});
+			
+			//获取图片标签
+			var PICSTAMP = ""
+//		  	var IDCardPic = dataIdCard
+				 $.ajax({
+			             type: "GET",
+			             url: URL + "/Register/GetPicStamp",
+			             async: false,
+			             dataType: "text",
+			             
+			             xhrFields: {
+					           withCredentials: true
+					       },
+					     crossDomain: true,
+			             success: function(data){
+			             		  
+			             		  PICSTAMP = data
+			                    }
+			        });
+					
+
+			//获取图片上传地址并上传
+
+				$("#en-up").change(function(){
+				var fd = new FormData();
+				fd.append("fileImg",$("#en-up").get(0).files[0]);
+				fd.append("PICSTAMP",PICSTAMP)
+				 $.ajax({
+					        url:imgserver+'/home/upload',  
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            processData: false,  
+				            contentType: false,
+				            success:function(data){
+				            $(".BusinessLicensePic").val(data.url)
+				           	$(".div-img").attr("src",imgserver+data.url)
+				            $(".img-box").show()
+				            	
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			$("#IDCardPic").change(function(){
+				var fd = new FormData();
+				fd.append("fileImg",$("#IDCardPic").get(0).files[0]);
+				fd.append("PICSTAMP",PICSTAMP);
+				 $.ajax({
+					        url:imgserver+'/home/upload',  
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            processData: false,  
+				            contentType: false,
+				            success:function(data){
+				            	dataIdCard = data.url
+				            	$(".IDCardPic-box").val(data.url+";"+dataIdCard2)
+				            	$(".div-img1").attr("src",imgserver+data.url)
+				          			console.log($(".IDCardPic-box").val())
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			$("#IDCardPic2").change(function(){
+				var fd = new FormData();
+				fd.append("fileImg",$("#IDCardPic2").get(0).files[0]);
+				fd.append("PICSTAMP",PICSTAMP);
+				 $.ajax({
+					        url:imgserver+'/home/upload',  
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            processData: false,  
+				            contentType: false,
+				            success:function(data){
+//				            	console.log(IDCardPic)
+				            	$(".IDCardPic-box").val(dataIdCard+";"+data.url)
+				            	$(".div-img2").attr("src",imgserver+data.url)
+				          		console.log($(".IDCardPic-box").val())
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			 
+			 $("#TaxPic").change(function(){
+				var fd = new FormData();
+				fd.append("fileImg",$("#TaxPic").get(0).files[0]);
+				fd.append("PICSTAMP",PICSTAMP);
+				 $.ajax({
+					        url:imgserver+'/home/upload',  
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            processData: false,  
+				            contentType: false,
+				            success:function(data){
+				            	$(".TaxPic").val(data.url)
+				          		console.log(data.url)
+				          		$(".div-img3").attr("src",imgserver+data.url)
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			 $("#LicencePic").change(function(){
+				var fd = new FormData();
+				fd.append("fileImg",$("#LicencePic").get(0).files[0]);
+				fd.append("PICSTAMP",PICSTAMP);
+				 $.ajax({
+					        url:imgserver+'/home/upload',  
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            processData: false,  
+				            contentType: false,
+				            success:function(data){
+				            	$(".LicencePic").val(data.url)
+				          		$(".div-img4").attr("src",imgserver+data.url)
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			 
+			  $("#RealIDCardPic").change(function(){
+				var fd = new FormData();
+				fd.append("fileImg",$("#RealIDCardPic").get(0).files[0]);
+				fd.append("PICSTAMP",PICSTAMP);
+				 $.ajax({
+					        url:imgserver+'/home/upload',  
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            processData: false,  
+				            contentType: false,
+				            success:function(data){
+				            	$(".RealIDCardPic").val(data.url)
+				          		$(".div-img5").attr("src",imgserver+data.url)
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			 
+			 
+			
+			
+			//select值的获取
+//			$(".select-pt").blur(function(){
+//				
+//				console.log($(".RegProvince").val())
+//			})
+//			$(".select-pl").blur(function(){
+//				
+//				console.log($(".ConProvince").val())
+//			})
+			
+			
+			//表单提交
+			$(".submit").click(function(){
+				$(".RegProvince").val($(".RegProvince1").val()+"-"+$(".RegProvince2").val()+"-"+$(".RegProvince3").val())
+				$(".ConProvince").val($(".ConProvince1").val()+"-"+$(".ConProvince2").val()+"-"+$(".ConProvince3").val())
+				if($(".CompanyName").val()==""){
+					alert("公司名称不能为空")
+					return
+				}
+				
+				if($(".RegProvince").val()==""||$(".RegAddress").val()==""){
+					alert("公司名省份地址不能为空")
+					return
+				}
+				if($(".BusinessLicenseNum").val()==""){
+					alert("工商营业执照注测号不能为空")
+					return
+				}
+				if($(".BusinessLicensePic").val()==""){
+					alert("工商营业执照不能为空")
+					return
+				}
+				if($(".date-check").val()==""){
+					alert("法人身份证有效期")
+					return
+				}
+				if($(".IDCardPic").val()==""){
+					alert("法人身份证不能为空")
+					return
+				}
+				
+				if($(".the").val()==""){
+					alert("税务登记账号不能为空")
+					return
+				}
+				if($(".TaxPic").val()==""){
+					alert("税务登记证不能为空")
+					return
+				}
+				if($(".LicencePic").val()==""){
+					alert("开户许可证不能为空")
+					return
+				}
+				if($(".RealName").val()==""){
+					alert("联系人不能为空")
+					return
+				}
+				if($(".RealIDNum").val()==""){
+					alert("联系人身份证号不能为空")
+					return
+				}
+				if($(".RealIDCardPic").val()==""){
+					alert("联系人手持身份证照片不能为空")
+					return
+				}
+				
+				if($(".CheckCode").val()==""){
+					alert("验证码不能为空")
+					return
+				}
+					    
+				 var fd =$("#form1").serialize();
+				
+				 $.ajax({
+				     url: URL + '/Register/ResetSupplementUser',
+				            type: 'POST',  
+				            data: fd,  
+				            dataType: 'JSON',  
+				            cache: false,  
+				            xhrFields: {
+							           withCredentials: true
+							       },
+						    crossDomain: true,
+				            success: function(data){
+					             		  if(data.Status==1){
+//					             		  		window.location.href="signup_4.html" 
+											alert("修改资料成功请重新登录")
+											localStorage.removeItem("token")
+	             		localStorage.removeItem("mail")
+	             		localStorage.removeItem("key")
+											window.location.href="index.html" 
+					             		  }else{
+					             		  	alert(data.Message)
+					             		  }
+			
+					                    }
+					    });
+					    
+					    
+			})
+			
+			 
+			$(".submit2").click(function(){
+				if(!$("#PhoneNumber").val()){
+					 $(".add").show();
+					setTimeout(function(){
+						$(".add").hide()
+					},3000)
+					return
+				}
+				$(".bounces-box2").show();
+				
+				
+			})
+			
+			
+			$(".down2").click(function(){
+				$(".bounces-box2").hide()
+			})
+			//验证码
+			$(".validation-true").click(function(){
+				
+				console.log($("#PhoneNumber").val())
+				console.log($("#validation-number").val())
+				 $.ajax({
+					        url:URL+'/Register/SendVerifyCode',  
+				            type: 'POST',  
+				            data:{phoneNumber:$("#PhoneNumber").val(),captcha:$("#validation-number").val()},
+				            dataType: 'JSON',  
+				            cache: false,
+				            xhrFields: {
+							           withCredentials: true
+							       },
+						    crossDomain: true,
+				            success:function(data){
+				            	if(data.Status==true){
+				            		$(".bounces-box2").hide()
+				            		time( document.getElementsByClassName("submit2")[0])
+				            	}else{
+				            		$(".false").show()
+				            	}
+				            	
+				          		
+				            },
+				            error:function(){
+				            	console.log("错误")
+				            }
+					         });
+			})
+			
+			
+			
+			//验证码
+			function Verification (){
+					$.ajax({
+			             type: "POST",
+			             url: URL + "/CreateCode.ashx?type=2",
+			             dataType: "text",
+			             xhrFields: {
+					           withCredentials: true
+					       },
+					    crossDomain: true,
+			            success: function(data){
+			             		 $(".validation-img2").attr("src",'data:image/gif;base64,'+encodeURI(data));
+			                    }
+			         });
+			}
+				Verification ()
+			
+			
+			$(".span-color2").click(function(){
+				Verification ()
+			})
+			//验证码倒计时
+				  var wait=60;
+				function time(val) {
+				  if (wait == 0) {
+				   val.removeAttribute("disabled");   
+				   val.value="获取验证码";
+				   wait = 60;
+				  } else { 
+				 
+				   val.setAttribute("disabled", true);
+				   val.value="重新发送(" + wait + ")";
+				   wait--;
+				   setTimeout(function() {
+				    time(val)
+				   },
+				   1000)
+				  }
+				 }  
+			
+			
+				
+				
+		</script>
+	</body>
+</html>

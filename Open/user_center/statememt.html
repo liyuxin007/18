@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+	</head>
+	<body>
+		<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/double-date.css"/>
+		<link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">	
+		<style type="text/css">
+			/*common*/
+			.welcome-lf{
+				width: 100%;
+				height: 1500px;
+				margin: 0;
+				font-size: 14px;
+				position: relative;
+			}
+			 .welcome-fix{
+			 	display: block;
+			 } 
+			@media screen and (max-width: 1106px) {
+				   .welcome-lf{
+				   	width: 920px;
+				   }
+		}
+			.app-head{
+				height: 50px;
+				background: white;
+				line-height: 50px;
+			}
+			.app-head span:first-child{
+				margin-left: 56px;
+			}
+			.app-head span:last-child{
+				margin-left: 40px;
+			}
+			.app-head span{
+				cursor: pointer;
+			}
+			
+			
+			.color{
+				color:#7DB72E;
+			}
+			.common p:first-child{
+				
+				background-position: 10px 10px;
+			}
+			.application p:first-child{
+			
+				background-position: 10px -40px;
+			}
+			.generalize p:first-child{
+				background-position: 10px -90px;
+			}
+			
+			
+			.statement p:first-child{
+				background-position: -33px -140px;
+			}
+			.finance p:first-child{
+				background-position: 10px -190px;
+			}
+			.newscenter p:first-child{
+				background-position: 10px  -240px;
+			}
+			.personage p:first-child{
+				background-position: 10px  -290px;
+			}
+			
+			.color2{
+				color: #7DB72F;
+				border-bottom: 2px solid #7DB72F;
+				padding: 14px 0;
+			}
+			.box1{
+				display: none;
+				margin-top: 0;
+			}
+			
+			.welcome-foot {
+				height: 1500px;
+				width: 100%;
+			}
+			
+			
+			
+			/*statememt*/
+			.input-width{
+				width: 160px;
+				padding: 4px;
+				display: inline-block;
+			}
+			.startData{
+				background: url(../img/signup_03.png) no-repeat;
+				background-position: 150px 6px ;
+			}
+			.endData{
+				background: url(../img/signup_03.png) no-repeat;
+				background-position: 150px 6px ;
+			}
+			.outer{
+				line-height: 24px;
+				
+			}
+			.outer span{
+				width: 56px;
+				text-align: right;
+			}
+			.fr span {
+				    margin: 3px 10px!important;
+				}
+				.fl span{
+					margin-left: 30px!important;
+				}
+			.box{
+				margin: 20px 30px;
+				display: flex;
+			}
+			
+			.date-check{
+				height: 35px;
+			}
+			.search{
+				width: 70px!important;
+			    height: 35px;
+			    color: white;
+			    background: #7DB72E;
+			    text-align: center;
+			    line-height: 35px;
+			    border-radius: 5px;
+			    display: inline-block;
+			    margin-left: 247px;
+			    cursor: pointer;
+			}
+			#container{
+				min-width:400px;
+				height:400px;
+				padding: 30px 160px; 
+				background:#f7f7f7 ;
+			}
+			.total{
+				height: 50px;
+				background: #f8f8f8;
+				margin-top: 20px;
+				line-height: 50px;
+				padding-left: 30px;
+				color: #808080;
+			}
+			.total span{
+				display: inline-block;
+			}
+			.total-sp{
+				margin-left: 20px;
+			}
+			.total-sp2{
+				margin-left: 20px;
+			}
+			
+			.table-head div{
+			text-align: center;
+				width: 33.333333%;
+			}
+			.table-head span{
+				margin-left: 0;
+			}
+			.table-tr span{
+				
+				margin-left: 0;
+			}
+			
+			.table-tr div{
+				text-align: center;
+				width: 33.333333%;
+
+			}
+			.table-tr div:first-child{
+				line-height: 80px;
+			}
+			.fl .date-list {
+				        top:35px;
+					    left: 61px;
+			}
+			.fr .date-list {
+				        top:35px;
+					    left: 41px;
+			}
+			#to span{
+				text-align: center!important;
+			}
+			.box{
+				font-size: 14px;
+			}
+			a{
+				color: black;
+			}
+			
+			
+.head li:nth-child(2) {
+  
+    border: none;
+}
+.head li:nth-child(2) a{
+   color:#ccc;
+}
+			.head li:nth-child(3) {
+    box-sizing: border-box;
+    border-bottom: 3px solid #7db72f;
+}
+.head li:nth-child(3) a{
+   color:#7db72f;
+}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+					<img src="../img/logo.png"/>
+			</div>
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li class="bg-change"><a href="application.html">管理中心</a></li>
+				<li class="bg-change2"><a href="statememt.html">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					 <p><a class="changePass" style="border: none;">修改密码</a></p>
+					<p class="pull-out2">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="../signup.html">注册</a>
+			</div>
+		</div>
+		
+		
+		<!--侧边栏-->
+				<div class="navigation">
+			<div style="height: 70px;"></div>
+			<div class="common welcome ">
+				<a href="user.html" >
+					<p></p>
+				</a>
+				<p class="navps">欢迎页</p>
+			</div>
+			<div class="common application ">
+				<a href="application.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">应用管理</p>
+			</div>
+			<div class="common generalize">
+				<a href="generalize.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">CPD推广</p>
+			</div>
+			<div class="common statement color">
+				<a href="statememt.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">数据报表</p>
+			</div>
+			<div class="common finance">
+				<a href="finace.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">财务管理</p>
+			</div>
+			<div class="common newscenter">
+				<a href="newscenter.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">消息中心</p>
+			</div>
+			<div class="common personage ">
+				<a href="personage.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">个人中心</p>
+			</div>
+		</div>
+		
+		
+		<!--中间类容区域-->
+		
+			<div style="height: 70px;"></div>
+			<div class="app-head content-center">
+				<span   class=" color2">下载量</span>
+				<span   class=" "><a href="statememt2.html">消费量</a></span>
+			</div>
+			<div class="welcome-center content-center">
+				<div class="welcome-fix ">
+					<!--消费量-->
+					<div class="welcome-foot box1">
+					
+					
+				</div>
+					
+					<!--下载量-->
+					<div class="welcome-lf box2">
+						<div style="height: 1px;"></div>
+						<div class="box">
+							<select class="input-width CateID">
+							  <option value ="2">选择应用</option>
+							
+							</select>
+							
+							
+							
+							<div class="outer clearfix">
+							    <div class="date date1 fl" id="from">
+							        <span>统计日期 </span><input type="text" class="date-check startData" />
+							    </div>
+							    <div class="date fr" id="to">
+							       <span>至</span> <input type="text" class="date-check endData"/>
+							    </div>
+							    
+							</div>
+						<span class="search">搜索</span>
+						</div>
+					<div id="container" style="min-width:400px;height:400px"></div>
+
+						<div class="total">
+							<span>总计</span>
+							<span class="total-sp">付费下载量  <span class="totalpay"></span></span>
+							<span class="total-sp2">总下载量 <span class="totaldown"></span></span>
+						</div>
+						
+							<div class="table">
+						<div class="table-head bg">
+							<div><span>日期</span></div>
+							<div><span>付费下载量</span></div>
+							<div><span>总下载量</span></div>
+							
+							
+						</div>
+						
+					</div>
+					</div>
+				</div>
+				
+				
+					
+				
+					
+				
+				
+				
+				
+		</div>
+		
+		<!--底部-->
+		<div class="foot">
+			
+				<p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+		</div>
+		<script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/double-date.js"></script>
+		
+	<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+	<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+	<script src="../js/helper.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".endData").val(getBeforeDate(0))
+ 			$(".startData").val(getBeforeDate(10))
+			
+			
+				
+			$(".app-hover1").click(function(){
+				console.log(11)
+				$(".box1").hide()
+				$(".box2").show()
+			})
+			$(".app-hover2").click(function(){
+				$(".box1").show()
+				$(".box2").hide()
+			})
+			
+			var dataOne =""
+			function down(){
+				$(".table-tr").remove()
+				$.ajax({
+		             type: "POST",
+		             url: URL + "/Statistics/Downloads",
+		             data:{token:token,keyword:$(".CateID").val(),startTime:$(".startData").val(),endTime:$(".endData").val(),pageSize:31},
+		             dataType:"JSON",
+		             async: false,
+		             xhrFields: {
+				           withCredentials: true
+				       },
+			        crossDomain: true,
+	             	success: function(data){
+	             		if(data.Status==402){
+			        		alert(data.Message)
+							window.location.href = "user.html"
+			        		return
+			        	}
+	             		console.log(data.List)
+	             		dataOne=data
+	             		 for(var i=0;i<data.List.length;i++){
+		       			var app = "<div class=table-tr><div><span>"+
+		       			DateTFormat(data.List[i].Date)
+		       			+"</span></div><div><span>"+
+		       			data.List[i].DownloadCount
+		       			+"</span></div><div><span>"+
+		       			data.List[i].TotalDownloadCount
+		       			+"</span></div></div>"
+		       			
+			 			$(".table").append(app)
+			 			
+		       }
+	             		
+	                    }
+		       });
+			}
+			
+			down()
+			function payDonw(){
+			 				var pay =[]
+			 				var totalPay = null
+			 					 for(var i=0;i<dataOne.List.length;i++){
+			 					 	totalPay = totalPay +dataOne.List[i].DownloadCount
+			 					 	pay.push(dataOne.List[i].DownloadCount)
+			 					 }
+			 					 $(".totalpay").text(totalPay)
+			 					console.log(totalPay)
+								return pay.reverse()
+								
+							}
+			
+			function totalDown(){
+			 				var pay =[]
+			 					 for(var i=0;i<dataOne.List.length;i++){
+			 					 	pay.push(dataOne.List[i].TotalDownloadCount)
+			 					 }
+			 					 $(".totaldown").text(pay[0])
+			 				console.log(pay)
+								return pay.reverse()
+								
+							}
+			function a(){
+						console.log(Math.ceil(dataOne.Total/10))
+						var data =[]
+						for(var i=0;i<dataOne.List.length;i++){
+						data.push(DateTFormat(dataOne.List[i].Date, "yyyy-MM-dd"))	
+						}
+						console.log(data)
+					return	data.reverse()
+							
+					}
+			
+			
+			$(".search").click(function(){
+			var st=	$(".startData").val().split("-")
+			var end = $(".endData").val().split("-")
+			console.log(parseInt(st[1])==parseInt(end[1]))
+			
+			if(parseInt(st[1])==parseInt(end[1])){
+				
+			}else{
+				alert("查询日期不大于一个月")
+				return
+			}
+				
+				
+				
+				
+				
+				
+				down()
+				
+						$('#container').highcharts({
+		    title: {
+		        text: '',
+		        x: -20
+		    },
+		    subtitle: {
+		        text: '',
+		        x: -20
+		    },
+		    xAxis: {
+		        categories: a()
+		    },
+		    yAxis: {
+		        title: {
+		            text: ''
+		        },
+		        plotLines: [{
+		            value: 0,
+		            width: 1,
+		            color: '#808080'
+		        }]
+		    },
+		    tooltip: {
+		        valueSuffix: ''
+		    },
+		    legend: {
+		        layout: 'vertical',
+		        align: 'right',
+		        verticalAlign: 'middle',
+		        borderWidth: 0
+		    },
+		    
+      plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true          // 开启数据标签
+                },
+                enableMouseTracking: false // 关闭鼠标跟踪，对应的提示框、点击事件会失效
+            }
+        },
+    
+    series: [
+    {
+        name: '付费下载量',
+        data: payDonw()
+    }
+    , {
+        name: '总下载量',
+        data: totalDown()
+    }
+    ]
+
+});
+			})
+//			
+			
+
+		       //下拉框选项
+		      $.ajax({
+		             type: "POST",
+		             url: URL + "/Statistics/GetPackageSelected",
+		             data:{token:token},
+		             dataType:"JSON",
+		             xhrFields: {
+				           withCredentials: true
+				       },
+			        crossDomain: true,
+	             	success: function(data){
+	             		console.log(data)
+	             		var app =""
+				            	  if(data){
+				            	  	for(var i=0;i<data.length;i++){
+				            		app+=" <option value="+data[i].Item1+">" +data[i].Item2+"</option>"
+				            	}
+				            	  }
+				            	
+				            	
+				            		$(".CateID").append(app)
+	             		
+	                    }
+		       });
+		       
+		       $(".CateID").change(function(){
+		       	console.log($(".CateID").val())
+		       })
+		       
+		       
+		       
+
+		       
+		       
+		       
+    // 获取 CSV 数据并初始化图表
+   /**
+  * Highcharts 在 4.2.0 开始已经不依赖 jQuery 了，直接用其构造函数既可创建图表
+ **/
+
+	
+$('#container').highcharts({
+    title: {
+        text: '',
+        x: -20
+    },
+    subtitle: {
+        text: '',
+        x: -20
+    },
+    xAxis: {
+        categories: a(),
+      
+    },
+    yAxis: {
+        title: {
+            text: ''
+        },
+        plotLines: [{
+            value: 0,
+            width: 1,
+            color: '#808080'
+        }]
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle',
+        borderWidth: 0
+    },
+    
+      plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true          // 开启数据标签
+                },
+                enableMouseTracking: false // 关闭鼠标跟踪，对应的提示框、点击事件会失效
+            }
+        },
+    
+    series: [
+    {
+        name: '付费下载量',
+        data: payDonw()
+    }
+    , {
+        name: '总下载量',
+        data: totalDown()
+    }
+    ]
+
+});
+
+
+
+
+
+
+
+
+			
+//			chart.xAxis[0].categories = [getBeforeDate(7),getBeforeDate(6), getBeforeDate(5), getBeforeDate(4), getBeforeDate(3), getBeforeDate(2), getBeforeDate(1), getBeforeDate(0)]
+
+function getBeforeDate(n){  
+    var n = n;  
+    var d = new Date();  
+    var year = d.getFullYear();  
+    var mon=d.getMonth()+1;  
+    var day=d.getDate();  
+    if(day <= n){  
+            if(mon>1) {  
+               mon=mon-1;  
+            }  
+           else {  
+             year = year-1;  
+             mon = 12;  
+             }  
+           }  
+          d.setDate(d.getDate()-n);  
+          year = d.getFullYear();  
+          mon=d.getMonth()+1;  
+          day=d.getDate();  
+     s = year+"-"+(mon<10?('0'+mon):mon)+"-"+(day<10?('0'+day):day);  
+     return s;  
+  } 
+  
+  
+  
+ 
+  
+  
+		</script>
+	</body>
+</html>
+
+	</body>
+</html>

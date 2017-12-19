@@ -1,0 +1,1234 @@
+﻿
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>安狗狗开放平台</title>
+        <link rel="stylesheet" type="text/css" href="../css/common .css" />
+        <link rel="stylesheet" type="text/css" href="../css/user.css" />
+        <link rel="stylesheet" type="text/css" href="../css/applic.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/bounces.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.pagination.css"/>
+        <style type="text/css">
+        	  .cancel2{width: 58px;
+    height: 30px;
+    color: white;
+    background: #a6a6a6;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 0 0 10px!important;
+    cursor: pointer;
+}
+    .particulars{
+    	width: 60px!important;
+    }
+    .validation-true2 {
+    
+    height: 30px;
+    width: 55px;
+    background: #7DB72E;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.validation-true ,  .validation-true2{
+	margin: 0;
+	width:140px ;
+	height: 40px;
+	line-height: 40px;
+}
+.create{
+	width: 120px!important;
+	height: 37px;
+	line-height: 35px;
+}
+.search2{
+	height: 37px;
+	line-height: 35px;
+	
+}
+.cancel2,.cancel33{
+	width:140px ;
+	height: 40px;
+	line-height: 40px;
+}
+
+.bo-content2 p:last-child{
+	padding: 0;
+}
+
+.position2{
+	position: relative;
+	left: 49px;
+}
+.img-on3{
+	width: 700px;
+}
+.bo-content2{
+	width: 383px;
+	border-radius: 3px;
+}
+.bo-content2 p{
+	text-align: center;
+	font-size: 18px;
+	padding-top: 20px;
+}
+.table-head2 div:nth-child(2){
+				width: 20%;
+				
+			}
+.table-tr2 div:nth-child(2){
+				width: 20%;
+			}
+			
+.table-head2 div:nth-child(1){
+				width: 30%;
+				
+			}
+.table-tr2 div:nth-child(1){
+				width: 30%;
+			}
+#parent{width:200px; height:15px;line-height: 15px; border:2px solid #09F;margin-left: 54px!important;} 
+  #son {width:0; height:100%; background-color:#09F; text-align:center; line-height:10px; font-size:20px; font-weight:bold;margin: 0;} 
+  .box div{
+  	margin-left: -37px;
+  	margin-top: 10px;
+  }
+  
+
+
+.box2 span{
+	text-align: right;
+}
+.table2  span{
+	 width: 100%;
+	text-align: left;
+}
+.table-head2 span{
+	margin-left: 30px;
+}
+.details span{
+	margin-right: 0;
+}
+
+.img-box3{
+    	margin-left: 10px!important;
+    	margin-top: 10px!important;
+    	 position: relative;
+    }
+.img-delet{
+    	position: absolute;
+    	top: 131px;
+    	left: 72px;
+    	color: white;
+    	background: greenyellow;
+    	text-align: center!important;
+    }
+    .margin-p{
+    	margin-right: 16px!important;
+    }
+    .creat-time span{
+    	
+    }
+        </style>
+    </head>
+    <body>
+        <!--头部-->
+        <div class="head">
+            <div class="head-left">
+				<img src="../img/logo.png"/>
+            </div>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="javascript:;">管理中心</a></li>
+                <li><a href="statememt.html">数据中心</a></li>
+            </ul>
+            <div class="head-right LoginAjax">
+                <p class="person"><span class="person2"></span><i class="arrow"></i></p>
+                <div class="hover">
+                    <p><a class="changePass" style="border: none;">修改密码</a></p>
+                    <p class="pull-out2">退出登录</p>
+                </div>
+            </div>
+            <div class="head-right LoginAjax2">
+                <a href="javascript:;" class="head-login">登录</a>
+
+                <a href="../signup.html">注册</a>
+            </div>
+        </div>
+
+
+        <!--侧边栏-->
+        <div class="navigation">
+            <div style="height: 70px;"></div>
+            <div class="common welcome ">
+                <a href="user.html">
+                    <p></p>
+                </a>
+                <p class="navps">欢迎页</p>
+            </div>
+            <div class="common application color">
+                <a href="application.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">应用管理</p>
+            </div>
+            <div class="common generalize">
+                <a href="generalize.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">CPD推广</p>
+            </div>
+            <div class="common statement">
+                <a href="statememt.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">数据报表</p>
+            </div>
+            <div class="common finance">
+                <a href="finace.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">财务管理</p>
+            </div>
+            <div class="common newscenter">
+                <a href="newscenter.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">消息中心</p>
+            </div>
+            <div class="common personage">
+                <a href="personage.html">
+                    <p></p>
+
+                </a>
+                <p class="navps">个人中心</p>
+            </div>
+        </div>
+
+
+
+
+        <!--中间类容区域-->
+        
+        	<div style="height: 70px;"></div>
+            <div class="app-head content-center">
+                <span class="app-hover1 color2">我的应用</span>
+                <span class="app-hover2 ">上下架记录</span>
+            </div>
+        	 <div class="welcome-center content-center">
+            
+           
+                <div class="welcome-fix ">
+                    <div class="welcome-lf box2">
+                    	<!--我的应用-->
+                    	<div class="box2-2">
+                    		 <p style="border:none!important;">
+                            <select class="input-width appCreat">
+                                <option value="" selected>全部</option>
+			                    <option value="0" >已撤销</option>
+			                    <option value="1" >上架待审核</option>
+			                    <option value="2" >上架中</option>
+			                    <option value="3" >上架未通过</option>
+			                    <option value="4" >下架待审核</option>
+			                    <option value="5" >已下架</option>
+
+                            </select>
+                            <input type="text" name="" id="" value="" placeholder="应用名称" class="input-width appCtname" /><span class="search2">搜索</span><span class="create">创建应用</span>
+                        </p>
+                        
+                        <div class="table2 mar">
+                            <div class="table-head2 bg">
+                                <div><span>应用名称</span></div>
+                                <div><span>状态</span></div>
+                                <div><span>创建时间</span></div>
+                                <div><span>操作</span></div>
+                            </div>
+						
+							
+                        </div>
+                        	<div class="box">
+								<div id="pagination2" class="page fl"></div>
+								
+							</div>
+                    	</div>
+                    	
+                    	
+                    	
+                    	
+                    	<!--我的应用创建-->
+                    	<div class="box2-1">
+                        <div class="title title-top">基础信息</div>
+                        <form id="form2">
+                            <input type="" name="token" id="" value="" class="token2 displaynone" />
+                            <div class="position">
+                                <span><em>*</em>应用安装包</span>
+                                <input type="file" name="pic" id="pic" value="" class="file-pos img-one" onchange="showPic()"/>
+                                <div class="img-on2"><span></span>请上传安装包不超过2G</div>
+                                <div class="pt-file2">上传</div>
+                                		
+								<div>
+							 	
+									 <!--<input type="file" id="pic" name="pic" onchange="showPic()"/>-->
+									
+									 <div id="parent" style="display: none;">
+									  <div id="son"></div>
+									</div> 
+							 	</div>
+                                
+                                
+                                
+                                <input type="text" name="ApkPath" id="" value="" class="displaynone file-box" />
+                            </div>
+                            <div><span><em>*</em>应用名称</span><input type="text" name="AppName" id="" value="" /></div>
+                            <div><span><em>*</em>版本号</span><input type="text" name="VersionName" id="" value="" /></div>
+                            <div>
+                                <span class="margin-p"><em>*</em>分类</span>
+                                <select class="input-width CateID">
+                                    <option value="1">全部</option>
+                                </select>
+                                <select class="input-width CateID2">
+                                    <option value="">请选择二级类型</option>
+                                </select>
+                            </div>
+                            <input type="" name="CateID" id="" value="" class="displaynone CateID3" />
+                            <input type="" name="LeafCateID" id="" value="" class="displaynone LeafCateID" />
+                            <div class="position imgmargin">
+                                <span class="img-name"><em>*</em>应用图标</span><em class="img-box">
+                                    <input type="file" name="" id="app" value="" style="opacity: 0;position: relative;z-index: 5;" />
+                                    <input type="text" name="Icon" id="" value="" class="displaynone appicon" />
+                                    <img src="" class="Icon" />
+                                </em>
+                                <div class="img-on"><span></span>png格式，尺寸256*256</div>
+                            </div>
+
+                            
+                            <div><span><em>*</em>应用包名</span><input type="text" name="PackName" id="" value="" /></div>
+                            
+                            
+                            
+                            
+                            <div class="position">
+                                <span><em>*</em>搜索关键词</span><input type="text" name="SearchKey" id="" value="" />
+                                <div class="img-on2"><span></span>空格分格，做多60字符；填写准确的关键词用户更容易搜索到</div>
+                            </div>
+
+                            <div class="position"><span><em>*</em>一句话描述</span><input type="text" name="Describe" id="" value="" /><div class="img-on2"><span></span>15字以内</div></div>
+
+                            <div>
+                                <span><em>*</em>语言</span>
+
+
+                                <label><input name="language" type="radio" value="zh" class="radio" />简体中文 </label>
+                                <label><input name="language" type="radio" value="tw" class="radio" />繁体中文 </label>
+                                <label><input name="language" type="radio" value="en" class="radio" />英文 </label>
+                                <label><input name="language" type="radio" value="other" class="radio" />其它 </label>
+
+                            </div>
+
+                            <div class="title">应用详情</div>
+                            <div class="position">
+                                <span><em>*</em>应用截图</span><input type="file" name="" id="" value="" class="file-pos img-two" />
+                                <input type="text" name="ScreenShot" id="" value="" class="displaynone screen" />
+                                <div class="img-on2"><span></span>截图分辨率为480*480、480*854、720*1280、800*1280、1080*1920,3至5张24位PNG或者JPEG图片,文件大小不超过1M</div>
+
+                                <div class="img-box2 screenshot">
+                                   
+                                </div>
+                                <div class="pt-file2">上传</div>
+                            </div>
+
+                            <div class="position">
+                                <span class="describe"><em>*</em>详细描述</span><textarea name="Detail" rows="" cols="" class="describe2"></textarea>
+                                <div class="img-on3"><span></span>500字以内</div>
+                            </div>
+
+
+                            <div class="title">审核与发布设置</div>
+                            <div><span>发布时间</span><input type="checkbox" name="" id="" value="" />审核后立即发布</div>
+                            <div class="position">
+                                <span class="describe"><em>*</em>辅助审核说明</span><textarea name="AuditDescribe" rows="" cols=""></textarea>
+                                <div class="img-on3">
+                                    <div>
+                                        <span></span>1.是否有哪些特殊机型或CPU等要求。
+                                    </div>
+                                    <div>
+                                        <span></span>2.如果修改了包的签名，需要在此填写修改签名原因。
+                                    </div>
+                                    <div>
+                                        <span></span>3.如上次提交审核未通过，则需在此填写备注信息，帮助审核通过。
+                                    </div>
+                                    <div>
+                                        <span></span>4.游戏应用的测试账号也可以在这里填写。
+                                    </div>
+                                    <div>
+                                        <span></span>5.最多不超过400字。
+                                    </div>
+                                    <div>
+                                        <span></span>如更新版本与上一版本相同，请在审核辅助说明出填写新版本更新原因，方便后台审核
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div style="height: 130px;"></div>
+                            <div><span><em>*</em>软件著作权登记账号</span><input type="text" name="SCRNumber" id="" value="" /></div>
+                            <div class="position">
+                                <span></span><input type="file" name="" id="" value="" class="file-pos img-three" />
+                                <input type="text" name="SCRPicture" id="" value="" class="displaynone SCRPicture " />
+                                <div class="img-on2"><span></span>请上传软件著作权证明，图片格式为PNG或JPEG,大小不超过1M</div>
+                                <img src="" class="SCRPicture-box" />
+                                <div class="pt-file2">上传</div>
+                            </div>
+                        </form>
+                        <div class="buttonps">
+                            <div class="submit">确认提交</div>
+                            <div class="cancel">取消</div>
+                        </div>
+
+                    </div>
+                    
+                   
+</div>
+                </div>
+
+ <div style="height: 100px;"></div>
+
+            </div>
+			
+			
+	
+
+
+
+
+            <!--底部-->
+            <div class="foot ft2" >
+
+                <p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+            </div>
+            <!--登录弹框-->
+            <div class="bounces-box">
+                <div class="bounces">
+                    <div class="bo-header">
+                        <span>登录</span>
+                        <span class="down"><img src="../img/down.png" /></span>
+                    </div>
+                    <div class="bo-content">
+                        <p><span>邮箱</span><input type="text" placeholder="请填写登录邮箱" class="login-mail" /></p>
+                        <p><span>密码</span><input type="password" placeholder="请填写密码" class="login-pw" /></p>
+                        <p class="checkbox">
+
+                            <!--<input type="checkbox" />-->
+                            <input type="checkbox">
+                            <span>记住密码</span><span><a href="forgot_1.html">忘记密码</a></span>
+                        </p>
+                        <div class="login">登录</div>
+                        <div class="registration"><a href="signup.html">注册</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--提示弹框-->
+             <div class="bounces-box2  bb2">
+                <div class="bounces2">
+                   
+                    <div class="bo-content2">
+                        <p>是否执行删除操作?</p>
+                        <p><span class="validation-true">确认</span><span class="cancel2">取消</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="bounces-box2 bb3">
+                <div class="bounces2">
+                    
+                    <div class="bo-content2">
+                        <p>是否执行下架操作?</p>
+                        <p><span class="validation-true2">确认</span><span class="cancel33">取消</span></p>
+                    </div>
+                </div>
+            </div>
+            <script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/helper.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/jquery.pagination.min.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+            	
+            		$(".cancel2").click(function(){
+            		$(".bounces-box2").hide()
+            	})
+            	
+            	//应用创建
+            	$(".create").click(function(){
+            		$(".box2-1").show();
+            		$(".box2-2").hide()
+            	})
+            	$(".cancel").click(function(){
+            		$(".box2-1").hide();
+            		$(".box2-2").show()
+            	})
+            	
+            	
+            	
+            	
+            	
+            	 function showPic(){
+  var pic = $("#pic").get(0).files[0];
+  ;
+  uploadFile();
+ }
+ function uploadFile(){
+  var pic = $("#pic").get(0).files[0];
+  var formData = new FormData();
+  formData.append("file" , pic);
+ 
+  $.ajax({
+   type: "POST",
+   url: "upload",
+   data: formData ,
+   processData : false, 
+   
+   contentType : false , 
+   xhr: function(){
+    var xhr = $.ajaxSettings.xhr();
+    if(onprogress && xhr.upload) {
+     xhr.upload.addEventListener("progress" , onprogress, false);
+     return xhr;
+    }
+    console.log(11)
+   } 
+  });
+ }
+ /**
+  * 侦查附件上传情况 ,这个方法大概0.05-0.1秒执行一次
+  */
+ function onprogress(evt){
+  var loaded = evt.loaded;     //已经上传大小情况 
+  var tot = evt.total;      //附件总大小 
+  var per = Math.floor(100*loaded/tot);  //已经上传的百分比 
+  $("#son").html( per +"%" );
+  $("#son").css("width" , per +"%");
+ }
+            	
+            	
+            	
+            	function common(data){
+            		  for(var i=0;i<data.List.length;i++){
+                    	app	=  "<div class=table-tr2><div><img src="+imgserver+
+                    	data.List[i].Icon
+                    	+"> <p> <em class=name>"+
+                    	data.List[i].AppName
+                    	+"</em> <em> "+
+                    	length(data.List[i].PackName)
+                    	+"</em><em> "+
+                                    data.List[i].VersionName
+                                    +"</em></p></div><div><span>"+
+					
+					filter(data.List[i].AuditStatus)
+					+"</span></div><div class=creat-time><span>"+
+					DateTFormat(data.List[i].CreateTime)
+					+"</span></div>"
+					
+					 
+					                     	if(data.List[i].AuditStatus==0){
+						app=app +"<div class=details><span class=particulars>更新</span><span class=delet>删除</span><span class=noPass>详情</span></div></div>"
+					}else if(data.List[i].AuditStatus==1||data.List[i].AuditStatus==4){
+						app=app +"<div class=details><span class=back>撤销</span><span class=noPass>详情</span></div></div>"
+					}else if(data.List[i].AuditStatus==2){
+						app=app +"<div class=details><span class=particulars>更新</span><span class=downShelve>下架</span><span class=noPass>详情</span></div></div>"
+					}else if(data.List[i].AuditStatus==5){
+						app=app +"<div class=details> <span class=particulars>更新</span><span class=upShelve>上架</span><span class=noPass>详情</span></div></div>"
+					}else if(data.List[i].AuditStatus==3){
+						app=app +"<div class=details><span class=particulars>更新</span><span class=delet>删除</span><span class=noPass>详情</span></div></div>"
+					}
+					 
+					 
+					     $(".table2").append(app)
+                    }
+            		   back()
+            	}
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+//          	 var imgserver = "http://imgqa.30.net"
+            	var dataObj=""
+            	var totalPage =""
+            	//我的应用
+            	var app =""
+            	$.ajax({
+                    type: "POST",
+                    url: URL + "/Application/GetMyApp",
+                    data:{token:token},
+                    async: false,
+                    dataType: "JSON",
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                    	console.log(data)
+                    	if(data.Status ==402){
+                    		
+                    	
+							alert(data.Message)
+							window.location.href = "user.html"
+					             	
+                    		$(".create").unbind()
+                    		return
+                    		
+                    	}
+                    	
+                    	totalPage =data.Total/10
+                    dataObj = data
+					common(data)
+            	console.log(totalPage)
+            	$("#pagination2").pagination({
+					currentPage: 1,
+					totalPage: Math.ceil(totalPage),
+					isShow: false,
+					prevPageText: "< 上一页",
+					nextPageText: "下一页 >",
+					callback: function(current) {
+						console.log(current)
+						$.ajax({
+                    type: "POST",
+                    url: URL + "/Application/GetMyApp",
+                    data:{token:token,pageIndex:current},
+                    async: false,
+                    dataType: "JSON",
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                    	$(".table-tr2").remove()
+                    	console.log(data.List)
+                    	totalPage =data.Total
+                    dataObj = data
+                    common(data)
+                       
+                    }
+                });
+						
+					}
+				});
+                      
+                     
+                       
+                    }
+                });
+            	
+            	 
+            	 
+            	 
+            	 
+            	 
+
+            	
+            	
+//          	$(".noPass").click(function(){
+//          		window.location.href = "application_5.html"
+//          		console.log(1)
+//          	})
+            
+                //获取图片标签
+                var PICSTAMP = ""
+                var IDCardPic = ""
+                $.ajax({
+                    type: "GET",
+                    url: URL + "/Register/GetPicStamp",
+                    async: false,
+                    dataType: "text",
+
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+
+                        PICSTAMP = data
+                    }
+                });
+
+
+                //获取图片上传地址并上传
+               
+                $("#app").change(function () {
+                    var fd = new FormData();
+                    fd.append("fileImg", $("#app").get(0).files[0]);
+//                  fd.append("PICSTAMP", PICSTAMP)
+                    console.log(fd)
+                    $.ajax({
+                        url: imgserver + '/home/upload',
+                        type: 'POST',
+                        data: fd,
+                        dataType: 'JSON',
+                        cache: false,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                            $(".Icon").removeAttr("src")
+                            $(".appicon").val(data.url)
+
+                            $(".Icon").attr("src", imgserver + data.url)
+                            $(".Icon").show()
+
+                        },
+                        error: function () {
+                            console.log("错误")
+                        }
+                    });
+                })
+            
+                var iturl = ""
+                var imgzu = []
+                var spliceUrl = ""
+                $(".img-two").change(function () {
+                	if(imgzu.length<5){
+                		 var fd = new FormData();
+                    fd.append("fileImg", $(".img-two").get(0).files[0]);
+                    fd.append("PICSTAMP", PICSTAMP)
+                    $.ajax({
+                        url: imgserver + '/home/upload',
+                        type: 'POST',
+                        data: fd,
+                        dataType: 'JSON',
+                        cache: false,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                        	if(data.message!==""){
+                        		alert(data.message)
+                        	}
+                            var img = ""
+                            var imgurl = ""
+                            iturl += data.url + ";"
+                            imgzu.push(data.url)
+                            imgurl = data.url
+                         
+                            $(".screen").val(iturl.substring(0, iturl.length - 1))
+                           
+                            console.log($(".screen").val())
+                            img = "<div class=img-box3><span class=img-delet>X</span>" +
+                                "<img src=" + imgserver + imgurl + "></div>"
+
+
+                            $(".screenshot").append(img)
+
+                            $(".img-box3").click(function (evn) {
+                                var that = this
+                                var t = $(".img-box3").index(this);
+                                
+                               
+                                if (evn.target.nodeName == "SPAN") {
+                                	
+                                    imgzu.splice(0 + t, t + 1)
+                                    console.log(imgzu)
+                                    if(imgzu.length==0){
+                                		spliceUrl=""
+                                	}else{
+                                		 for (var i = 0; i < imgzu.length; i++) {
+                                        spliceUrl = imgzu[i]
+                                    	}
+                                	}
+                                   
+                                    
+                                    $(that).remove()
+									$(".screen").val(spliceUrl)
+									console.log($(".screen").val())
+                                }
+
+                            })
+
+
+                        },
+                        error: function () {
+                            console.log("错误")
+                        }
+                    });
+                	}else{
+                		alert("超过图片限制")
+                	}
+                   
+                })
+
+
+
+
+
+                $(".img-three").change(function () {
+                    var fd = new FormData();
+                    fd.append("fileImg", $(".img-three").get(0).files[0]);
+                    fd.append("PICSTAMP", PICSTAMP)
+                    $.ajax({
+                        url: imgserver + '/home/upload',
+                        type: 'POST',
+                        data: fd,
+                        dataType: 'JSON',
+                        cache: false,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                            if (data.url) {
+                                $(".SCRPicture-box").removeAttr("src")
+                                $(".SCRPicture").val(data.url)
+                                console.log($(".SCRPicture").val())
+                                $(".SCRPicture-box").attr("src", imgserver + data.url)
+                                $(".SCRPicture-box").show()
+                            }
+
+                        },
+                        error: function () {
+                            console.log("错误")
+                        }
+                    });
+                })
+
+                //上传app
+                $(".img-one").change(function () {
+                	
+                	$("#parent").show()
+                	
+                    var fd = new FormData();
+                    fd.append("fileImg", $(".img-one").get(0).files[0]);
+                    fd.append("PICSTAMP", PICSTAMP)
+                    $.ajax({
+                        url: imgserver + '/home/UploadApkFile?dir=open/appapk',
+                        type: 'POST',
+                        data: fd,
+                        dataType: 'JSON',
+                        cache: false,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                        	if(data.status){
+                        		  console.log(data.url)
+                            var appurl = data.url
+                            $(".file-box").val(appurl)
+                        	}else{
+                        		alert(data.message)
+                        	}
+                          
+                            //				           		console.log($(".file-box").val())
+							
+                        },
+                        error: function () {
+                            console.log("错误")
+                        }
+                    });
+                })
+
+            
+
+                $(".radio").change(function () {
+                    console.log($("input[type='radio']:checked").val())
+
+                })
+
+
+					
+
+
+
+
+
+                 //获取下拉框
+                $.ajax({
+                    url: URL + '/Application/GetAppCate',
+                    type: 'POST',
+                    data: { CateID: 0, token: token },
+                    dataType: 'JSON',
+                    cache: false,
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                       
+                        var app = ""
+					 $(".CateID3").val($(".CateID").val())
+                        for (var i = 0; i < data.length; i++) {
+                            app += " <option value=" + data[i].Id + ">" + data[i].CateName + "</option>"
+                        }
+
+                        $(".CateID").append(app)
+
+                    },
+                    error: function () {
+                        console.log("错误")
+                    }
+                });
+              
+               var app2 = ""
+                $(".CateID").change(function () {
+                   
+                    console.log($(".CateID").val())
+                    $.ajax({
+                        url: URL + '/Application/GetAppCate',
+                        type: 'POST',
+                        data: { CateID: $(".CateID").val(), token: token },
+                        dataType: 'JSON',
+                        cache: false,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true,
+                        success: function (data) {
+                            $(".CateID3").val($(".CateID").val())
+							
+                            app2 = ""
+                            for (var i = 0; i < data.length; i++) {
+                                app2 += " <option class=Cate value=" + data[i].Id + ">" + data[i].CateName + "</option>"
+                            }
+
+                            $(".CateID2").append(app2)
+
+                        },
+                        error: function () {
+                            console.log("错误")
+                        }
+                    });
+
+
+                })
+              
+              
+              
+
+                $(".CateID2").change(function () {
+                    $(".LeafCateID").val($(".CateID2").val())
+                    console.log($(".LeafCateID").val())
+                })
+
+                 //表单提交
+                $(".submit").click(function () {
+                    $(".token2").val(token)
+                    //				 var fd = new FormData($("#form2")[0]);
+                    var fd = $("#form2").serialize()
+
+                    $.ajax({
+                        url: URL + '/Application/SaveApp',
+                        type: 'POST',
+                        data: fd,
+                        dataType: 'JSON',
+                        cache: false,
+
+
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true,
+                        success: function (data) {
+                           
+                           if(data.Message=="ok"){
+                           	alert("创建应用成功")
+                           	window.location.href = "application.html"
+                           }else{
+                           	alert(data.Message)
+                           }
+							
+                        }
+                    });
+                })
+
+                var app2 = ""
+                //上下架记录
+                $(".app-hover2").click(function () {
+					window.location.href ="application4.html"
+
+                })
+
+				
+
+                $(".updown").change(function () {
+                    console.log($(".updown").val())
+                })
+                //查询
+                $(".search").click(function () {
+
+                    $.ajax({
+                        url: URL + '/Application/ShelveLogs',
+                        type: 'POST',
+                        data: { keyword: $(".updown").val(), auditType: $(".appname").val(), token: token },
+                        dataType: 'JSON',
+                        cache: false,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true,
+                        success: function (data) {
+                            console.log(data.List)
+                            if (data.List == true) {
+                                $(".table-tr").remove()
+                                for (var i = 0; i < data.List.length; i++) {
+                                    var app = ""
+
+                                    app = "<div class=table-tr>" + "<div>" +
+                                   "<img src=" + data.List[i].Icon + "><p class=tutu></p><p><em class=name>" +
+
+                                   data.List[i].AppName
+                                   + "</em><em	> " + data.List[i].PackName + "</em>" + "<em>" + data.List[i].AppID + "</em></p></div>" +
+                                   "<div><span>" +
+                                   filter(data.List[i].Status)
+                                   + "</span></div><div><span>" +
+                                  DateTFormat( data.List[i].CreateTime)
+                                   + "</span></div><div><span>" +
+                                  DateTFormat( data.List[i].LastTime)
+                                   + "</span></div><div class=details><span>详情</span>"
+
+                                   + "</div>"
+                                    $(".table").append(app)
+                                }
+                            }
+
+
+                        }
+                    });
+                })
+
+				function filter(num){
+				
+								switch (num){
+										case 0:
+				
+										
+										return num="已撤销";
+				
+										case 1:
+										return  num="上架待审核";
+				
+										case 2:
+										return  num="上架中";
+				
+										case 3:
+										return num="上架审核未通过";
+				
+										case 4:
+										return num="下架待审核";
+										
+										case 5:
+										return num="已下架";
+				
+										}
+				
+							}
+					
+					
+					
+						//事件委托应用管理
+						
+			function back(){
+				 $(".table-tr2").click(function(evn){
+				 			var that = this
+						    var t=$(".table-tr2").index(this);
+						   	var evn = evn || event;
+						   	
+						   	//撤回
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="back"){
+								   		var backObj = dataObj.List[t].Id
+								console.log(backObj)
+								 
+								
+								$.ajax({
+					             type: "POST",
+					             url: URL+"/Application/Cancel  ",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+									if(data.Message==null){
+										$(that).remove()
+										alert("成功")
+										window.location.href ="application.html"
+									}else{
+										alert(data.Message)
+									}
+									 
+					                    }
+					         });
+			
+
+
+					  }
+						   	//删除
+						   	 	if(evn.target.nodeName == "SPAN"&&evn.target.className =="delet"){
+						   	 		
+						   	 		$(".bb2").show()
+						   		$(".validation-true").unbind()
+						   		 $(".validation-true").click(function(){
+						   		 	
+						   		 	var backObj = ''
+						   		 		backObj =dataObj.List[t].Id
+						   		 	console.log(backObj)
+						   		 	
+								 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/DeleteApp",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	$(".bounces-box2").hide()
+					             	console.log(data)
+					             	if(data.Status ==true){
+					             		 that.remove()
+					             	}
+
+					                    }
+					         });
+					  			})
+						}
+						   	//下架
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="downShelve"){
+						   		$(".bb3").show()
+						   		 $(".validation-true2").click(function(){
+						   		var backObj = dataObj.List[t].Id
+								 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/DownShelve",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	console.log(data)
+					             	
+										window.location.reload() 
+					                    }
+					         });
+
+												})
+					  }
+						   	//上架
+						   	if(evn.target.nodeName == "SPAN"&&evn.target.className =="upShelve"){
+						   		var backObj = dataObj.List[t].Id
+								 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/UpShelve",
+					             data:{AppId:backObj,token:token},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	console.log(data)
+					             	window.location.reload() 
+
+					                    }
+					         });
+
+
+					  }
+						
+						if(evn.target.nodeName == "SPAN"&&evn.target.className =="particulars"){
+							console.log(11)
+						   		var backObj = dataObj.List[t].Id
+								sessionStorage.setItem("backObj",backObj)
+								window.location.href = "application_2.html"
+
+					  }
+					if(evn.target.nodeName == "SPAN"&&evn.target.className =="noPass"){
+//							console.log(11)
+								var backObj = dataObj.List[t].Id
+								sessionStorage.setItem("backObj",backObj)
+								console.log(1)
+						   		window.location.href = "application_5.html"
+
+					  }
+
+					});
+			}
+			
+			$(".cancel33").click(function(){
+				$(".bounces-box2").hide()
+			})
+			$(".bounces-box2").css({"height": allHeight});
+		
+
+			//应用查询
+			$(".search2").click(function(){
+				
+				 $.ajax({
+					             type: "POST",
+					             url: URL+"/Application/GetMyApp",
+					             data:{auditType:$(".appCreat").val(),keyword:$(".appCtname").val(),token:token,},
+					             dataType: "json",
+					             xhrFields: {
+							           withCredentials: true
+							       },
+							     crossDomain: true,
+					             success: function(data){
+					             	totalPage =data.Total/10
+					             	//移除节点
+					             	$(".table-tr2").remove()
+					             	
+								common(data)
+								$("#pagination2").pagination({
+								currentPage: 1,
+								totalPage: Math.ceil(totalPage),
+								isShow: false,
+								prevPageText: "< 上一页",
+								nextPageText: "下一页 >",
+								callback: function(current) {
+									console.log(current)
+									$.ajax({
+			                    type: "POST",
+			                    url: URL + "/Application/GetMyApp",
+			                    data:{auditType:$(".appCreat").val(),keyword:$(".appCtname").val(),token:token,pageIndex:current},
+			                    async: false,
+			                    dataType: "JSON",
+			                    xhrFields: {
+			                        withCredentials: true
+			                    },
+			                    crossDomain: true,
+			                    success: function (data) {
+			                    	$(".table-tr2").remove()
+			                    	console.log(data.List)
+			                    	totalPage =data.Total
+			                    dataObj = data
+			                    common(data)
+
+					  
+                    
+                      
+                       
+                    }
+                });
+						
+					}
+				});
+								
+								
+					                    }
+					         });
+					        
+			})
+            </script>
+    </body>
+</html>
+
+

@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>安狗狗开放平台</title>
+		<link rel="stylesheet" type="text/css" href="../css/common .css"/>
+		<link rel="stylesheet" type="text/css" href="../css/user.css"/>
+		<style type="text/css">
+			.color{
+				color:#7DB72E;
+			}
+			.welcome-center{
+				margin-top: 70px;
+				
+			}
+				@media screen and (max-width: 1106px) {
+				   .welcome-center{
+				   	width: 1044px;
+				   }
+		}
+			
+			.ft2{
+				position: absolute;
+				bottom: 0;
+				z-index: 88;
+			}
+			.ctmag{
+				margin: 0!important;
+				padding-left: 35px;
+				padding-right: 20px;
+			}
+			.size{
+				font-size: 22px;
+			}
+			.ag-btton{
+				margin-left: 30px;
+				cursor: pointer;
+			}
+			.noPass{
+				   
+				    
+			}
+			.ag-btton{
+				 position: relative;
+				    top: -54px;
+				    left: 429px;
+				    cursor: pointer;
+				    color: lightskyblue
+			}
+			.lfwidth{
+				width: 100%!important;
+			}
+			
+
+a{
+	color: lightskyblue;
+}
+
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head">
+			<div class="head-left">
+				<img src="../img/logo.png"/>
+			</div>
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="javascript:;">管理中心</a></li>
+				<li><a href="statememt.html">数据中心</a></li>
+			</ul>
+			<div class="head-right LoginAjax">
+				<p class="person"><span class="person2"></span><i class="arrow"></i></p>
+				<div class="hover">
+					 <p><a style="border: none;" class="changePass">修改密码</a></p>
+					<p class="pull-out2">退出登录</p>
+				</div>
+			</div>
+			<div class="head-right LoginAjax2">
+				<a href="javascript:;" class="head-login">登录</a>
+				
+				<a href="../signup.html">注册</a>
+			</div>
+		</div>
+		
+		
+		<!--侧边栏-->
+		<div class="navigation">
+			<div style="height: 70px;"></div>
+			<div class="common welcome color">
+				<a href="user.html" >
+					<p></p>
+				</a>
+				<p class="navps">欢迎页</p>
+			</div>
+			<div class="common application">
+				<a href="application.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">应用管理</p>
+			</div>
+			<div class="common generalize">
+				<a href="generalize.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">CPD推广</p>
+			</div>
+			<div class="common statement">
+				<a href="statememt.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">数据报表</p>
+			</div>
+			<div class="common finance">
+				<a href="finace.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">财务管理</p>
+			</div>
+			<div class="common newscenter">
+				<a href="newscenter.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">消息中心</p>
+			</div>
+			<div class="common personage">
+				<a href="personage.html">
+					<p></p>
+					
+				</a>
+				<p class="navps">个人中心</p>
+			</div>
+		</div>
+		
+		
+		
+		
+        <!--中间类容区域-->
+        <div id="content" class="content-center" style="margin-top:10px;">
+                <div class="welcome-center">
+                    <div class="welcome-fix">
+                        <div class="welcome-lf">
+                            <p>开发者信息</p>
+                            <p>欢迎您 : <span id="user_name"></span></p>
+                            <!--<p>上次登录IP地址 : <span	></span></p>-->
+                            <p>上次登录时间 : <span id="lasttime"></span></p>
+                        </div>
+                        <div class="welcome-rt">
+                            <p>财务状况</p>
+                            <p><b>账户总余额  : </b> <span id="amount"></span><em> 元</em></p>
+                            <p><b>现金余额  : </b> <span id="consumeBalance"></span><em> 元</em></p>
+                            <p><b>赠送余额  : </b><span id="giftAmount"></span><em> 元</em></p>
+                            <p><b>昨日消费  :</b><span id="ydayCost"></span><em> 元</em></p>
+                        </div>
+                    </div>
+                    <div class="welcome-foot">
+                        <p class="ft-head">应用概况</p>
+                        <div class="table">
+                            <div class="table-head bg">
+                                <div><span>应用名称</span></div>
+                                <div><span>状态</span></div>
+                                <div><span>昨日消耗（元）</span></div>
+                                <div><span>日下载量</span></div>
+                                <div><span>总下载量</span></div>
+                            </div>
+                           
+                        </div>
+
+
+                    </div>
+                </div>
+           <div style="height: 100px;">	</div>
+</div>
+
+
+            <!--底部-->
+            <div class="foot ft2">
+
+                <p>COPYRIGHT(C)2012-2016 上海移卓网络科技有限公司版权所有 沪ICP备14053322号-1</p>
+            </div>
+            <script src="../js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+            <script src="../js/common.js"></script>
+            <script src="../js/helper.js"></script>
+            <script src="../js/common2.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+                $(function () {
+
+		
+		
+                    $.ajax({
+                        type: "POST",
+                        url: URL + "/User/GetData",
+                        data: { token: localStorage.getItem('token') },
+                        dataType: "JSON",
+                        async: false,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true,
+                        success: function (data) {
+                        	var textValue = data.auditText
+                        	sessionStorage.setItem("textValue",textValue)
+                        	for(var i=0;i<$(".navigation a").length-2;i++){
+
+									
+									
+						            if (textValue=="待审核"||textValue=="审核不通过") {
+						                	
+							                $(".navigation a").eq(i).attr('href', '#');     
+							                 $(".navigation a").eq(i).click(function (event) {
+							                    event.preventDefault(); 
+							                    if(textValue=="待审核"){
+							                    	alert("待审核通过后可以正常使用")
+							                    }else{
+							                    	alert("审核不通过请重新填写资料")
+							                    }
+							                    
+							                });
+									
+										}
+						            }
+		
+                        	
+                        	
+                        	
+                        	
+                        	
+                        		if(data.Status==401){
+											alert("登录失效请重新登录")
+											window.location.href = "../index.html"
+											return
+					             	}
+                        	
+                        	
+
+                            if (data.auditText) {
+                            	
+                            	
+                            	console.log(data)
+                                $("#content").children().remove();
+                                var a = '	<div style="height: 70px;"></div>' +
+                                '<div class="welcome-center ctmag">' +
+                            '<div class="welcome-fix">' +
+                            '<div class="welcome-lf lfwidth">' +
+                  '<p class=size>' + data.auditText + '</p>' +
+                  '<p>您的账号 : <span id="user_name"> </span> ' + data.auditText + '</p>' +
+                  '<p>' +  button(data.auditRemark)+ '<span	></span></p></div></div></div>';
+                                $("#content").html(a);
+
+						if(data.auditText=="审核不通过"){
+                            		 $("#content").append("<div class=ag-btton>点击重新填写资料</div>")
+                            	}
+						
+						
+						
+						
+//							window.location.href ="user_2.html"
+							
+//							if(data.auditText=="审核不通过"){
+//								var noPass = "<div class=noPass>点击重新更改资料</div>"
+//								$("#content").append(noPass)
+//							}
+							
+							
+                            }
+
+                            $("#content").show();
+                            $("#user_name").html(data.email);
+                            $("#lasttime").html(DateTFormat(data.lastTime));
+                            $("#amount").html(data.consumeBalance + data.giftAmount);
+                            $("#consumeBalance").html(data.consumeBalance);
+                            $("#giftAmount").html(data.giftAmount);
+                            $("#ydayCost").html(data.ydayCost);
+                            if (data.cpdList != null) {
+                                for (var i in data.cpdList) {
+
+                                    var result = "审核中";
+                                    if (data.cpdList[i].AuditStatus == 2)
+                                        result = "上架中";
+                                    else if (data.cpdList[i].AuditStatus == 5)
+                                        result = "已下架";
+									 else if (data.cpdList[i].AuditStatus == 0)
+                                        result = "已撤销";
+                                        else if (data.cpdList[i].AuditStatus == 1)
+                                        result = "上架待审核";
+                                         else if (data.cpdList[i].AuditStatus == 3)
+                                        result = "上架待审核未通过";
+                                        else if (data.cpdList[i].AuditStatus == 4)
+                                        result = "下架待审核";
+                                    var app = "<div class=table-tr>" + "<div>" +
+                                   "<img src=" + data.cpdList[i].Icon + "><p class=tutu></p><p><em class=name>" +
+                                    data.cpdList[i].AppName
+
+                                    + "</em><em	> " + data.cpdList[i].VersionName + " </em>" + "<em> </em></p></div>" +
+
+
+                                    "<div>" +
+                                    "<span>" + result + "</span>"
+
+                                    + "</div>" +
+                                    "<div>" +
+                                    "<span>" + data.cpdList[i].YdayCost + "</span>"
+                                    + "</div>" +
+                                    "<div>" +
+                                    "<span>" + data.cpdList[i].YdayDow + "</span>"
+                                    + "</div>" +
+                                    "<div>" +
+                                    "<span>" + data.cpdList[i].TotalDow + "</span>"
+                                    + "</div>"
+
+
+
+                                    + "</div>"
+                                    $(".table").append(app)
+                                }
+                            }
+                            $(".ag-btton").click(function(){
+									window.location.href = "../signup5.html"
+								})
+                        }
+                    });
+
+
+
+
+					function button(data){
+						console.log(data)
+						if(data == null){
+						return	data = ""
+						}else{
+							return data
+						}
+					}
+					
+					
+                })
+                
+                
+                
+                
+                
+            </script>
+</body>
+</html>
