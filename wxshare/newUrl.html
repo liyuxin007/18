@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#box{
+				width:455px;
+				margin: 0 auto;
+			}
+			h2{
+				color: #878787;
+				width: 304px;
+				text-align: center;
+			}
+			input{
+				height: 35px;
+				width: 300px;
+			}
+			.btn{
+				width: 120px;
+				border:none;
+				border-radius: 5px;
+				color: white;
+				height: 41px;
+				margin-left: 10px;
+				position: relative;
+				top:1px ;
+				background: #169bd5;
+			}
+			p{
+				color: #878787;
+			}
+			.jump{
+				display: block;
+				margin-top: 10px;
+				color:#0099ff;
+			}
+			.text{
+				word-wrap:break-word;
+				
+				width: 300px;
+				height: 200px;
+			}
+			#zz{
+				width: 298px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!--<input type="" name="" id="" value="" class="in"/><button>生成</button>
+		<div class="copy">复制</div>
+		<a class="text" id="contents">
+			
+		</a>-->
+		<div id="box">
+			<h2>链接转换</h2>
+		<p>请输入链接：</p>
+		<input  class="in">
+		<p>请输入标题：</p>
+		<input type="" name="" id="zz" value="" /><button class="span btn" data-clipboard-action="copy" data-clipboard-target="#foo">点击生成</button>
+		
+		<p>新链接地址 :</p>
+		<textarea class="text"    id="foo" type="text" value="hello">
+			
+		</textarea>
+		
+		
+		<a class="jump" href="javascript:;">
+			复制地址并跳转到新浪短网址
+		</a>
+		</div>
+		
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/url.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			 $(".span").click(function(){
+			 	
+			 var sp =  encodeURI($("#zz").val())
+			 $("#zz").val(sp)
+			 if($(".in").val()){
+						$(".text").val("")
+//						$(".text").attr("href","http://192.168.1.73:8000/"+"?id="+$(".in").val())
+//						$(".text").val(api+"/wxshare"+"?id="+$(".in").val())
+						$(".text").val(wexin+"/wxshare/news2.html"+"?id="+$(".in").val())
+					}
+			$(".text").val( $(".text").val()+"/"+$("#zz").val())
+			 })
+			
+//				$("button").click(function(){
+//					if($(".in").val()){
+//						$(".text").val("")
+//				
+//						$(".text").val(api+"/wxshare/news2.html"+"?id="+$(".in").val())
+//					}
+//				
+//			})
+			// button的class的值
+        var clipboard = new Clipboard('.btn');
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+        
+        
+        $(".jump").click(function(){
+        	
+        	window.open("http://dwz.wailian.work/");    
+        })
+		</script>
+	</body>
+</html>

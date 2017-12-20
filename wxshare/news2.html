@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				overflow-x: hidden;
+			}
+			img{
+				height: 80px;
+				width: 100px;
+				margin:2px 2px 0 2px;
+			}
+			.img-list,.three{
+				display: flex;
+				
+			}
+			.img-list img{
+				display: block;
+				flex: 1;
+			}
+			
+			.weight{
+				font-size: 18px;
+				margin-bottom: 10px;
+				margin-top: 12px;
+				line-height: 24px;
+				
+			}
+			.IsAdvert{
+				display: inline-block;
+				font-size: 16px;
+				font-weight: normal;
+				border: 1px solid red ;
+				border-radius: 10px;
+				width: 50px;
+				text-align: center;
+				margin: 5px;
+				height: 26px;
+				line-height: 26px;
+			}
+			.one img{
+				width: 100%;
+				height: 210px;
+			}
+			.one,.img2,.img3{
+				border-bottom:1px solid #f9f9f9 ;
+			}
+			.box{
+				padding-top:50px ;
+				margin: 0 15px;
+				
+			}
+			
+			.head{
+				display: none;
+				position: fixed;
+				height: 50px;
+				width: 100%;
+				border-bottom:1px solid #ececec ;
+				background: url(img/news.png) no-repeat;
+				background-size: 30px;
+				background-position:20px 8px;
+				line-height: 50px;
+				font-size: 18px;
+				font-weight: 5;
+				padding-left:60px ;
+				background-color: white;
+			}
+			
+			.Source{
+				margin-top: 15px;
+				padding-bottom: 15px;
+				color: #b6b6b6;
+				font-size: 13px;
+			}
+			.Source span{ 
+				margin-left: 10px;
+			}
+			.title{
+				
+				margin-left: 10px;
+			}
+			.ti-box{
+				display: flex;
+				margin-top:30px ;
+			}
+			
+			.img3{
+				height: 108px;
+			}
+			iframe{
+				display: none;
+				border: none;
+			}
+			.title p{
+				color: #b6b6b6;
+				font-size: 13px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			今日热点新闻，你知道吗？
+		</div>
+		
+		<div class="box"></div>
+		<!--<iframe src="" width=100% height="650"  id="add">
+				
+		</iframe>-->
+			<a href="index.html" id="toMain" style="display: none;">
+  <p></p> 
+</a>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dropload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/url.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ReqImeiReplace.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var CbExtra=function(key,value){
+				this.key=key;
+				this.value=value;
+			}
+			var arrayCall =[];
+			var href = window.location.href
+			sessionStorage.setItem("href",href)
+			function GetParam(urlID, id) {
+			      href = href+ "";
+			      regstr = "/(\\?|\\&)" + id + "=([^\\&]+)/";
+			      reg = eval(regstr);
+			      result = href.match(reg);//匹配的结果是：result[0]=?sid=22 result[1]=sid result[2]=22。所以下面我们返回result[2]
+			      if (result && result[2]) {
+			          return result[2];
+			      }
+			}
+			var urlId = GetParam(href,"id")
+			
+			sessionStorage.setItem("urlId",urlId)
+			if(sessionStorage.getItem("number")){
+				$(".head").show()
+				if(sessionStorage.getItem("WechatNewsPush")){
+					
+				}else{
+					sessionStorage.setItem("WechatNewsPush",1)
+					$.ajax({
+         	            method: "POST",
+        	            url:URL,
+        	            dataType:"JSON",
+         	            data:{PackName: "WechatNewsPush",
+			            Imei: _getRandomImei(),
+			            ClassCode: "WechatNewsPush",
+			            Coid: 9,
+			            NCoid: 1,
+			            Type: 0,
+			            Channel: "youandmi",
+			            SystemVer: 21,
+			            PackType:"local",
+			            ApkName: ''},
+	             		success: function(data){
+	             			
+	             		}
+	       			})
+				}
+				
+				
+				
+			}else{
+				$('a#toMain>p').trigger('click') ;
+			}
+			var num2 = true 	
+			$(".head").click(function(){
+				location.reload()   
+			})
+
+			
+				
+				$('.element').dropload({
+				 scrollArea: window,
+       			 threshold : 2500,
+				 loadDownFn: function(me) {
+				 $.ajax({
+                 type: 'POST',
+                 url: api+"/NewsPush/GetNewsInfo?coid=9&ncoid=1&imei="+_getRandomImei() +"&channel=youandmi&version=1.0.001&SystemVer=21",
+                 dataType: 'json',
+                 success: function(result){
+                        var app = ""
+				         for(var  i=1;i<result.length;i++){
+				         	var  random =    parseInt(Math.random()*100)
+				         	var num = result[i].ImageType
+				         	var title = result[i].Title
+				         	var imgurl = result[i].ImageUrl
+				         	var IsAdvert = result[i].IsAdvert
+				         	var imageList = result[i].ImageList
+				         	var DetailUrl = result[i].DetailUrl
+				         	var CallbackExtra = result[i].CallbackExtra
+				         	var Source = result[i].Source
+				         	var CommentCount = random;
+							arrayCall.push(new CbExtra(DetailUrl,CallbackExtra));
+				         	app += filt(num,title,imgurl,IsAdvert,imageList,DetailUrl,Source,CommentCount)
+				         }
+				        
+				    $(".box").append(app)
+                      // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        me.resetload();
+                    },500);
+                },
+                error: function(xhr, type){
+                   
+                    me.resetload();
+                }
+            });
+				}
+			});
+			
+
+			function action(num,DetailUrl){
+				var CallbackExtra;
+				for (i in arrayCall){
+					if(arrayCall[i].key==DetailUrl)
+					{
+						CallbackExtra=arrayCall[i].value;
+						break;
+					}
+				}
+				
+				                            //  等iframe加载完毕  
+				$.ajax({
+				             method: "post",
+				             url:api+"/adApi/webReport",
+				             data:{imei:_getRandomImei(),verCode:10001,version:"1.0.001",SystemVer:21,channel:"youandmi",coid:9,ncoid:1,ua:navigator.userAgent,CallbackExtra:CallbackExtra},
+				             success:function(data){
+				             	console.log(data)
+				             }
+				       }) 
+			 
+			      			
+				window.location.href =DetailUrl
+				num2 = false
+//				$(".head").hide()
+//				$(".box").hide()
+//				$("#add").show()
+//				$("#add").attr("src",DetailUrl)
+//	  			window.location.replace(DetailUrl)
+			}
+			function filt(num,title,imgurl,IsAdvert,imageList,DetailUrl,Source,CommentCount){
+				var one,two,three ='' 
+				if(imageList){
+					var list =imageList.split(";")
+				}
+				
+				switch(num){
+						case 1:
+							one = "<div class=one     onclick=action('"+num+"','"+DetailUrl+"')><div class=weight>"
+							+title+
+							"</div><img src="
+							+ imgurl+
+							" alt=正在加载/><div class=Source>"+Source+" <span>"+advert(IsAdvert)+"</span></div></div>"
+							return one
+						case 2:
+						  two = " <div class= 'img2 ' onclick=action('"+num+"','"+DetailUrl+"')><div class=weight>"
+						    +title+
+						    "</div><div class=img-list><img src="
+						   + list[0] +
+						    " alt=正在加载/><img src="
+						   + list[1]+
+						    " alt=正在加载/><img src="
+						   + list[2]+
+						    " alt=正在加载/></div><div class=Source>"+Source+"<span>"+pin(IsAdvert,CommentCount)+"</span> <span>"+advert(IsAdvert)+"</span></div></div>"
+							return two
+						case 3:
+						three = "<div class=img3   onclick=action('"+num+"','"+DetailUrl+"')><div class=ti-box><div><img src="
+						+imgurl+
+						" alt=正在加载/></div><div class=title>"
+						+title+advert(IsAdvert)+
+						"<p>"+Source+"</p></div></div></div>"
+							return three
+						}
+				
+						$(".img2").click(function(){
+					$(this).index()
+					console.log($(this).index())
+				})
+				
+				
+				function advert(IsAdvert){
+					if(IsAdvert){
+						return "<span >广告</span>"
+					}else{
+					 	return ""
+					}
+				}
+				function pin(IsAdvert,CommentCount){
+					
+					if(IsAdvert){
+						return ""
+					}else{
+					 	return ""+CommentCount+"评论"
+					}
+				}
+				
+			}		
+   function urlRdom(){
+    	var num = 0
+		!function(XBack){
+		var state = 'x-back';
+	var onPopState = function(event){
+		event.state === state 
+		record(state); 
+	}
+
+	var record = function(state){
+		num++
+		history.pushState(null, null,document.URL);
+		if(num==2&&num2==true){
+			history.pushState(null, null, 'newbox2.html?ran='+ Math.random()+'');
+			location.reload()  
+		}else if(num==2&&num2==false){
+			location.reload()  
+		}
+	}
+
+	!function(){
+			window.addEventListener('popstate', onPopState);
+			record(state);  
+		}.call(window.XBack = window.XBack || {});
+		}('XBack');
+	}
+    setTimeout(function(){
+    	urlRdom()
+    },1000)
+		</script>
+	</body>
+</html>
