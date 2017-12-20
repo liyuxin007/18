@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				overflow: hidden;
+			}
+			.box{
+				height: 800px;
+				width: 700px;
+				margin: 0 auto;
+				
+				font-size: 30px;
+				text-align: center;
+			}
+			.box2{
+				line-height: 700px;
+				background: url(img/1.jpg) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+			}
+			.box3{
+				display: none;
+				position: absolute;
+				top: 0;
+				line-height: 600px;
+				background: url(img/2.jpg) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+			}
+			.box4{
+				display: none;
+				position: absolute;
+				top: 0;
+				line-height: 456px;
+				background: url(img/3.jpg) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+			}
+			.box5{
+				display: none;
+				position: absolute;
+				top: 0;
+				line-height: 342px;
+				background: url(img/4.jpg) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+			}
+			.box6{
+				display: none;
+				position: absolute;
+				top: 0;
+				line-height: 342px;
+				background: url(img/5.jpg) no-repeat;
+				background-size: cover;
+				    background-position: 6px 1px;
+    height: 919px;
+    width: 782px;
+			}
+			.a{
+				animation:mymove 1s forwards;
+				display: block;
+			}
+				.b{
+				animation:mymove2 1s forwards;
+				
+			}
+			@keyframes mymove
+				{
+				0% {opacity: 0;}
+				
+				100% {opacity: 1;}
+				}
+				@keyframes mymove2
+				{
+				0% {opacity: 1;}
+				
+				100% {opacity: 0;}
+				}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box2">
+				<div class="one">2011年11月11日18大学成立</div>
+			</div>
+			<div class="box3" id = "box3">
+				<div class="two">2012年6月  获得广东省推荐企业信息化技术服务商</div>
+			</div>
+			<!--<div class="box4">
+				<div class="three">2012年6月  获得广东省推荐企业信息化技术服务商</div>
+			</div>-->
+		</div>
+		
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+						var arrayNum1 = [
+								"2012年6月  获得广东省推荐企业信息化技术服务商",
+								"2012年11月 安狗狗管家版本发布",
+								"2013年3月  安狗狗管家用户突破100万",
+								"2013年8月  掌星立意获得广东省信息产业厅双软认定企业",
+								"2013年12月 获得深圳市政府互联网行业初创企业重点扶植对象",
+								"2013年12月 安狗狗管家进入全国移动APP前500名"
+								]
+						
+						
+						var arrayNum2 = [
+						"2014年7月  获得广东省软件协会过程改进委员会理事",
+						"2014年10月安狗狗应用管家事业部成立",
+						"2014年11月 线刷宝软件与线刷宝官网上线",
+						"2014年12月 安狗狗管家用户突破1000万",
+						"2015年5月  掌星立意被认定为国家高新技术认定企业",
+						"2015年6月 线刷宝事业部成立",
+						"2015年9月 线刷宝售后帮ROM开发者平台上线"
+						]
+						
+						var arrayNum3 = [
+						"2016年4月 线刷宝ROM大师发布",
+						"2016年8月  移卓获得广东省双软高新技术认定企业",
+						"2016年8月 线刷宝售后O2O上线",
+						"2016年9月  安狗狗渠道日分发量突破100万",
+						"2016年10月 安狗狗管家用户超过5000万",
+						"2016年12月 线刷宝年度出货287万台"
+						]
+						var arrayNum4 = [
+						"2017年3月  安狗狗清理大师发布，下载量突破300万",
+						"2017年7月  新潮、移卓获得广东省信息产业厅双软认定企业",
+						"2017年8月 线刷宝刷机软件月新增突破80万"
+						]
+			$('.one').addClass('animated flip');
+			$('.one').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				setTimeout(function(){
+					
+					$(".box2").fadeOut(3000)
+					$("#box3").addClass("a")
+				},1000)
+			});
+			$("#box3")[0].addEventListener("webkitAnimationEnd", function(){ 
+				 $("#box3").addClass("b")
+				 
+				 $("#1").addClass("a")
+				}, false); 
+				
+				
+		for(let i = 1;i<arrayNum1.length;i++){
+		var app ="<div class=box3 id="+i+" ><div class=two>"
+		+arrayNum1[i]+
+		"</div></div>"
+			$(".box").append(app)
+			if(i==5){
+				
+				$('#'+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#'+i+'').addClass("b")
+				
+						
+					   $('#'+10+'').addClass("a")
+						
+					}, false);
+			}else{
+				$('#'+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#'+i+'').addClass("b")
+				
+						var i2 = i+1
+					   $('#'+i2+'').addClass("a")
+						
+					}, false);
+			}
+			
+			
+		
+			
+		}
+			var c = 1
+		for(let i = 0;i<arrayNum2.length;i++){
+			var app2 ="<div class=box4 id="+c+i+" ><div class=two>"
+			+arrayNum2[i]+
+			"</div></div>"
+			$(".box").append(app2)
+		
+
+				if(i==6){
+					$('#16')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#16').addClass("b")
+				
+						
+					   $('#'+20+'').addClass("a")
+						
+					}, false);
+				}else{
+					$('#'+c+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#'+c+i+'').addClass("b")
+				
+						var i2 = c*10+i+1
+						
+					   $('#'+i2+'').addClass("a")
+						
+					}, false);
+				}
+				
+			
+		}
+			
+			
+				var d = 2
+		for(let i = 0;i<arrayNum3.length;i++){
+			var app2 ="<div class=box5 id="+d+i+" ><div class=two>"
+			+arrayNum3[i]+
+			"</div></div>"
+			$(".box").append(app2)
+		
+				console.log(app2)
+				if(i==5){
+					$('#25')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#25').addClass("b")
+				
+						
+					   $('#'+30+'').addClass("a")
+						
+					}, false);
+				}else{
+					$('#'+d+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#'+d+i+'').addClass("b")
+				
+						var i2 = d*10+i+1
+						
+					   $('#'+i2+'').addClass("a")
+						
+					}, false);
+				}
+				
+			
+		}
+			
+					var e = 3
+		for(let i = 0;i<arrayNum4.length;i++){
+			var app2 ="<div class=box6 id="+e+i+" ><div class=two>"
+			+arrayNum4[i]+
+			"</div></div>"
+			$(".box").append(app2)
+		console.log(app2)
+
+				if(i==2){
+					
+				}else{
+					$('#'+e+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+
+						$('#'+e+i+'').addClass("b")
+				
+						var i2 = e*10+i+1
+						console.log(i)
+					   $('#'+i2+'').addClass("a")
+						
+					}, false);
+				}
+				
+			
+		}
+			
+		</script>
+	</body>
+</html>

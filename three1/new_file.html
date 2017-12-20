@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body,html{
+				
+				
+				margin: 0;
+				background: cover;
+				font-size: 25px;
+				height: 100%;
+			}
+			body{
+				background: url(img/bgi.png) no-repeat;
+				background-size: cover;
+				overflow-x:hidden ;
+			}
+			.box{
+				
+				height: 1000px;
+				width: 100%;
+				
+				
+				font-size: 30px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.box2{
+				    display: none;
+    background: url(img/1.png) no-repeat;
+    background-size: cover;
+    background-position: -7px -342px;
+    height: 636px;
+    width: 761px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+			}
+			.box3{
+				display: none;
+				position: absolute;
+				top: 0;
+				
+				background: url(img/2.png) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+				position: absolute;
+    left: 33%;
+     top: 17%;
+			}
+			.box3-3{
+				display: none;
+				position: absolute;
+				top: 0;
+				
+				background: url(img/3.png) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+				font-size: 25px;
+						position: absolute;
+    left: 33%;
+     top: 17%;
+			}
+			.box4{
+				display: none;
+				position: absolute;
+				top: 0;
+				
+				
+				background: url(img/4.png) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+						position: absolute;
+    left: 30%;
+     top: 17%;
+			}
+			
+			.box4-4{
+				display: none;
+				position: absolute;
+				top: 0;
+				
+				
+				background: url(img/5.png) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+						position: absolute;
+    left: 30%;
+    top: 17%;
+			}
+			
+			.box5{
+				display: none;
+				position: absolute;
+				top: 0;
+				
+				
+				background: url(img/6.png) no-repeat;
+				background-size: cover;
+				background-position: -30px 1px ;
+				height: 800px;
+				width: 700px;
+						position: absolute;
+     left: 30%;
+    top: 17%;
+			}
+			.box6{
+				display: none;
+				position: absolute;
+				top: 0;
+				
+				
+				background: url(img/7.png) no-repeat;
+				background-size: cover;
+				    background-position: 6px 1px;
+			    height: 919px;
+			    width: 782px;
+			    font-size: 25px;
+			    position: absolute;
+			    left: 25%;
+			     top: 8%;
+			}
+			.color{
+				color: #f8e300;
+				font-size: 65px;
+			}
+			.text-3 .two:first-child{
+				color:#f8e300;
+				font-size: 65px;
+				margin-bottom: 20px;
+			}
+			.text-4 .two:first-child{
+				color: #f8e300;
+				font-size: 65px;
+				margin-bottom: 20px;
+			}
+			.text-5 .two:first-child{
+				color: #f8e300;
+				font-size: 65px;
+				margin-bottom: 20px;
+			}
+			.text-6 .two:first-child{
+				color: #f8e300;
+				font-size: 65px;
+				margin-bottom: 20px;
+			}
+			.text-7 .two:first-child{
+				color: #f8e300;
+				font-size: 65px;
+				margin-bottom: 20px;
+			}
+			.text-8 .two:first-child{
+				color: #f8e300;
+				font-size: 65px;
+				margin-bottom: 20px;
+			}
+			.two{
+				opacity: 0;
+				height: 82px;
+				text-shadow:0px 0px 12px white;
+				color: #667d4f;
+				 text-shadow: 0 0 0.2em white,0 0 0.2em white;
+           font-size: 30px;
+         width: 800px;
+			}
+			.text-3{
+				
+				position: relative;
+				
+				left:563px;
+			}
+			.text-4{
+				
+				position: relative;
+				
+				left:500px;
+			}
+			.text-5{
+				
+				position: relative;
+				
+				left:563px;
+			}
+			.text-6{
+				
+				position: relative;
+				
+				left:563px;
+			}
+			.text-7{
+				
+				position: relative;
+				
+				left:563px;
+			}
+			.text-8{
+				
+				position: relative;
+				
+				left:650px;
+			}
+			.a{
+				animation:mymove 3s forwards;
+				display: block;
+			}
+			.b{
+				animation:mymove2 3s forwards;
+				
+			}
+			.text-box div{
+				font-size: 15px!important;
+				height: 50px;
+			}
+			.text-box p{
+				margin: 0;
+			}
+			.one-b{
+			color: #f8e300;
+		    font-size: 65px;
+		    margin-bottom: 20px;
+		    text-shadow:0px 0px 12px white;
+    	    text-shadow: 0 0 0.2em white,0 0 0.2em white;
+    	    opacity: 0;
+			}
+			.one-a{
+				 color: #667d4f;
+				  opacity: 0;
+			}
+			@keyframes mymove
+				{
+				0% {opacity: 0;}
+				
+				100% {opacity: 1;}
+				}
+				@keyframes mymove2
+				{
+				0% {opacity: 1;}
+				
+				100% {opacity: 0;}
+				}
+				.text-box{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 300px;
+					height: 800px;
+					border: 1px solid red;
+				}
+				.gif{
+					position: absolute;
+					left: 250px;
+    				top: 186px;
+					
+					color: #f8e300;
+				    font-size: 65px;
+				    margin-bottom: 20px;
+				    width: 250px;
+				    overflow: hidden;
+				}
+				.block{
+					opacity: 1;
+				}
+				/*滚动条*/
+				.bgcolor{
+					height:3542px;
+					width: 100%;
+					background: black;
+					color: white;
+					position: relative;
+					top: -31px;
+					display: none;
+				}
+				.bg-box{
+					width: 630px;
+					text-align: center;
+					height: 100%;
+					background: black;
+					margin: 0 auto;
+					opacity: 1;
+					display: none;
+				}
+				
+				.magin-top{
+					padding-top: 70%;
+					
+				}
+				
+				
+				
+				.top{
+					position: fixed;
+					left: 80px;
+					top: 0;
+					color: white;
+				}
+				
+							
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	</head>
+	<body>
+		<div class="gif">
+			<div class="gif1"></div>
+			<div class="gif2"></div>
+			<div class="gif3"></div>
+			<div class="gif4"></div>
+			<div class="gif5"></div>
+			<div class="gif6"></div>
+			<div class="gif7"></div>
+		</div>
+		<div class="box">
+			<div class="box2">
+				<div class="one"><p class="one-b">2011年</p><p class="one-a">11月11日18大学成立</p></div>
+			</div>
+			<div class="box3" id = "box3">
+				<div class="text-3">
+					
+				</div>
+			</div>
+			<div class="box3-3">
+				<div class="text-4">
+					
+				</div>
+			</div>
+			
+			<div class="box4">
+				<div class="text-5">
+					
+				</div>
+			</div>
+			<div class="box4-4">
+				<div class="text-6">
+					
+				</div>
+			</div>
+			<div class="box5">
+				<div class="text-7">
+					
+				</div>
+			</div>
+			<div class="box6">
+				<div class="text-8">
+					
+				</div>
+			</div>
+		</div>
+		<div class="bgcolor">
+			<div class="top">
+				<h1>18大学发展历程:</h1>
+			</div>
+			<div class="bg-box">
+				<h2 class="magin-top">2011年</h2>
+				<p>11月11日18大学成立</p>
+				<h2>2012年</h2>
+				<p>6月  获得广东省推荐企业信息化技术服务商</p>
+				<p>11月 安狗狗管家版本发布</p>
+				<h2>2013年</h2>
+				<p>3月  安狗狗管家用户突破100万</p>
+				<p>8月  掌星立意获得广东省信息产业厅双软认定企业</p>
+				<p>12月 获得深圳市政府互联网行业初创企业重点扶植对象</p>
+				<p>12月 安狗狗管家进入全国移动APP前500名</p>
+				<h2>2014年</h2>
+				<p>7月获得广东省软件协会过程改进委员会理事</p>
+				<p>10月安狗狗应用管家事业部成立</p>
+				<p>11月 线刷宝软件与线刷宝官网上线</p>
+				<p>12月 安狗狗管家用户突破1000万</p>
+				<h2>2015年</h2>
+				<p>5月  掌星立意被认定为国家高新技术认定企业</p>
+				<p>6月 线刷宝事业部成立</p>
+				<p>9月 线刷宝售后帮ROM开发者平台上线</p>
+				<h3>2016年</h3>
+				<p>4月 线刷宝ROM大师发布</p>
+				<p>8月  移卓获得广东省双软高新技术认定企业</p>
+				<p>9月  安狗狗渠道日分发量突破100万</p>
+				<p>10月 安狗狗管家用户超过5000万</p>
+				<p>12月 线刷宝年度出货287万台</p>
+				<h3>2017年</h3>
+				<p>3月  安狗狗清理大师发布，下载量突破300万</p>
+				<p>7月  新潮、移卓获得广东省信息产业厅双软认定企业</p>
+				<p>8月 线刷宝刷机软件月新增突破80万</p>
+			</div>
+			
+			
+		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//滚动
+			var n =0;
+//			setInterval(function(){
+//					n　+=50
+//					console.log(n)
+//					$('body').animate({ scrollTop:n}, 2000);
+//				},2000)
+		function Timeout(){
+			setTimeout(function(){
+				$('body').animate({ scrollTop:2400},30000);
+			},1000)
+		}
+			
+			
+			
+						var arr1 = ["2012年",
+								"6月  获得广东省推荐企业信息化技术服务商",
+								"11月 安狗狗管家版本发布",
+								
+								]
+						
+						var arr2 = ["2013年","3月  安狗狗管家用户突破100万",
+								"8月  掌星立意获得广东省信息产业厅双软认定企业",
+								"12月 获得深圳市政府互联网行业初创企业重点扶植对象",
+								"12月 安狗狗管家进入全国移动APP前500名"]
+						
+						
+						
+						var arr3 = ["2014年",
+						"7月获得广东省软件协会过程改进委员会理事",
+						"10月安狗狗应用管家事业部成立",
+						"11月 线刷宝软件与线刷宝官网上线",
+						"12月 安狗狗管家用户突破1000万",
+						]
+						
+						var arr4 = ["2015年","5月  掌星立意被认定为国家高新技术认定企业",
+						"6月 线刷宝事业部成立",
+						"9月 线刷宝售后帮ROM开发者平台上线"
+]
+
+
+						var arr5 = ["2016年",
+						"4月 线刷宝ROM大师发布",
+						"8月  移卓获得广东省双软高新技术认定企业",
+						"8月 线刷宝售后O2O上线",
+						"9月  安狗狗渠道日分发量突破100万",
+						"10月 安狗狗管家用户超过5000万",
+						"12月 线刷宝年度出货287万台"
+						]
+						var arr6 = ["2017年",
+						"3月  安狗狗清理大师发布，下载量突破300万",
+						"7月  新潮、移卓获得广东省信息产业厅双软认定企业",
+						"8月 线刷宝刷机软件月新增突破80万"
+						]
+						//2
+						setTimeout(function(){
+							$(".box2").fadeIn(2000)
+							
+						},2000) 
+						//5
+						setTimeout(function(){
+							$(".one-b").css("opacity",1)
+							$(".gif1").append($(".one-b").text())
+						},5000)
+						
+						//6
+						setTimeout(function(){
+							$('.one-a').css("opacity",1)
+							$('.one-a').addClass('animated flip');
+						},6000)
+						
+			$('.one-a').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				setTimeout(function(){
+					$(".gif1").remove()
+					$(".gif2").append($("#0").text())
+					$(".box2").fadeOut(2000)
+					$("#box3").addClass("a")
+					$("#0").addClass("a")
+					
+				},3000)
+			});
+			
+			//12年
+//			
+//				$("#0")[0].addEventListener("webkitAnimationEnd", function(){ 
+//						
+//					   $("#1").addClass("animated flip")
+//					   
+//					}, false);
+			
+			for(let i = 0;i<arr1.length;i++){
+				var app ="<div class=two id="+i+">"
+						+arr1[i]+
+					"</div>"
+					$(".text-3").append(app)
+					if(i==1){
+						$("#0")[0].addEventListener("webkitAnimationEnd", function(){ 
+						
+					   $("#1").addClass("block animated bounceIn")
+					   
+					}, false);
+					}
+				
+					
+					
+					
+			$("#1").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#2").addClass("block animated bounceIn")
+						},3000)
+			});
+					
+					$("#2").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						
+						setTimeout(function(){
+						$(".box3").addClass("b")
+						$(".box3-3").addClass("a")
+						$("#10").addClass("a")
+						
+						},3000)
+			});
+					
+					
+//				if(i==2){
+//					$('#'+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//						$(".box3").addClass("b")
+//						$(".box3-3").addClass("a")
+//						$("#10").addClass("a")
+//						
+//					}, false);
+//
+//				}else{
+//					$('#'+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//						var i2 = i+1
+//					   $('#'+i2+'').addClass("a")
+//					   
+//					}, false);
+//				}
+					
+					
+					
+					
+					
+					
+				}
+			
+			
+			//13年
+			var a = 1
+			for(let i = 0;i<arr2.length;i++){
+				var app ="<div class=two id="+a+i+">"
+						+arr2[i]+
+					"</div>"
+					$(".text-4").append(app)
+					if(i==1){
+						$("#10")[0].addEventListener("webkitAnimationEnd", function(){ 
+							$(".gif2").remove()
+						$(".gif3").append($("#10").text())
+					   $("#11").addClass("block animated bounceIn")
+					   
+					}, false);
+					}
+						
+					
+         $("#11").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#12").addClass("block animated bounceIn ")
+						},1000)
+			});
+		$("#12").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#13").addClass("block animated bounceIn")
+						},1000)
+			});
+
+$("#13").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#14").addClass("block animated bounceIn")
+						},1000)
+			});
+
+
+
+$("#14").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							
+							$(".box3-3").addClass("b")
+						$(".box4").addClass("a")
+						$("#20").addClass("a")
+						},1000)
+			});
+//				if(i==4){
+//					
+//					
+//					$('#14')[0].addEventListener("webkitAnimationEnd", function(){ 
+//						$(".box3-3").addClass("b")
+//						$(".box4").addClass("a")
+//						$("#20").addClass("a")
+//						$(".text-box").append($(".text-4").html())
+//					}, false);
+//
+//				}else{
+//				$('#'+a+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//				
+//						var i2 = a*10+i+1
+//						
+//					   $('#'+i2+'').addClass("a")
+//						
+//					}, false);
+//				}
+					
+					
+				}
+////			//14年
+				var b = 2
+			for(let i = 0;i<arr3.length;i++){
+				var app ="<div class=two id="+b+i+">"
+						+arr3[i]+
+					"</div>"
+					$(".text-5").append(app)
+					if(i==1){
+						$("#20")[0].addEventListener("webkitAnimationEnd", function(){
+							$(".gif3").remove()
+						$(".gif4").append($("#20").text())
+					   $("#21").addClass("block animated bounceIn")
+					   
+					}, false);
+					}
+					
+					
+					$("#21").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#22").addClass("block animated bounceIn")
+						},1000)
+			});
+					
+							$("#22").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#23").addClass("block animated bounceIn")
+						},1000)
+			});
+								$("#23").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							 $("#24").addClass("block animated bounceIn")
+						},1000)
+			})
+	
+	
+				$("#24").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							
+							 $(".box4").addClass("b")
+						$(".box4-4").addClass("a")
+						$("#30").addClass("a")
+						},1000)
+			})
+	
+	
+//				if(i==arr3.length-1){
+//					$('#24')[0].addEventListener("webkitAnimationEnd", function(){ 
+//						$(".box4").addClass("b")
+//						$(".box4-4").addClass("a")
+//						$("#30").addClass("a")
+//						$(".text-box").append($(".text-5").html())
+//					}, false);
+//
+//				}else{
+//				$('#'+b+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//				
+//						var i2 = b*10+i+1
+//						
+//					   $('#'+i2+'').addClass("a")
+//						
+//					}, false);
+//				}
+					
+					
+				}
+////			//15年
+				var c = 3
+			for(let i = 0;i<arr4.length;i++){
+				var app ="<div class=two id="+c+i+">"
+						+arr4[i]+
+					"</div>"
+					$(".text-6").append(app)
+					if(i==1){
+						$("#30")[0].addEventListener("webkitAnimationEnd", function(){
+							$(".gif4").remove()
+						$(".gif5").append($("#30").text())
+					   $("#31").addClass("block animated bounceIn")
+					   
+					}, false);
+					}
+					
+					$("#31").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#32").addClass("block animated bounceIn")
+						},1000)
+			})
+					
+					
+						$("#32").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#33").addClass("block animated bounceIn")
+						},1000)
+			})
+					
+					
+					$("#33").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							
+							$(".box4-4").addClass("b")
+						$(".box5").addClass("a")
+						$("#40").addClass("a")
+						},1000)
+			})
+			
+					
+//				if(i==3){
+//					$('#33')[0].addEventListener("webkitAnimationEnd", function(){ 
+//						$(".box4-4").addClass("b")
+//						$(".box5").addClass("a")
+//						$("#40").addClass("a")
+//						$(".text-box").append($(".text-6").html())
+//					}, false);
+//					
+//					
+//				}else{
+//				$('#'+c+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//				
+//						var i2 = c*10+i+1
+//						
+//					   $('#'+i2+'').addClass("a")
+//						
+//					}, false);
+//				}
+					
+					
+				}
+////			
+////			//16年
+////			
+////			
+			var d = 4
+			for(let i = 0;i<arr5.length;i++){
+				var app ="<div class=two id="+d+i+">"
+						+arr5[i]+
+					"</div>"
+					$(".text-7").append(app)
+					if(i==1){
+						$("#40")[0].addEventListener("webkitAnimationEnd", function(){ 
+							$(".gif5").remove()
+						$(".gif6").append($("#40").text())
+					   $("#41").addClass("block animated bounceIn")
+					   
+					}, false);
+					}
+					
+					
+					$("#41").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#42").addClass("block animated bounceIn")
+						},1000)
+			})
+					
+						$("#42").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#43").addClass("block animated bounceIn")
+						},1000)
+			})
+							$("#43").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#44").addClass("block animated bounceIn")
+						},1000)
+			})
+										$("#44").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#45").addClass("block animated bounceIn")
+						},1000)
+			})
+													$("#45").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#46").addClass("block animated bounceIn")
+						},1000)
+			})
+																$("#46").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							
+							$(".box5").addClass("b")
+						$(".box6").addClass("a")
+						$("#50").addClass("a")
+						},1000)
+			})
+//				if(i==arr5.length-1){
+//					$('#46')[0].addEventListener("webkitAnimationEnd", function(){ 
+//						$(".box5").addClass("b")
+//						$(".box6").addClass("a")
+//						$("#50").addClass("a")
+//						$(".text-box").append($(".text-7").html())
+//					}, false);
+//				
+//				}else{
+//					
+//				$('#'+d+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//				
+//						var i2 = d*10+i+1
+//						
+//					   $('#'+i2+'').addClass("a")
+//						
+//					}, false);
+//				}
+					
+					
+				}
+//			
+//			//17年
+//			
+			var e = 5
+			for(let i = 0;i<arr6.length;i++){
+				var app ="<div class=two id="+e+i+">"
+						+arr6[i]+
+					"</div>"
+					$(".text-8").append(app)
+					if(i==1){
+						$("#50")[0].addEventListener("webkitAnimationEnd", function(){
+							$(".gif6").remove()
+						$(".gif7").append($("#50").text())
+					   $("#51").addClass("block animated bounceIn")
+					   
+					}, false);
+					}
+						
+					
+							$("#51").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#52").addClass("block animated bounceIn")
+						},1000)
+			})
+				$("#52").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$("#53").addClass("block animated bounceIn")
+						},1000)
+			})
+					$("#53").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						setTimeout(function(){
+							$(".box").css("display","none")
+							$(".gif").css("display","none")
+							$(".bgcolor").show()
+							$(".bg-box").show()
+							Timeout()
+						},7000)
+			})
+				
+				
+//				if(i==arr6.length-1){
+//
+//				}else{
+//				$('#'+e+i+'')[0].addEventListener("webkitAnimationEnd", function(){ 
+//				
+//						var i2 = e*10+i+1
+//						
+//					   $('#'+i2+'').addClass("a")
+//						
+//					}, false);
+//				}
+					
+					
+				}
+			
+			
+			
+		</script>
+	</body>
+</html>
