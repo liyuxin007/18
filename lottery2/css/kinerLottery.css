@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+html {
+    font-size : 20px;
+}
+h3{
+	margin: 0;
+}
+
+/*@media only screen and (min-width: 320px){
+    html {
+        font-size: 19px !important;
+    }
+    }*/
+/*@media only screen and (min-width: 401px){
+    html {
+        font-size: 20px !important;
+    }
+  
+}*/
+/*@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important;
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important;
+    }
+}*/
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    
+    height: 100%;
+    
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	    /*width: 88%;
+	    display: inline-block;*/
+}
+button{
+	 background: #12a14c;  
+            border:0px;
+     color: white;
+}
+.box {
+    width: 15rem;
+    height: 15rem;
+    
+    margin: 0 auto;
+    position:relative;
+    top: 4%;
+    /*position: absolute;
+    top: 93%;
+    left: 50%;*/
+    /*transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);*/
+  
+    overflow:hidden
+}
+.text2{
+	font-weight: bold;
+	width: 10rem;
+	position: relative;
+	top: 12%;
+	left: 52%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+   
+    color: #f9eca6;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+
+
+/*.text4{
+	background: #a20202;
+	height: 6rem;
+	border: 1px solid #a20202;
+	border-radius: 5px;
+	margin: 15px;
+	position: relative;
+	bottom: -16rem;
+}*/
+
+.text2 span{
+	color: #ffcc00
+}
+.box .outer {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;*/
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  
+}
+
+.box .outer img{
+    width: 100%;
+}
+
+.box .inner{
+    position: relative;
+    left: 52%;
+    top: -48%;
+
+    width: 5rem;
+    height: 5rem;
+   
+    -webkit-transform: translate(-50%, -50%);
+   
+    z-index: 2;
+    background-image: url(../imgs/jp.png);
+    background-size: auto 5rem;
+    background-repeat: no-repeat;
+}
+
+
+.box-father{
+	height: 53rem;
+	background: url(../imgs/ZHOGNQIUbg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.text{
+	background: #a20202;
+	
+	border: 1px solid #a20202;
+	border-radius: 5px;
+	margin: 15px;
+	
+	margin-top: 137px;
+	height: 8rem;
+	overflow: hidden;
+}
+.text span {
+	display: block;
+	color: #f5de9b;
+	margin: 0.5rem 0.6rem;
+	letter-spacing: 0.1rem
+}
+.foot {
+	
+	background: #fdcece;
+	font-size: 0.6rem;
+	
+	
+}
+.foot img{
+	height: 3.5rem;
+	width: 3.5rem;
+}
+.ft{
+	overflow: hidden;
+	padding-left: 11px;
+	display: inline-block;
+	padding-bottom: 10px;
+	
+}
+.flot{
+	float: right;
+}
+.nor{
+	color: white;
+}
+.ft2{
+	overflow: hidden;
+	
+	display: inline-block;
+	float:right;
+}
+.one{
+	float: left;
+	
+	    height: 3.5rem;
+    width: 3.5rem;
+   /* border: 1px solid black;*/
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.two{
+	height: 3.5rem;
+	margin-left: 10px;
+	float: left;
+	position: relative;
+}
+.two span{
+	display: block;
+}
+.two span:last-child{
+	display: inline-block;
+	width: 88%;
+	
+	text-align: center;
+	color: white;
+	border-radius:5px ;
+	padding:5px 0;
+	position: absolute;
+	bottom: 0;
+	background: #12a14c;
+	
+}
+.text3{
+	padding: 0 16px;
+	background: #fdcece;
+	height: 4rem;
+    color: #666666;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    
+}
+.lt{
+	text-align: left!important;
+	
+	color: #666;
+	width: 8rem;
+	margin-top: 4rem;
+}
+
+.title{
+	background: #a20202!important;
+	
+}
+.title span{
+	color:  #f5de9b!important;
+}
+.text p{
+	margin: 0;
+	background: #a20202!important;
+	color:  #f5de9b!important;
+}
+.two{
+	width: 4rem;
+	
+	
+}
+.two span:first-child{
+	color:#333;
+}
+
+.borde{
+	position: relative;
+	height: 50px;
+	background: #fdcece;
+}
+.borde div{
+	height: 1px ;
+	width: 100%;
+	background: #c20000;
+	position: absolute;
+	top: 50%;
+}
+@media screen and (min-width:320px){
+ html {
+        font-size: 18px !important;
+    }
+    .text{
+    	font-size: 12px!important;
+    }
+}
+@media screen and (min-width:375px){
+ html {
+        font-size: 19px !important;
+    }
+}
+@media screen and (min-width:400px){
+ html {
+        font-size: 20px !important;
+    }
+    .box-father{
+	height: 55rem!important;
+	
+}
+.box{
+	top: 8%;
+}
+.text{
+	margin-top:  162px;
+}
+}

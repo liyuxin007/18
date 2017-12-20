@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>大转盘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/kinerLottery.css">
+</head>
+
+<body>
+	
+	<div class="box-father">
+		<div style="height: 1px;"> </div>
+		<div class="text">
+			<span><h3>出行倒计时 国庆长假你准备好了吗！</h3></span>
+			<span >还有一天时间，即将迎来万众期待的十一黄金周，
+			今年恰逢中秋、国庆双节连放8天，相信不少人已经准备了长假出行计划
+			在打包行李的同时，不妨也更新下你的手机应用。
+			
+			</span>
+			
+			<span>
+				下载应用还可以参与抽奖哦~具体请往下看~~
+			</span>
+		</div>
+		
+    <div id="box" class="box">
+        <div class="outer KinerLottery KinerLotteryContent"><img src="./imgs/cjian.png"></div>
+        
+        <div class="inner KinerLotteryBtn start"></div>
+    </div>
+    <div class="text2">
+			您今天还有<span class="math">1</span>次抽奖机会
+	</div>	
+	<div class="text4">
+		
+		</div>
+    </div>
+    
+  
+   <div class="text3" bb="aaaa">
+			小编精心为大家准备了几款应用，包罗衣食住行，吃喝玩乐，相信会为你的旅程带来不少便利。
+   </div>
+   
+   	<div class="foot">
+   			
+			<div class="ft">
+				<div class="one"><img src="http://src.apgoview.com/userfiles/images/2017-04-19/6993063e0b7842bdac6aacfbdc11b747.png">
+				</div><div class="two"><span id=>WiFi万能钥匙</span>
+					<span class="ft3">
+						<button class="nor a comtencentwifimanager" 
+							data-downurl="http://apkvip.57.net/files//2017-09-27/ad84c3a9fd1e42d38897cd4f723082be.apk"
+							data-appName = "WiFi万能钥匙"
+							data-packName ="com.tencent.wifimanager"
+							data-icon ="http://src.apgoview.com/userfiles/images/2017-04-19/6993063e0b7842bdac6aacfbdc11b747.png"
+							data-verName = "3.0.0"
+							data-source ="local"
+							data-size ="14.5698318481445"
+							data-vercode = "81"
+							>
+							<a href="javascript:; " class='comneteasemy download '>下载</a>
+						</button>
+						
+						
+					</span>
+				</div>
+					<div class="lt">随时随地连WiFi</div>
+			</div>
+			
+			
+   		
+   	</div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/AJS.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/rotation.js"></script>
+    <script type="text/javascript">
+    	function onInstall(name){
+    		var packname = name.replace(/\./g, "");
+			$("." + packname).removeClass("nor downing continue open cancel upgrade retry").addClass("install").html("安装");
+			
+    	}
+    	function onOpen(name){
+    		var packname = name.replace(/\./g, "");
+    		$("." + packname).removeClass("nor downing continue cancel upgrade install retry").addClass("open").html("打开");
+    	}
+    </script>
+    
+</body>
+
+</html>
